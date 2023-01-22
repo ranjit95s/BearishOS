@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BearishOS/static/css/main.2b395605.css",
+    "main.js": "/BearishOS/static/js/main.1ffdba26.js",
+    "static/media/source-serif-pro-all-400-normal.woff": "/BearishOS/static/media/source-serif-pro-all-400-normal.a8a93831984ffd4e8f7b.woff",
+    "static/media/source-serif-pro-latin-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-latin-400-normal.f5b1bc3ff0438b15298d.woff2",
+    "static/media/source-serif-pro-latin-ext-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-latin-ext-400-normal.eb9ad12b9dda04fce5af.woff2",
+    "static/media/source-serif-pro-cyrillic-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-cyrillic-400-normal.01139b701f1eb2a6958d.woff2",
+    "static/media/source-serif-pro-greek-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-greek-400-normal.5f27fe26decc1385118e.woff2",
+    "static/media/source-serif-pro-cyrillic-ext-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-cyrillic-ext-400-normal.a16446d373777df62a7e.woff2",
+    "static/media/source-serif-pro-vietnamese-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-vietnamese-400-normal.8fb8eabe508ffcd906af.woff2",
+    "index.html": "/BearishOS/index.html",
+    "main.2b395605.css.map": "/BearishOS/static/css/main.2b395605.css.map",
+    "main.1ffdba26.js.map": "/BearishOS/static/js/main.1ffdba26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b395605.css",
+    "static/js/main.1ffdba26.js"
+  ]
+}
