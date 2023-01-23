@@ -59,6 +59,26 @@ opacity: 1 !important;
 .tssStyle  {
     font: normal normal 300 11px/17px Source Serif Pro  !important;
 }
+.t1317 {
+    text-align: left;
+font: normal normal 300 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.absc {
+        position: absolute;
+    top: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 5px !important;
+    border-radius: 5px;
+    z-index: 1;
+    left: -5.5rem;
+    width: 6.5rem;
+}
+
 .dtl > span  {
     font: normal normal 600 15px/21px Source Serif Pro  !important;
 }
@@ -309,7 +329,8 @@ color: #925f00d2;
     border: 3px solid #E9EDF2;
     border-radius: 5px;
     opacity: 1;
-    height: 40px;
+    padding:0px !important;
+    /* height: 40px; */
 }
  .ComposeBtns  {
     display: flex;
@@ -474,6 +495,11 @@ color: #925f00d2;
     padding: 0px !important;
 }
 
+.spanCC {
+    padding: 0px;
+    display: flex;
+}
+
 
 .alpha , .mini , .cross , .attach {display: none;}
 
@@ -502,7 +528,7 @@ color: #925f00d2;
 }
 
 /* ,.hoverBody */
-.ComposeLower,.hoveroutStyle,.btnStyle ,.hoverStyle,.peek,.ComposeBtns {
+.ComposeLower,.hoveroutStyle,.btnStyle ,.hoverStyle,.peek {
     padding: 0px !important;
 }
 .padding0 {
@@ -572,13 +598,35 @@ color: #925f00d2;
     margin-right: 10px;
 }
 
+.fn {
+    text-align: left;
+font: normal normal normal 15px/21px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
 .em {
+    text-align: left;
     font: normal normal 300 11px/15px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
 }
 .bg{
     background-color: #5EE2A0;
     border-radius: 5px;
     width: 25px !important;
+    opacity:75%;
+}
+
+.opc75 {
+    opacity: 75%;
+    padding: 4.2px 4.2px;
+}
+
+.opc {
+    opacity:0.5;
 }
 
 .ename {
@@ -654,6 +702,19 @@ opacity: 1;
 .rel {
     position:relative;
 }
+
+.info2 {
+    margin-top: 18px;
+    display: block;
+    text-align: left;
+    word-spacing: 0px;
+        /* line-height: 1.2 !important; */
+    font: normal normal 300 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
 .abs {
     position: absolute;
     top: 3rem;
@@ -708,7 +769,7 @@ opacity: 1;
     border: 1px solid gray;
 }
 .users {
-    width:6.2rem;
+    width:6.4rem;
     margin-top:3px;
     margin-bottom:3px;
     font: normal normal 300 13px/17px Source Serif Pro;
@@ -724,6 +785,10 @@ opacity: 1;
     margin:4px;
     font: normal normal 600 13px/21px Source Serif Pro  !important;
     color: black;
+}
+
+.pl4 {
+    padding-left:4px !important;
 }
 
 .abss{
@@ -747,8 +812,10 @@ opacity: 1;
 .colorr{
     background: #FF0000 0% 0% no-repeat padding-box;
     border-radius: 5px;
-    opacity: 0.25;
-    display:block;
+    opacity: 50%;
+    display: block;
+    color: black;
+    padding: 2px !important;
 }
 
 .absf {
@@ -799,6 +866,12 @@ opacity: 1;
     border-radius: 5px;
     font-size: 25px;
     margin-right: 10px;
+    width: 50px;
+    height: 50px !important;
+}
+
+.askp img {
+    object-fit:none !important;
 }
 .pink {
     background:pink 0% 0% no-repeat padding-box;

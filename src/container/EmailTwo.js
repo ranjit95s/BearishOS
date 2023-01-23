@@ -22,17 +22,23 @@ import sty from '../components/sty.module.css'
 // import { ClassNames } from '@emotion/react';
 
 function EmailTwo() {
-  const [style, setStyle] = useState(cx(sty.spanInv));
-  const [style2, setStyle2] = useState(cx(sty.spanHide, sty.spanInv));
+  const [style, setStyle] = useState(cx(sty.spanCC));
+  const [style2, setStyle2] = useState(cx(sty.spanHide));
 
   const [style3, setStyle3] = useState(false);
   const [style4, setStyle4] = useState(false);
   const [style5, setStyle5] = useState(false);
-  // const [style6, setStyle6] = React.useState(false);
+  const [user1, setUser1] =   useState(false);
+  const [user2, setUser2] =   useState(false);
+  const [user3, setUser3] =   useState(false);
 
   const changeStyle = () => {
     setStyle(cx(sty.spanInv, sty.spanHide));
-    setStyle2(cx(sty.composeBody, sty.borderBStyle, sty.spanShow, sty.spanInv));
+    setStyle2(cx(sty.composeBody, sty.borderBStyle, sty.spanShow));
+    if(user1)
+    setUser1( false);
+    else
+    setUser1(true);
   };
 
   const changeStyle2 = () => {
@@ -55,12 +61,18 @@ function EmailTwo() {
     else
       setStyle5(true)
   };
-  // const changeStyle5 = () => {
-  //     if(style6)
-  //         setStyle6(false)
-  //     else 
-  //         setStyle6(true)
-  // };
+  const changeStyle5 = () => {
+      if(user2)
+          setUser2(false)
+      else 
+          setUser2(true)
+  };
+  const changeStyle6 = () => {
+      if(user3)
+          setUser3(false)
+      else 
+          setUser3(true)
+  };
   return (
     <>
       <StyledEngineProvider injectFirst>
@@ -98,7 +110,7 @@ function EmailTwo() {
               <CardContent className={cx(sty.composeBody, sty.borderBStyle, sty.rel)}>
                 <Typography variant="h5" className={sty.tmsmStyle}>To</Typography>
                 <input type="text" name="toId" id="toId" onClick={changeStyle} />
-                <Stack className={cx(sty.userData, sty.abs, sty.spanHide)}>
+                <Stack className={user1 ? cx(sty.userData, sty.abs, sty.spanShow) : cx(sty.userData, sty.abs, sty.spanHide)}>
                   <CardContent className={cx(sty.user, sty.padding0)}>
                     <Typography className={cx(sty.pic)}>
                       TU
@@ -133,9 +145,9 @@ function EmailTwo() {
                 </CardContent>
               </CardContent>
               <CardContent className={style2} style={{ "display": "flex", "position": "relative" }}>
-                <input type="text" name="cc" id="cc" />
+                <input onClick={changeStyle5} type="text" name="cc" id="cc" />
                 <Typography className={cx(sty.spanInv)} style={{ "margin-right": "15px" }}>CC</Typography>
-                <Stack className={cx(sty.userData, sty.abs, sty.spanHide)}>
+                <Stack className={user2 ? cx(sty.userData, sty.abs, sty.spanShow) : cx(sty.userData, sty.abs, sty.spanHide)}>
                   <CardContent className={cx(sty.user, sty.padding0)}>
                     <Typography className={cx(sty.pic)}>
                       TU
@@ -166,9 +178,9 @@ function EmailTwo() {
                 </Stack>
               </CardContent>
               <CardContent className={style2} style={{ "display": "flex", "position": "relative" }}>
-                <input type="text" name="bcc" id="bcc" />
+                <input onClick={changeStyle6} type="text" name="bcc" id="bcc" />
                 <Typography className={cx(sty.spanInv)} style={{ "margin-right": "15px" }}>BCC</Typography>
-                <Stack className={cx(sty.userData, sty.abs, sty.spanHide)}>
+                <Stack className={user3 ? cx(sty.userData, sty.abs, sty.spanShow) : cx(sty.userData, sty.abs, sty.spanHide)}>
                   <CardContent className={cx(sty.user, sty.padding0)}>
                     <Typography className={cx(sty.pic)}>
                       TU
@@ -206,7 +218,7 @@ function EmailTwo() {
               </CardContent>
             </CardContent>
             <CardContent className={style5 ? cx(sty.ComposeLower, sty.spanShow) : cx(sty.ComposeLower, sty.spanHide)}>
-              <CardContent className={cx(sty.ComposeBtns)}>
+              <CardContent className={cx(sty.ComposeBtns,sty.padding0)}>
                 <CardContent className={cx(sty.ComposeBtns)}>
                   <ImageListItem><img src={link} alt="hero" className={style3 ? cx(sty.bg) : ''} onClick={changeStyle2} /></ImageListItem>
                   <CardContent className={style3 ? cx(sty.hoveroutStyle, sty.spanShow) : cx(sty.hoveroutStyle, sty.spanHide)}>
@@ -230,8 +242,8 @@ function EmailTwo() {
                 <CardContent className={cx(sty.ComposeBtns)}>
                   <ImageListItem><img src={trash} alt="hero" /></ImageListItem>
                 </CardContent>
-                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle)}>
-                  <Typography onClick={changeStyle3}>Send</Typography>
+                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle,sty.padding0)}>
+                  <Typography onClick={changeStyle3} className={cx(sty.tmStyle,sty.opc75)}>Send</Typography>
                   <ImageListItem><img src={LD} alt="hero" /></ImageListItem>
                   <CardContent className={style4 ? cx(sty.hoveroutStyle, sty.spanShow) : cx(sty.hoveroutStyle, sty.spanHide)}>
                     <CardContent className={cx(sty.hoverStyle, sty.comexx)}>

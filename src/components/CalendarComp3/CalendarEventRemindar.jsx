@@ -237,6 +237,7 @@ export default function CalendarEventRemindar() {
                                     </Typography>
                                     </CardContent>
                                 </CardContent>
+                                <CardContent className={cx(sty.padding0,calSty.overflow2)}>
                                 <CardContent className={cx(sty.padding0, calSty.mt10)} >
                                     <Typography variant="h5" className={cx(calSty.tnnn1521, calSty.tmr, calSty.op1)}>
                                         <span className={cx(calSty.picTU, sty.tnnn1521, sty.padding0)}>TU</span> Full Name
@@ -252,6 +253,7 @@ export default function CalendarEventRemindar() {
                                     <Typography variant="h6" className={cx(calSty.t31216, calSty.tmr, calSty.org)}>
                                         Guests
                                     </Typography>
+                                </CardContent>
                                 </CardContent>
                             </CardContent>
                         </Stack>

@@ -25,6 +25,7 @@ export default function CalendarWorkSpace() {
     const [style5, setStyle5] = React.useState(false);
     const [style6, setStyle6] = React.useState(false);
     const [style7, setStyle7] = React.useState(false);
+    const [style8, setStyle8] = React.useState(false);
     // const [accessOne, setAccessOne] = React.useState('can edit');
     // const handleChange = (event) => {
     //     setAccessOne(event.target.value)
@@ -70,6 +71,14 @@ export default function CalendarWorkSpace() {
             setStyle7(true);
         }
     };
+    const changeStyle7 = () => {
+        if (style8) {
+            setStyle8(false);
+        }
+        else {
+            setStyle8(true);
+        }
+    };
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -113,23 +122,23 @@ export default function CalendarWorkSpace() {
                                             </CardContent>
                                         </CardContent>
                                         <Stack className={cx(sty.flexAccess)}>
-                                            <CardContent style={{ "margin-left": "0px" }} className={cx(sty.ComposeBtns, sty.tsStyle)}>
-                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
-                                                    <Typography onClick={changeStyle3} className={cx(sty.tsStyle)}>Can Edit</Typography>
+                                            <CardContent style={{ "margin-left": "0px" }} className={cx(sty.ComposeBtns, sty.tsStyle,sty.padding0)}>
+                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                                    <Typography onClick={changeStyle3} className={cx(sty.t1317)}>Can Edit</Typography>
                                                     <ImageListItem className={cx(sty.imgr)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Edit
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can View
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Comment
                                                                 </Typography>
-                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.t1317, sty.padding0)}>
                                                                     Revoke Access
                                                                 </Typography>
                                                             </CardContent>
@@ -169,23 +178,23 @@ export default function CalendarWorkSpace() {
                                             </CardContent>
                                         </CardContent>
                                         <Stack className={cx(sty.flexAccess)}>
-                                            <CardContent style={{ "margin-left": "0px" }} className={cx(sty.ComposeBtns, sty.tsStyle)}>
-                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
-                                                    <Typography onClick={changeStyle3} className={cx(sty.tsStyle)}>Can Edit</Typography>
+                                            <CardContent style={{ "margin-left": "0px" }} className={cx(sty.ComposeBtns, sty.tsStyle,sty.padding0)}>
+                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                                    <Typography onClick={changeStyle3} className={cx(sty.t1317)}>Can Edit</Typography>
                                                     <ImageListItem className={cx(sty.imgr)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Edit
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can View
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Comment
                                                                 </Typography>
-                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.t1317, sty.padding0)}>
                                                                     Revoke Access
                                                                 </Typography>
                                                             </CardContent>
@@ -278,23 +287,23 @@ export default function CalendarWorkSpace() {
                                                     Email of user
                                                 </Typography>
                                             </CardContent>
-                                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
-                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
-                                                    <Typography onClick={changeStyle3} className={cx(sty.tsStyle)}>Can Edit</Typography>
+                                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle,sty.padding0)}>
+                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                                    <Typography onClick={changeStyle3} className={cx(sty.t1317,sty.pl4,sty.padding0)}>Can Edit</Typography>
                                                     <ImageListItem className={cx(sty.imgr)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Edit
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can View
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Comment
                                                                 </Typography>
-                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.t1317, sty.padding0)}>
                                                                     Revoke Access
                                                                 </Typography>
                                                             </CardContent>
@@ -327,23 +336,23 @@ export default function CalendarWorkSpace() {
                                                     Email of user
                                                 </Typography>
                                             </CardContent>
-                                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
-                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
-                                                    <Typography onClick={changeStyle4} className={cx(sty.tsStyle)}>Can Edit</Typography>
+                                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle,sty.padding0)}>
+                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                                    <Typography onClick={changeStyle4} className={cx(sty.t1317,sty.pl4,sty.padding0)}>Can Edit</Typography>
                                                     <ImageListItem className={cx(sty.imgr)}><img src={style5 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style5 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle4}>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Edit
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can View
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Comment
                                                                 </Typography>
-                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.t1317, sty.padding0)}>
                                                                     Revoke Access
                                                                 </Typography>
                                                             </CardContent>
@@ -369,23 +378,23 @@ export default function CalendarWorkSpace() {
                                                     Email of user
                                                 </Typography>
                                             </CardContent>
-                                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
-                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
-                                                    <Typography onClick={changeStyle4} className={cx(sty.tsStyle)}>Can Edit</Typography>
+                                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle,sty.padding0)}>
+                                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                                    <Typography onClick={changeStyle4} className={cx(sty.t1317,sty.pl4,sty.padding0)}>Can Edit</Typography>
                                                     <ImageListItem className={cx(sty.imgr)}><img src={style5 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style5 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle4}>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Edit
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can View
                                                                 </Typography>
-                                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
                                                                     Can Comment
                                                                 </Typography>
-                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.tsStyle, sty.padding0)}>
+                                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.t1317, sty.padding0)}>
                                                                     Revoke Access
                                                                 </Typography>
                                                             </CardContent>
@@ -407,8 +416,8 @@ export default function CalendarWorkSpace() {
                             </CardContent>
 
                             <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
-                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
-                                    <Typography onClick={changeStyle5} className={cx(sty.tsStyle)}>Anyone</Typography>
+                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                    <Typography onClick={changeStyle5} className={cx(sty.t1317,sty.pl4,sty.padding0)}>Anyone</Typography>
                                     <ImageListItem className={cx(sty.imgr)}><img src={style6 ? dau : dad} alt="hero" /></ImageListItem>
                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                         <Stack className={style6 ? cx(sty.ddd, sty.abss, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
@@ -426,24 +435,24 @@ export default function CalendarWorkSpace() {
                                 </CardContent>
                             </CardContent>
 
-                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
-                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
-                                    <Typography onClick={changeStyle4} className={cx(sty.tsStyle)}>Can Edit</Typography>
+                            <CardContent className={cx(sty.ComposeBtns, sty.tsStyle,sty.padding0)}>
+                                <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                    <Typography onClick={changeStyle7} className={cx(sty.t1317,sty.pl4,sty.padding0)}>Can Edit</Typography>
                                     <ImageListItem className={cx(sty.imgr)}><img src={style5 ? dau : dad} alt="hero" /></ImageListItem>
                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
-                                        <Stack className={style5 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
+                                        <Stack className={style8 ? cx(sty.ddd, sty.absc, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle4}>
-                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
-                                                    Can Edit
+                                                <Typography variant="h1" className={cx(sty.mars, sty.tsStyle, sty.padding0)}>
+                                                    This Link <br></br> <span>will allow users to </span>
                                                 </Typography>
-                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
-                                                    Can View
+                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
+                                                    Edit
                                                 </Typography>
-                                                <Typography variant="h1" className={cx(sty.mar, sty.tsStyle, sty.padding0)}>
-                                                    Can Comment
+                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
+                                                    View
                                                 </Typography>
-                                                <Typography variant="contained" className={cx(sty.mar, sty.colorr, sty.tsStyle, sty.padding0)}>
-                                                    Revoke Access
+                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
+                                                    Comment
                                                 </Typography>
                                             </CardContent>
                                         </Stack>

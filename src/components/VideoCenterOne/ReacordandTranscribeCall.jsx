@@ -35,7 +35,7 @@ export default function ReacordandTranscribeCall() {
                             </ImageListItem>
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
-                        <Typography className={cx(sty.info,sty.tmsmStyle)}>
+                        <Typography className={cx(sty.info2,sty.tmsmStyle)}>
                         Would you like Bearish to record and transcribe this call?
                     </Typography>
                             <CardContent className={cx(sty.btns,sty.alss)}>

@@ -8,18 +8,26 @@
     width: 350px;
     min-height: 525px;
     max-height: 650px;
-    height: max-content;
+    height: auto;
 }
 .boxWH2 {
     width: 375px;
-    min-height: 475px;
-    max-height: 475px;
+    /* min-height: 475px; */
+    /* max-height: 475px; */
     height: max-content;
+}
+
+.dot {
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
 }
 
 .boxIn {
     width: 325px;
-    height: max-content;
+    height: auto !important;
+    /* min-height: 525px !important; */
+    /* max-height: 650px !important; */
 }
 .boxIn2 {
     width: 350px;
@@ -27,7 +35,7 @@
 }
 
 .mar {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .sajmn {
@@ -124,6 +132,17 @@ opacity: 1;
 
 .tml {
     margin-left:41px;
+}
+
+.overflow2 {
+    height: 7rem;
+    overflow: scroll;
+    margin-top: 0px;
+    padding: 5px !important;
+}
+
+.overflow2::-webkit-scrollbar{
+    display:none !important;
 }
 
 .op05{

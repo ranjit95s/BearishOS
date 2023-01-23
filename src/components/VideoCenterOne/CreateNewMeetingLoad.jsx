@@ -38,7 +38,7 @@ export default function CreateNewMeetingLoad() {
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Name your Meeting' name="code" id="code" />
                             </CardContent>
-                            <Typography className={cx(sty.info,sty.tmsmStyle)}>
+                            <Typography className={cx(sty.info2,sty.tmsmStyle)}>
                             Just a second while we create your shiny new meeting.
                     </Typography>
                             <CardContent className={cx(sty.btns)}>

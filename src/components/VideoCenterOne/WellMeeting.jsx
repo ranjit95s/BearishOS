@@ -49,7 +49,7 @@ export default function WellMeeting() {
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Meeting Name' name="code" id="code" />
                             </CardContent>
-                            <Typography className={cx(sty.info, sty.tmsmStyle)}>
+                            <Typography className={cx(sty.info2, sty.tmsmStyle)}>
                                 Help Bearish better identify you in the meeting.
                             </Typography>
                             <CardContent className={cx(sty.btns,sty.wbtn)}>

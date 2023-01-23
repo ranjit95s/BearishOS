@@ -38,7 +38,7 @@ export default function JoinMeetingLoad() {
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Meeting Id or Meeting Link' name="code" id="code" />
                             </CardContent>
-                            <Typography className={cx(sty.info,sty.tmsmStyle)}>
+                            <Typography className={cx(sty.info2,sty.tmsmStyle)}>
                             One moment, we’re connecting you to your meeting.
                             </Typography>
                             <CardContent className={cx(sty.btns)}>

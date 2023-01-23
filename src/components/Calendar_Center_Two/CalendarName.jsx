@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
-import color from '../img/color.png';
+import color from '../img/Access.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -40,7 +40,7 @@ export default function CalendarName() {
                                     </CardContent>
                                 </CardContent>
                                 <input className={cx(sty.colorSelect)} type="color" name="color" id="colors"/>
-                                <label style={{"align-items": "center","display": "flex","opacity":"70%"}} For="colors"><img src={color} alt="close" loading="lazy" /></label>
+                                <label style={{"align-items": "center","display": "flex","opacity":"70%"}} For="colors"><img style={{"width":"9px"}} src={color} alt="close" loading="lazy" /></label>
                             </CardContent>
                             <CardContent className={cx(sty.btns,sty.ebtns)}>
                             <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn, sty.ebtnIn,sty.tsStyle, sty.ref)}>

@@ -64,7 +64,7 @@ export default function CalendarEventRemindar2() {
                             <CardContent className={cx(sty.padding0, calSty.w100, calSty.mr)}>
                                 <CardContent className={cx(sty.headerStyle, sty.padding0, calSty.w100)}>
                                     <Typography variant="h1" className={cx(calSty.t61521, calSty.tmr)}>
-                                        Thursday, January 12th <span> * </span> 6:00 - 6:30 pm
+                                        Thursday, January 12th <span className={calSty.dot}> • </span> 6:00 - 6:30 pm
                                     </Typography>
                                 </CardContent>
                             </CardContent>
@@ -105,12 +105,12 @@ export default function CalendarEventRemindar2() {
                                     <img src={pgroup} alt="close" loading="lazy" />
                                 </ImageListItem>
                             </CardContent>
-                            <CardContent className={cx(sty.padding0, calSty.w100, calSty.mr)}>
+                            <CardContent className={cx(sty.padding0, calSty.w100, calSty.mr,calSty.overflow2)}>
                                 <CardContent className={cx(sty.padding0)} >
                                     <Typography variant="h5" className={cx(calSty.tnnn1521, calSty.tmr, calSty.op1)}>
                                         <span className={cx(calSty.picTU, sty.tnnn1521, sty.padding0)}>TU</span> Full Name
                                     </Typography>
-                                    <Typography variant="h6" className={cx(calSty.t31216, calSty.tmr, calSty.org)}>
+                                    <Typography variant="h6" className={cx(calSty.t31216, calSty.tml, calSty.org)}>
                                         Oranizer
                                     </Typography>
                                 </CardContent>
@@ -118,10 +118,28 @@ export default function CalendarEventRemindar2() {
                                     <Typography variant="h5" className={cx(calSty.tnnn1521, calSty.tmr, calSty.op1)}>
                                         <span className={cx(calSty.picTU, sty.tnnn1521, sty.padding0)}>TU</span> Full Name
                                     </Typography>
-                                    <Typography variant="h6" className={cx(calSty.t31216, calSty.tmr, calSty.org)}>
+                                    <Typography variant="h6" className={cx(calSty.t31216, calSty.tml, calSty.org)}>
                                         Guests
                                     </Typography>
                                 </CardContent>
+
+                                <CardContent className={cx(sty.padding0, calSty.mt16)} >
+                                    <Typography variant="h5" className={cx(calSty.tnnn1521, calSty.tmr, calSty.op1)}>
+                                        <span className={cx(calSty.picTU, sty.tnnn1521, sty.padding0)}>TU</span> Full Name
+                                    </Typography>
+                                    <Typography variant="h6" className={cx(calSty.t31216, calSty.tml, calSty.org)}>
+                                        Oranizer
+                                    </Typography>
+                                </CardContent>
+                                <CardContent className={cx(sty.padding0, calSty.mt16)} >
+                                    <Typography variant="h5" className={cx(calSty.tnnn1521, calSty.tmr, calSty.op1)}>
+                                        <span className={cx(calSty.picTU, sty.tnnn1521, sty.padding0)}>TU</span> Full Name
+                                    </Typography>
+                                    <Typography variant="h6" className={cx(calSty.t31216, calSty.tml, calSty.org)}>
+                                        Guests
+                                    </Typography>
+                                </CardContent>
+
                             </CardContent>
                         </Stack>
                         <Stack className={cx(calSty.mainStack, calSty.mt16)}>

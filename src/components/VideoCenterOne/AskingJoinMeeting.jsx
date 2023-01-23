@@ -64,17 +64,17 @@ export default function AskingJoinMeeting() {
                             </ImageListItem>
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
-                            <Typography className={cx(sty.info, sty.tmsmStyle)}>
+                            <Typography className={cx(sty.info2, sty.tmsmStyle)}>
                                 Your host will let you into the meeting soon. You can test your mic and video while you wait below
                             </Typography>
                             <Stack className={cx(sty.CameraON, sty.borderStyle)}></Stack>
                             <CardContent className={cx(sty.btns,sty.ask)}>
                                 <ImageListItem style={{"display":"flex"}}>
                                     <ImageListItem className={microphone ? cx(sty.askp,sty.pink) : cx(sty.askp)} onClick={turnOnMic}>
-                                        <img src={microphone ? micOn : micOff} alt="close" loading="lazy" />
+                                        <img src={micOn} alt="close" loading="lazy" />
                                     </ImageListItem>
                                     <ImageListItem className={cameraOn ? cx(sty.askp,sty.pink) : cx(sty.askp)} onClick={turnOnCam}>
-                                        <img src={cameraOn ? camOn : camOff}  alt="close" loading="lazy" />
+                                        <img src={camOn}  alt="close" loading="lazy" />
                                     </ImageListItem>
                                 </ImageListItem>
                                 <ImageListItem >
