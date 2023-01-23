@@ -11,7 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function EmbarrassingGmail() {
     return (
         <>
@@ -22,9 +22,12 @@ export default function EmbarrassingGmail() {
                         <Typography varient="h1" className={cx(sty.tlStyle)}>
                             Well this is Embarrassing
                         </Typography>
-                        <ImageListItem >
-                            <img src={Close} alt="close" loading="lazy" />
-                        </ImageListItem>
+                        <ImageListItem id="my-element5">
+                                <ReactTooltip  anchorId="my-element5" className={sty.tooltip} type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip>
+                                <img src={Close} alt="close" loading="lazy" />
+                            </ImageListItem>
                     </CardContent>
                     <CardActions  className={cx(sty.signSec)}>
                     <Button className={cx(sty.signIn, sty.tlStyle)}>

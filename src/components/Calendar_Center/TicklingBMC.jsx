@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
-import sem from '../img/sem.png';
+import sem from '../img/smc.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -11,7 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function TicklingBMC() {
     return (
         <>
@@ -22,9 +22,12 @@ export default function TicklingBMC() {
                         <Typography variant="h1" className={cx(sty.tlStyle)}>
                             Tickling the Backend
                         </Typography>
-                        <ImageListItem >
-                            <img src={Close} alt="close" loading="lazy" />
-                        </ImageListItem>
+                        <ImageListItem id="my-element23">
+                                <ReactTooltip className={sty.tooltip} anchorId="my-element23" type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip>
+                                <img src={Close} alt="close" loading="lazy" />
+                            </ImageListItem>
                     </CardContent>
                     <CardActions  className={cx(sty.signSec)}>
                     <Button className={cx(sty.signIn, sty.tlStyle)}>

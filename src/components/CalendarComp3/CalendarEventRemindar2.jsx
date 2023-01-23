@@ -19,7 +19,7 @@ import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 import calSty from './CalComp_Sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function CalendarEventRemindar2() {
     return (
         <>
@@ -31,12 +31,28 @@ export default function CalendarEventRemindar2() {
                                 <CardContent className={cx(sty.signIn,calSty.tmr, calSty.signCal, calSty.t61521, sty.inputStyle, sty.NickStyle)}>
                                     <input type="text" placeholder='Title of Event' name="code" id="code" />
                                 </CardContent>
-                                <ImageListItem className={cx(calSty.tmr)}>
+                                <ImageListItem id="my-element61" className={cx(calSty.tmr)}>
+                                <ReactTooltip
+                                    className={sty.tooltip}
+                                    anchorId="my-element61"
+                                    type="light"
+                                    effect="solid"
+                                >
+                                    <span>Edit</span>
+                                </ReactTooltip>
                                     <img src={edit} alt="close" loading="lazy" />
                                 </ImageListItem>
-                                <ImageListItem >
-                                    <img src={Close} alt="close" loading="lazy" />
-                                </ImageListItem>
+                                <ImageListItem id="my-element60">
+                                <ReactTooltip
+                                    className={sty.tooltip}
+                                    anchorId="my-element60"
+                                    type="light"
+                                    effect="solid"
+                                >
+                                    <span>Close</span>
+                                </ReactTooltip>
+                                <img src={Close} alt="close" loading="lazy" />
+                            </ImageListItem>
                             </CardContent>
                         </Stack>
                         <Stack className={cx(calSty.mainStack)}>

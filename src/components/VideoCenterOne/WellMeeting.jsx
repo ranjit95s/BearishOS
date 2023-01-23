@@ -11,7 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function WellMeeting() {
     return (
         <>
@@ -22,7 +22,15 @@ export default function WellMeeting() {
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
                                 Welcome to the Meeting
                             </Typography>
-                            <ImageListItem >
+                            <ImageListItem id="my-element57">
+                                <ReactTooltip
+                                    className={sty.tooltip}
+                                    anchorId="my-element57"
+                                    type="light"
+                                    effect="solid"
+                                >
+                                    <span>Close</span>
+                                </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>

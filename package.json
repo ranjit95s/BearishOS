@@ -1,6 +1,6 @@
 {
   "name": "my-task",
-  "homepage": "https://ranjit95s.github.io/BearishOS-Task",
+  "homepage": "https://ranjit95s.github.io/BearishOS",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-tooltip": "^5.5.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

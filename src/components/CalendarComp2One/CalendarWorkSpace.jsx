@@ -16,12 +16,9 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-// import InputLabel from '@mui/material/InputLabel';
-// import MenuItem from '@mui/material/MenuItem';
-// import FormHelperText from '@mui/material/FormHelperText';
-// import FormControl from '@mui/material/FormControl';
 // import Select from '@mui/material/Select';
 // import TextField from '@mui/material/TextField';
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function CalendarWorkSpace() {
     const [style3, setStyle3] = React.useState(false);
     const [style4, setStyle4] = React.useState(false);
@@ -32,13 +29,7 @@ export default function CalendarWorkSpace() {
     // const handleChange = (event) => {
     //     setAccessOne(event.target.value)
     // }
-    // const menuProps = {
-    //     getContentAnchorEl: null,
-    //     anchorOrigin: {
-    //       vertical: "bottom",
-    //       horizontal: "left"
-    //     }
-    //   };
+
     const changeStyle2 = () => {
         if (style3) {
             setStyle3(false);
@@ -88,16 +79,22 @@ export default function CalendarWorkSpace() {
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
                                 Share This [WorkSpace]
                             </Typography>
-                            <ImageListItem className={cx(sty.rel)} style={{ "display": "flex","align-items": "center" }}>
-                                <img src={access} onClick={changeStyle6} alt="close" loading="lazy" />
-                                <Stack style={{ "width": "300px","left":"-18rem","top":"2rem" }} className={style7 ? cx(sty.ddd, sty.abs, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
+                            <ImageListItem className={cx(sty.rel)} style={{ "display": "flex", "align-items": "center" }}>
+                                <img src={access} id="my-element26" onClick={changeStyle6} alt="close" loading="lazy" />
+                                <ReactTooltip className={sty.tooltip} anchorId="my-element26" type='light' effect='solid'>
+                                    <span>Requested Access</span>
+                                </ReactTooltip>
+                                <Stack style={{ "width": "300px", "left": "-18rem", "top": "2rem" }} className={style7 ? cx(sty.ddd, sty.abs, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                     <CardContent className={cx(sty.headerStyle)} >
                                         <Typography varient="h1" className={cx(sty.tmStyle)}>
                                             Access Requested By
                                         </Typography>
-                                        <ImageListItem >
-                                            <img src={Close} alt="close" loading="lazy" />
-                                        </ImageListItem>
+                                        <ImageListItem id="my-element27">
+                                <ReactTooltip className={sty.tooltip} anchorId="my-element27" type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip>
+                                <img src={Close} alt="close" loading="lazy" />
+                            </ImageListItem>
                                     </CardContent>
                                     <CardContent className={cx(sty.padding0, sty.flexWS)} style={{ "flex-direction": "column", "margin-bottom": "20px" }}>
                                         <CardContent style={{ "width": "100%", "display": "flex", "justify-content": "start", "align-items": "center", "padding": "0px", "margin-bottom": "20px" }} ClassName={cx(sty.userInfo, sty.tmsmStyle, sty.padding0)}>
@@ -149,7 +146,9 @@ export default function CalendarWorkSpace() {
                                                     </CardContent>
                                                 </CardContent>
                                             </Stack>
-                                            <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                            <ImageListItem id="my-element28" className={cx(sty.imgr)}><ReactTooltip className={sty.tooltip} anchorId="my-element28" type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip><img src={Close} alt="hero" /></ImageListItem>
                                         </Stack>
                                     </CardContent>
 
@@ -203,13 +202,18 @@ export default function CalendarWorkSpace() {
                                                     </CardContent>
                                                 </CardContent>
                                             </Stack>
-                                            <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                            <ImageListItem id="my-element29" className={cx(sty.imgr)}><ReactTooltip className={sty.tooltip} anchorId="my-element29" type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip><img src={Close} alt="hero" /></ImageListItem>
                                         </Stack>
 
                                     </CardContent>
 
                                 </Stack>
-                                <img src={Close} className={cx(sty.imgStyle)} alt="close" loading="lazy" />
+                                <ReactTooltip className={sty.tooltip} anchorId="my-element30" type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip>
+                                <img src={Close} id="my-element30" className={cx(sty.imgStyle)} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
                         <Stack>
@@ -217,7 +221,7 @@ export default function CalendarWorkSpace() {
                         </Stack>
                         <Stack>
                             <CardContent className={cx(sty.signIn, sty.rel, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                                <img src={search}  alt="close" loading="lazy" />
+                                <img src={search} alt="close" loading="lazy" />
                                 <input onClick={changeStyle2} className={cx(sty.imgr)} type="text" placeholder='Invite User by Email' name="Cal" id="Cal" />
                                 <Stack className={style3 ? cx(sty.ddd, sty.abs, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                     <CardContent className={cx(sty.padding0, sty.flexWS)}>

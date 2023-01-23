@@ -9,6 +9,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 
@@ -22,9 +23,12 @@ export default function SuccessGmail() {
                         <Typography varient="h1" className={cx(sty.tlStyle)}>
                         Success
                         </Typography>
-                        <ImageListItem >
-                            <img src={Close} alt="close" loading="lazy" />
-                        </ImageListItem>
+                        <ImageListItem id="my-element3">
+                                <ReactTooltip className={sty.tooltip} anchorId="my-element3" type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip>
+                                <img src={Close} alt="close" loading="lazy" />
+                            </ImageListItem>
                     </CardContent>
                     <CardActions  className={cx(sty.signSec)}>
                     <Button className={cx(sty.signIn, sty.tlStyle)}>

@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function JoinMeetingGo() {
     return (
         <>
@@ -21,7 +21,15 @@ export default function JoinMeetingGo() {
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
                             Join a Meeting
                             </Typography>
-                            <ImageListItem >
+                            <ImageListItem id="my-element50">
+                                <ReactTooltip
+                                    className={sty.tooltip}
+                                    anchorId="my-element50"
+                                    type="light"
+                                    effect="solid"
+                                >
+                                    <span>Close</span>
+                                </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>

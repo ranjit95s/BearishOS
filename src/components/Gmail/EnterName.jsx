@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function EnterName() {
     return (
         <>
@@ -21,7 +21,10 @@ export default function EnterName() {
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
                                 Enter Email
                             </Typography>
-                            <ImageListItem >
+                            <ImageListItem id="my-element6">
+                                <ReactTooltip  anchorId="my-element6" className={sty.tooltip} type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>

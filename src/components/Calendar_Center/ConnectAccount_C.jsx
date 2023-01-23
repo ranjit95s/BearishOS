@@ -2,11 +2,11 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
-import sem from '../img/sem.png';
+import sem from '../img/sgc.png';
 import logoM from '../img/LogoM.png'
 import gear from '../img/gear.png';
-import ex from '../img/smallEx.png';
-import sol from '../img/sol.png';
+import ex from '../img/smc.png';
+import sol from '../img/smt.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -15,7 +15,7 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function ConnectAccount_C() {
     return (
         <>
@@ -27,8 +27,14 @@ export default function ConnectAccount_C() {
                             Connect An Account
                         </Typography>
                         <ImageListItem style={{"display":"flex","align-items": "center"}}>
-                            <img  src={gear} alt="close" loading="lazy" />
-                            <img className={cx(sty.imgStyle)} src={Close} alt="close" loading="lazy" />
+                            <img id="my-element15" src={gear} alt="close" loading="lazy" />
+                            <ReactTooltip className={sty.tooltip} anchorId="my-element15" type='light' effect='solid'>
+                                    <span>Manage Connections</span>
+                                </ReactTooltip>
+                            <img id="my-element16" className={cx(sty.imgStyle)} src={Close} alt="close" loading="lazy" />
+                            <ReactTooltip className={sty.tooltip} anchorId="my-element16" type='light' effect='solid'>
+                                    <span>Close</span>
+                                </ReactTooltip>
                         </ImageListItem>
                     </CardContent>
                     <CardActions  className={cx(sty.signSec)}>

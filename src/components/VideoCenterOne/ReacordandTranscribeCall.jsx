@@ -11,7 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function ReacordandTranscribeCall() {
     return (
         <>
@@ -22,7 +22,15 @@ export default function ReacordandTranscribeCall() {
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
                             Record and Transcribe Call
                             </Typography>
-                            <ImageListItem >
+                            <ImageListItem id="my-element56">
+                                <ReactTooltip
+                                    className={sty.tooltip}
+                                    anchorId="my-element56"
+                                    type="light"
+                                    effect="solid"
+                                >
+                                    <span>Close</span>
+                                </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>

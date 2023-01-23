@@ -8,7 +8,7 @@ import camOff from '../img/camOff.png';
 import camOn from '../img/camOn.png';
 import micOff from '../img/micOff.png';
 import micOn from '../img/micOn.png';
-
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 import loading from '../img/loading.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -51,7 +51,15 @@ export default function AskingJoinMeeting() {
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
                                 Asking to Join the Meeting
                             </Typography>
-                            <ImageListItem >
+                            <ImageListItem id="my-element47">
+                                <ReactTooltip
+                                    className={sty.tooltip}
+                                    anchorId="my-element47"
+                                    type="light"
+                                    effect="solid"
+                                >
+                                    <span>Close</span>
+                                </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
