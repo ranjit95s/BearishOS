@@ -42,7 +42,7 @@ export default function SuccessB() {
                         </Typography>
                     </Button>
                     <Typography className={cx(sty.info,sty.tsStyle)}>
-                    This page should automatically redirect for you to login to Box.
+                    Your intelligent connection to Box was a success.
                     </Typography>
                     </CardActions>
                 </Card>

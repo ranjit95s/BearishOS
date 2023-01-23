@@ -35,6 +35,9 @@ export default function WellMeeting() {
                             </ImageListItem>
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
+                        <Typography className={cx(sty.info2, sty.tmsmStyle)}>
+                                Help Bearish better identify you in the meeting.
+                            </Typography>
                             <CardContent className={cx(sty.wellM)}>
                                 <CardContent className={cx(sty.signIn, sty.wellC ,sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                     <input type="text" placeholder='First Name' name="code" id="code" />
@@ -49,9 +52,6 @@ export default function WellMeeting() {
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Meeting Name' name="code" id="code" />
                             </CardContent>
-                            <Typography className={cx(sty.info2, sty.tmsmStyle)}>
-                                Help Bearish better identify you in the meeting.
-                            </Typography>
                             <CardContent className={cx(sty.btns,sty.wbtn)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>

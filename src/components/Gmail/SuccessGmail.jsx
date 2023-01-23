@@ -38,7 +38,7 @@ export default function SuccessGmail() {
                         </Typography>
                     </Button>
                     <Typography className={cx(sty.info,sty.tsStyle)}>
-                    This page should automatically redirect for you to login to Google Gmail.
+                    Your intelligent connection to Google Gmail was a success.
                     </Typography>
                     </CardActions>
                 </Card>

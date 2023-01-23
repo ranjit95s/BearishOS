@@ -20,7 +20,7 @@ export default function CreateNewMeetingGo() {
                     <Card className={cx(sty.inStyle)}>
                         <CardContent className={cx(sty.headerStyle)}>
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
-                                Name Your Meeting
+                                Create Your Meeting
                             </Typography>
                             <ImageListItem id="my-element48">
                                 <ReactTooltip

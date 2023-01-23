@@ -37,7 +37,7 @@ export default function SuccessLook() {
                         </Typography>
                     </Button>
                     <Typography className={cx(sty.info,sty.tsStyle)}>
-                    This page should automatically redirect for you to login to Microsoft Outlook.
+                    Your intelligent connection to Microsoft Outlook was a success.
                     </Typography>
                     </CardActions>
                 </Card>

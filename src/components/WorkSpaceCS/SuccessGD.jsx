@@ -42,7 +42,7 @@ export default function SuccessGD() {
                         </Typography>
                     </Button>
                     <Typography className={cx(sty.info,sty.tsStyle)}>
-                    This page should automatically redirect for you to login to Google Drive.
+                    Your intelligent connection to Google Drive was a success.
                     </Typography>
                     </CardActions>
                 </Card>

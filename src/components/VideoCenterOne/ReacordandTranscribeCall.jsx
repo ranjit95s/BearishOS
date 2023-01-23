@@ -38,7 +38,7 @@ export default function ReacordandTranscribeCall() {
                         <Typography className={cx(sty.info2,sty.tmsmStyle)}>
                         Would you like Bearish to record and transcribe this call?
                     </Typography>
-                            <CardContent className={cx(sty.btns,sty.alss)}>
+                            <CardContent className={cx(sty.btns,sty.alss,sty.pmt)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Yes

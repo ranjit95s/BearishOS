@@ -37,7 +37,7 @@ export default function SuccessMC() {
                         </Typography>
                     </Button>
                     <Typography className={cx(sty.info,sty.tsStyle)}>
-                    This page should automatically redirect for you to login to Microsoft Calendar.
+                    Your intelligent connection to Microsoft Calendar was a success.
                     </Typography>
                     </CardActions>
                 </Card>

@@ -870,6 +870,17 @@ opacity: 1;
     height: 50px !important;
 }
 
+.pmt {
+    margin-top: 10px !important;
+    /* padding-right: 0px !important; */
+    padding: 0px !important;
+}
+
+.tbtns button{
+    width: fit-content !important;
+    opacity: 60%;
+    padding: 10px 11px;}
+
 .askp img {
     object-fit:none !important;
 }

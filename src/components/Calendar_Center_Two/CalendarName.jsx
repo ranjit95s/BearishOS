@@ -40,9 +40,9 @@ export default function CalendarName() {
                                     </CardContent>
                                 </CardContent>
                                 <input className={cx(sty.colorSelect)} type="color" name="color" id="colors"/>
-                                <label style={{"align-items": "center","display": "flex","opacity":"70%"}} For="colors"><img style={{"width":"9px"}} src={color} alt="close" loading="lazy" /></label>
+                                <label style={{"align-items": "center","display": "flex","opacity":"70%"}} For="colors"><img style={{"width":"7.4px","opacity":"0.5"}} src={color} alt="close" loading="lazy" /></label>
                             </CardContent>
-                            <CardContent className={cx(sty.btns,sty.ebtns)}>
+                            <CardContent className={cx(sty.btns,sty.tbtns)}>
                             <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn, sty.ebtnIn,sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Refresh
@@ -50,7 +50,7 @@ export default function CalendarName() {
                                 </CardContent>
                                 <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn,sty.padding0,sty.ebtnIn, sty.tsStyle, sty.yel)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Hide
+                                        Un-Hide
                                     </Button>
                                 </CardContent>
                                 <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn,sty.ebtnIn, sty.tsStyle, sty.out)}>

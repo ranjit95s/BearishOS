@@ -42,7 +42,7 @@ export default function SuccessDP() {
                         </Typography>
                     </Button>
                     <Typography className={cx(sty.info,sty.tsStyle)}>
-                    This page should automatically redirect for you to login to Dropbox.
+                    Your intelligent connection to Dropbox was a success.
                     </Typography>
                     </CardActions>
                 </Card>

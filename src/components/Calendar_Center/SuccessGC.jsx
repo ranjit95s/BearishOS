@@ -37,7 +37,7 @@ export default function SuccessGC() {
                         </Typography>
                     </Button>
                     <Typography className={cx(sty.info,sty.tsStyle)}>
-                    This page should automatically redirect for you to login to Google Calendar.
+                    Your intelligent connection to Google Calendar was a success.
                     </Typography>
                     </CardActions>
                 </Card>
