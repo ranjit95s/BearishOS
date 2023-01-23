@@ -26,6 +26,7 @@ export default function CalendarWorkSpace() {
     const [style6, setStyle6] = React.useState(false);
     const [style7, setStyle7] = React.useState(false);
     const [style8, setStyle8] = React.useState(false);
+    const [workSpaceName, setWorkSpaceName] = React.useState('[WorkSpace]');
     // const [accessOne, setAccessOne] = React.useState('can edit');
     // const handleChange = (event) => {
     //     setAccessOne(event.target.value)
@@ -86,7 +87,7 @@ export default function CalendarWorkSpace() {
                     <Card className={cx(sty.inStyle)} style={{ "width": "350px" }}>
                         <CardContent className={cx(sty.headerStyle)}>
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
-                                Share This [WorkSpace]
+                                Share This {workSpaceName}
                             </Typography>
                             <ImageListItem className={cx(sty.rel)} style={{ "display": "flex", "align-items": "center" }}>
                                 <img src={access} id="my-element26" onClick={changeStyle6} alt="close" loading="lazy" />

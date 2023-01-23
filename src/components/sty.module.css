@@ -498,6 +498,7 @@ color: #925f00d2;
 .spanCC {
     padding: 0px;
     display: flex;
+    padding-bottom: 0px !important;
 }
 
 

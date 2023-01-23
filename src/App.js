@@ -13,15 +13,15 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-      {/* <EmailComp /> */}
+      <CalendarComp2One />
+      <EmailComp/>
       {/* <EmailComp2 /> */}
-      {/* <EmailTwo /> */}
-      {/* <CalendarComp /> */}
-      {/* <CalendarComp2 /> */}
-      {/* <CalendarComp2One /> */}
+      <EmailTwo />
+      <CalendarComp />
+      <CalendarComp2 />
       <WorkSpaceCS />
-      {/* <CalendarComp3 /> */}
-      {/* <VideoCenterOne /> */}
+      <CalendarComp3 />
+      <VideoCenterOne />
     </div>
   );
 }

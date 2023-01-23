@@ -69,6 +69,14 @@ export default function CalendarEventRemindar() {
         }
     };
 
+    const [startDate, setStartDate] = React.useState('00/00/0000');
+    const [startTime, setStartTime] = React.useState('00:00 AM');
+    const [endDate, setEndDate] = React.useState('00/00/0000');
+    const [endTime, setEndTime] = React.useState('00:00 AM');
+    const [timeZone, setTimeZone] = React.useState('Time Zone');
+    const [remindar, setRemindar] = React.useState('Add A Remindar');
+    const [purposeTime, setPurposeTime] = React.useState('Propose Multiple Times');
+
 
     return (
         <>
@@ -106,10 +114,10 @@ export default function CalendarEventRemindar() {
                                     </Typography>
                                     <CardContent className={cx(sty.borderStyle, calSty.w100, calSty.t61521, calSty.dateTimeFlex)}>
                                         <Typography variant="h1" className={cx(calSty.t31521)}>
-                                            00/00/0000
+                                            {startDate}
                                         </Typography>
                                         <Typography variant="h1" className={cx(calSty.t31521)}>
-                                            00:00 AM
+                                            {startTime}
                                         </Typography>
                                     </CardContent>
                                 </CardContent>
@@ -119,10 +127,10 @@ export default function CalendarEventRemindar() {
                                     </Typography>
                                     <CardContent className={cx(sty.borderStyle, calSty.w100, calSty.t61521, calSty.dateTimeFlex)}>
                                         <Typography variant="h1" className={cx(calSty.t31521)}>
-                                            00/00/0000
+                                            {endDate}
                                         </Typography>
                                         <Typography variant="h1" className={cx(calSty.t31521)}>
-                                            00:00 AM
+                                            {endTime}
                                         </Typography>
                                     </CardContent>
                                 </CardContent>
@@ -138,7 +146,7 @@ export default function CalendarEventRemindar() {
                                 </CardContent>
                                 <CardContent className={cx(sty.headerStyle, sty.padding0, sty.rel)}>
                                     <CardContent className={cx(sty.signIn, calSty.signCal, calSty.t61521, sty.inputStyle, sty.NickStyle)}>
-                                        <input type="text" onClick={timeZS} placeholder='Time Zone' name="code" id="code" />
+                                        <input type="text" onClick={timeZS} placeholder='Time Zone' value={timeZone} name="code" id="code" />
                                         <ImageListItem >
                                             <img src={dad} alt="dad" loading="lazy" />
                                         </ImageListItem>
@@ -161,7 +169,7 @@ export default function CalendarEventRemindar() {
                             <CardContent className={cx(sty.padding0, calSty.w100, calSty.mr)}>
                                 <CardContent className={cx(sty.headerStyle, sty.padding0, sty.rel)}>
                                     <CardContent className={cx(sty.signIn, calSty.signCal, calSty.t61521, sty.inputStyle, sty.NickStyle)}>
-                                        <input type="text" onClick={remindarS} placeholder='Add a Remindar' name="code" id="code" />
+                                        <input type="text" onClick={remindarS} value={remindar} placeholder='Add a Remindar' name="code" id="code" />
                                         <ImageListItem >
                                             <img src={dad} alt="dad" loading="lazy" />
                                         </ImageListItem>
@@ -187,7 +195,7 @@ export default function CalendarEventRemindar() {
                                 <CardContent className={cx(sty.headerStyle, sty.padding0, calSty.w100)}>
                                     <CardContent onClick={pmtS} className={cx(sty.borderStyle, calSty.w100, calSty.t61521, calSty.dateTimeFlex)}>
                                         <Typography variant="h1" className={cx(calSty.t61521, calSty.tmr, calSty.op1)}>
-                                            Propose Multiple Times
+                                            {purposeTime}
                                         </Typography>
                                         <ImageListItem >
                                             <img src={dad} alt="dad" loading="lazy" />
