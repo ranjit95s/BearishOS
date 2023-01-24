@@ -35,6 +35,8 @@ opacity: 0.98;
     padding-right: 15px !important;
 }
 
+
+
 .tbs1117 {
     text-align: left;
     font: normal normal 600 11px/15px Source Serif Pro;
@@ -146,6 +148,10 @@ opacity: 1;
   opacity: 1;
   margin-bottom: 15px !important;
   margin-left: 0px !important;
+}
+
+.ais {
+    align-items: start !important;
 }
 
 .flexdl2 {

@@ -1,9 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-// import Popover from '@mui/material/Popover';
-import Stack from '@mui/material/Stack';
-import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.png';
 import CardActions from "@mui/material/CardActions";
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -12,8 +8,8 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
+import calSty from "../CalendarComp3/CalComp_Sty.module.css";
 import calSty4 from './CalSty4.module.css';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function ChooseEventType() {
     return (
         <>
@@ -26,10 +22,10 @@ export default function ChooseEventType() {
                             </Typography>
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
-                            <Button className={cx(calSty4.flexdl)}>
+                            <Button className={cx(calSty4.flexdl,calSty4.ais)}>
                                 <Typography
                                     varient="h1"
-                                    className={cx(calSty4.tsecStyle)}
+                                    className={cx(calSty4.tsecStyle,sty.als)}
                                 >
                                     One on One Meetings
                                 </Typography>
@@ -41,7 +37,7 @@ export default function ChooseEventType() {
                                 </Typography>
                             </Button>
 
-                            <Button className={cx(calSty4.flexdl)}>
+                            <Button className={cx(calSty4.flexdl,calSty4.ais)}>
                                 <Typography
                                     varient="h1"
                                     className={cx(calSty4.tsecStyle)}
@@ -56,7 +52,7 @@ export default function ChooseEventType() {
                                 </Typography>
                             </Button>
 
-                            <Button className={cx(calSty4.flexdl)}>
+                            <Button className={cx(calSty4.flexdl,calSty4.ais)}>
                                 <Typography
                                     varient="h1"
                                     className={cx(calSty4.tsecStyle)}

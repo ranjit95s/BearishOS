@@ -26,7 +26,7 @@ export default function CVschedules() {
                             </Typography>
                     </CardContent>
                     <CardActions className={cx(sty.signSec)}>
-                            <Button className={cx(calSty4.flexdl)}>
+                            <Button className={cx(calSty4.flexdl,calSty4.ais)}>
                                 <Typography
                                     varient="h1"
                                     className={cx(calSty4.tsecStyle)}
@@ -41,7 +41,7 @@ export default function CVschedules() {
                                 </Typography>
                             </Button>
 
-                            <Button className={cx(calSty4.flexdl)}>
+                            <Button className={cx(calSty4.flexdl,calSty4.ais)}>
                                 <Typography
                                     varient="h1"
                                     className={cx(calSty4.tsecStyle)}
@@ -56,7 +56,7 @@ export default function CVschedules() {
                                 </Typography>
                             </Button>
 
-                            <Button className={cx(calSty4.flexdl)}>
+                            <Button className={cx(calSty4.flexdl,calSty4.ais)}>
                                 <Typography
                                     varient="h1"
                                     className={cx(calSty4.tsecStyle)}

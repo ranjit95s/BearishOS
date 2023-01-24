@@ -177,7 +177,7 @@ export default function OneToOneMeeting1() {
                                             <Stack
                                                 className={
                                                     style4
-                                                        ? cx(sty.ddd, sty.absf, sty.padding0)
+                                                        ? cx(sty.ddd, sty.abs, sty.padding0)
                                                         : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)
                                                 }
                                             >
