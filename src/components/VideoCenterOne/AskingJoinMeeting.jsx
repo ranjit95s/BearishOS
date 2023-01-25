@@ -2,12 +2,12 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.png';
+import Close from '../img/Close.svg';
 
 import camOff from '../img/camOff.png';
-import camOn from '../img/camOn.png';
+import camOn from '../img/camOn.svg';
 import micOff from '../img/micOff.png';
-import micOn from '../img/micOn.png';
+import micOn from '../img/micOn.svg';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import loading from '../img/loading.png';
 import Typography from '@mui/material/Typography';

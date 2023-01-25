@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 // import Popover from '@mui/material/Popover';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.png';
-import access from '../img/Access.png';
-import search from '../img/search.png';
+import Close from '../img/Close.svg';
+import access from '../img/Access.svg';
+import search from '../img/search.svg';
 import dau from '../img/dau.png';
 import dad from '../img/dad.png';
 import Typography from '@mui/material/Typography';
@@ -175,7 +175,7 @@ export default function CalendarWorkSpace() {
                                 Share This {workSpaceName}
                             </Typography>
                             <ImageListItem className={cx(sty.rel)} style={{ "display": "flex", "align-items": "center" }}>
-                                <img src={access} className={sty.cursor} id="my-element26" onClick={changeStyle5} alt="close" loading="lazy" />
+                                <img src={access} className={cx(sty.cursor)} id="my-element26" onClick={changeStyle5} alt="close" loading="lazy" />
                                 <ReactTooltip className={sty.tooltip} anchorId="my-element26" type='light' effect='solid'>
                                     <span>Requested Access</span>
                                 </ReactTooltip>
@@ -268,7 +268,7 @@ export default function CalendarWorkSpace() {
                             <CardContent  style={{"width":"105px"}}  className={cx(sty.ComposeBtns,sty.mrll, sty.tsStyle,sty.padding0)}>
                                                 <CardContent onClick={changeStyle6} className={cx(sty.ComposeBtns,sty.mrll,sty.cursor,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
                                                     <Typography className={cx(sty.t1317,sty.padding0,sty.p33)}>Anyone</Typography>
-                                                    <ImageListItem className={cx(sty.imgr3)}><img src={style7 ? dau : dad} alt="hero" /></ImageListItem>
+                                                    <ImageListItem className={cx(sty.imgr3)}><img style={{"width":"20px"}} src={style7 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style7 ? cx(sty.ddd, sty.abss, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle6}>
@@ -287,20 +287,20 @@ export default function CalendarWorkSpace() {
                                             <CardContent  style={{"width":"105px"}}  className={cx(sty.ComposeBtns,sty.cursor,sty.mrll, sty.tsStyle,sty.padding0)}>
                                                 <CardContent onClick={changeStyle7} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
                                                     <Typography className={cx(sty.t1317,sty.padding0,sty.p33)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr3)}><img src={style8 ? dau : dad} alt="hero" /></ImageListItem>
+                                                    <ImageListItem className={cx(sty.imgr3)}><img style={{"width":"20px"}} src={style8 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style8 ? cx(sty.ddd, sty.abss, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle7}>
-                                                            <Typography variant="h1" className={cx(sty.mars, sty.tsStyle, sty.padding0)}>
+                                                            <Typography variant="h1" className={cx(sty.pbtl,sty.mars, sty.tsStyle, sty.padding0)}>
                                                     This Link <br></br> <span>will allow users to </span>
                                                 </Typography>
-                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
+                                                <Typography variant="h1" className={cx(sty.pbtl,sty.mar, sty.t1317, sty.padding0)}>
                                                     Edit
                                                 </Typography>
-                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
+                                                <Typography variant="h1" className={cx(sty.pbtl,sty.mar, sty.t1317, sty.padding0)}>
                                                     View
                                                 </Typography>
-                                                <Typography variant="h1" className={cx(sty.mar, sty.t1317, sty.padding0)}>
+                                                <Typography variant="h1" className={cx(sty.pbtl,sty.mar, sty.t1317, sty.padding0)}>
                                                     Comment
                                                 </Typography>
                                                             </CardContent>

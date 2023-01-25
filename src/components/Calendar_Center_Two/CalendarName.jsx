@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.png';
-import color from '../img/Access.png';
+import Close from '../img/Close.svg';
+import color from '../img/Access.svg';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';

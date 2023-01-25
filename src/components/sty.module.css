@@ -879,6 +879,10 @@ opacity: 1;
     opacity: 1;
 }
 
+.iconc svg {
+color: #00767B !important;
+}
+
 .colorr{
     background: #f88b8b 0% 0% no-repeat padding-box;
     border-radius: 5px;

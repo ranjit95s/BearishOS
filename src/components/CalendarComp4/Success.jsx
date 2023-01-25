@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 // import Popover from '@mui/material/Popover';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.png';
+import Close from '../img/Close.svg';
 import CardActions from "@mui/material/CardActions";
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';

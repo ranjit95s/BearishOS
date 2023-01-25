@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "./img/Close.png";
+import Close from "./img/Close.svg";
 import sem from "./img/sem.png";
 import ex from "./img/smallEx.png";
 import sol from "./img/sol.png";
