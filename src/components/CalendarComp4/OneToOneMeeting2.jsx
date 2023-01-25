@@ -155,7 +155,7 @@ export default function OneToOneMeeting2() {
                                 <Typography
                                     className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
                                 >
-                                
+                                Sun
                                 </Typography>
                                 <Typography
                                     className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}

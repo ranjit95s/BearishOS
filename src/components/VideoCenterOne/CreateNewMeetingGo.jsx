@@ -41,7 +41,7 @@ export default function CreateNewMeetingGo() {
                             <Typography className={cx(sty.info2,sty.tmsmStyle)}>
                             Just a second while we create your shiny new meeting.
                             </Typography>
-                            <CardContent className={cx(sty.btns)}>
+                            <CardContent className={cx(sty.btns,sty.mr255)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Go

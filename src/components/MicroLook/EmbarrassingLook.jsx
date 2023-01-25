@@ -40,9 +40,17 @@ export default function EmbarrassingLook() {
                     Your intelligent connection to Microsoft Outlook failed. Please press connect and try to 
                     connect your account again. Need help? Submit a ticket below.
                     </Typography>
-                    <CardContent className={cx(sty.submitT,sty.tmStyle)}>
-                        <span> Submit a Ticket </span>
-                    </CardContent>
+                    <CardActions className={cx(sty.cobtn)}>
+                            <Button className={cx(sty.flexdl2)}>
+                                <Typography
+                                    variant="h1"
+                                    className={cx(sty.tmStyle)}
+                                >
+                                Submit a Ticket
+                                </Typography>
+                                
+                            </Button>
+                        </CardActions>
                     </CardActions>
                 </Card>
             </Box>

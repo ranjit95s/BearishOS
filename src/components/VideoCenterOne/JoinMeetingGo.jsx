@@ -40,7 +40,7 @@ export default function JoinMeetingGo() {
                             <Typography className={cx(sty.info2,sty.tmsmStyle)}>
                             Ask the host of your meeting for a Meeting Id or Meeting Link to join.
                             </Typography>
-                            <CardContent className={cx(sty.btns)}>
+                            <CardContent className={cx(sty.btns,sty.mr255)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Go

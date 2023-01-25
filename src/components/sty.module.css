@@ -733,15 +733,42 @@ opacity: 1;
     padding:1px;
 }
 
+.cobtn {
+  padding: 0px !important;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.flexdl2 {
+    background: none;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    /* align-items: start; */
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: black;
+    text-transform: none;
+    opacity: 0.5;
+    margin-bottom: 15px;
+    /* margin-left: 0px !important; */
+}
+
 .imgr2 {
     margin-left:18px;
     padding:1px;
 }
 
+.mr255 {
+margin-top:23px !important;
+}
+
 .p33 {
     width: 100%;
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 }
 
 .imgr3 {
@@ -814,11 +841,15 @@ color: #000000;
 opacity: 1;
 }
 
+.cursor{
+    cursor:pointer !important;
+}
+
 .mar{
     margin:4px;
 }
 .mars {
-    margin:4px;
+    margin:3px;
     font: normal normal 600 13px/21px Source Serif Pro  !important;
     color: black;
 }
@@ -849,7 +880,7 @@ opacity: 1;
 }
 
 .colorr{
-    background: #ff8f8f 0% 0% no-repeat padding-box;
+    background: #f88b8b 0% 0% no-repeat padding-box;
     border-radius: 5px;
     /* opacity: 50%; */
     display: block;

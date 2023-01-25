@@ -52,7 +52,7 @@ export default function ReqUser({pin}) {
             </CardContent>
             <Stack className={cx(sty.flexAccess)}>
             <CardContent  style={{"width":"100px"}}  className={cx(sty.ComposeBtns,sty.mrll, sty.tsStyle,sty.padding0)}>
-                    <CardContent onClick={changeStyle3} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                    <CardContent onClick={changeStyle3} className={cx(sty.ComposeBtns,sty.cursor,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
                         <Typography className={cx(sty.t1317,sty.padding0)}>Can Edit</Typography>
                         <ImageListItem className={cx(sty.imgr2)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                         <Stack className={cx(sty.tsStyle, sty.rel)}>
@@ -84,9 +84,9 @@ export default function ReqUser({pin}) {
                         </CardContent>
                     </CardContent>
                 </Stack>
-                <ImageListItem id="my-element28" className={cx(sty.imgr)}><ReactTooltip className={sty.tooltip} anchorId="my-element28" type='light' effect='solid'>
+                <ImageListItem id={"my-element"+pin.id} className={cx(sty.imgr)}><ReactTooltip className={sty.tooltip} anchorId={"my-element"+pin.id} type='light' effect='solid'>
         <span>Close</span>
-    </ReactTooltip><img src={Close} alt="hero" /></ImageListItem>
+    </ReactTooltip><img className={sty.cursor} src={Close} alt="hero" /></ImageListItem>
             </Stack>
         </CardContent>
         </>

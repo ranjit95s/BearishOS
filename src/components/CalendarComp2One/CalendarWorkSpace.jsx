@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import ReqUser from './ReqUser'
+import ToggleUser from './ToggleUser'
 // import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
@@ -22,7 +23,6 @@ import sty from '../sty.module.css';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function CalendarWorkSpace() {
     const [style3, setStyle3] = React.useState(false);
-    const [style4, setStyle4] = React.useState(false);
     const [style5, setStyle5] = React.useState(false);
     const [style6, setStyle6] = React.useState(false);
     const [style7, setStyle7] = React.useState(false);
@@ -105,10 +105,7 @@ export default function CalendarWorkSpace() {
     };
 
     const requestedAccessUsers = [{"id":"1","ProfilePic":"TU","Name":"Full Name 1","Email":"narutouzumaki2002@gmail.com"},{"id":"2","ProfilePic":"TU","Name":"Full Name 2","Email":"narutouzumaki2002@gmail.com"}];
-    const toggleUsers = [{"id":"1","ProfilePic":"TU","Name":"Full Name 1","Email":"narutouzumaki2002@gmail.com"},{"id":"2","ProfilePic":"TU","Name":"Full Name 2","Email":"narutouzumaki2002@gmail.com"}];
-    const addedUsers = [{"id":"1","ProfilePic":"TU","Name":"Full Name 1","Email":"narutouzumaki2002@gmail.com"},{"id":"2","ProfilePic":"TU","Name":"Full Name 2","Email":"narutouzumaki2002@gmail.com"}];
-    const allMUsers = [{"id":"1","ProfilePic":"TU","Name":"Full Name 1","Email":"narutouzumaki2002@gmail.com"},{"id":"2","ProfilePic":"TU","Name":"Full Name 2","Email":"narutouzumaki2002@gmail.com"}];
-
+   
     // const displayRequestedAccessUsers
     //         = requestedAccessUsers.map((d) => 
     //         <CardContent key={d.id} className={cx(sty.padding0, sty.flexWS)} style={{ "flex-direction": "column", "margin-bottom": "20px" }}>
@@ -178,7 +175,7 @@ export default function CalendarWorkSpace() {
                                 Share This {workSpaceName}
                             </Typography>
                             <ImageListItem className={cx(sty.rel)} style={{ "display": "flex", "align-items": "center" }}>
-                                <img src={access} id="my-element26" onClick={changeStyle5} alt="close" loading="lazy" />
+                                <img src={access} className={sty.cursor} id="my-element26" onClick={changeStyle5} alt="close" loading="lazy" />
                                 <ReactTooltip className={sty.tooltip} anchorId="my-element26" type='light' effect='solid'>
                                     <span>Requested Access</span>
                                 </ReactTooltip>
@@ -191,7 +188,7 @@ export default function CalendarWorkSpace() {
                                 <ReactTooltip className={sty.tooltip} anchorId="my-element27" type='light' effect='solid'>
                                     <span>Close</span>
                                 </ReactTooltip>
-                                <img src={Close} alt="close" loading="lazy" />
+                                <img className={sty.cursor} src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                                     </CardContent>
                                     {requestedAccessUsers?.map((pin) => <ReqUser key={pin.id} pin={pin} />)}
@@ -199,7 +196,7 @@ export default function CalendarWorkSpace() {
                                 <ReactTooltip className={sty.tooltip} anchorId="my-element30" type='light' effect='solid'>
                                     <span>Close</span>
                                 </ReactTooltip>
-                                <img src={Close} id="my-element30" className={cx(sty.imgStyle)} alt="close" loading="lazy" />
+                                <img src={Close} id="my-element30" className={cx(sty.imgStyle,sty.cursor)} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
                         <Stack>
@@ -250,47 +247,8 @@ export default function CalendarWorkSpace() {
                         <Stack>
                             <CardContent className={cx(sty.minHeight, sty.padding0)}>
                                 {/* default state */}
-                                <CardContent className={cx(sty.padding0, sty.flexWS)}>
-                                    <CardContent style={{ "width": "100%", "display": "flex", "justify-content": "start", "align-items": "center", "padding": "0px", "margin-bottom": "20px" }} ClassName={cx(sty.userInfo, sty.tmsmStyle, sty.padding0)}>
-                                        <Typography variant="h5" className={cx(sty.pic, sty.picc, sty.tmsmStyle, sty.padding0)}>
-                                            TU
-                                        </Typography>
-                                        <CardContent className={cx(sty.userEmail, sty.flexUser, sty.tmsmStyle, sty.padding0)}>
-                                            <CardContent className={cx(sty.padding0)}>
-                                                <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
-                                                    Full Name
-                                                </Typography>
-                                                <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
-                                                    Email of user
-                                                </Typography>
-                                            </CardContent>
-                                            <CardContent  style={{"width":"100px"}}  className={cx(sty.ComposeBtns,sty.mrll, sty.tsStyle,sty.padding0)}>
-                                                <CardContent onClick={changeStyle8} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
-                                                    <Typography className={cx(sty.t1317,sty.padding0)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr2)}><img src={style9 ? dau : dad} alt="hero" /></ImageListItem>
-                                                    <Stack className={cx(sty.tsStyle, sty.rel)}>
-                                                        <Stack className={style9 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
-                                                            <CardContent className={cx(sty.users2, sty.padding0, sty.tsStyle)} onClick={changeStyle8}>
-                                                                <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-                                                                    Can Edit
-                                                                </Typography>
-                                                                <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-                                                                    Can View
-                                                                </Typography>
-                                                                <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-                                                                    Can Comment
-                                                                </Typography>
-                                                                <Typography variant="contained" className={cx(sty.pbtl, sty.colorr, sty.t1317, sty.padding0)}>
-                                                                    Revoke Access
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </Stack>
-                                                    </Stack>
-                                                </CardContent>
-                                            </CardContent>
-                                        </CardContent>
-                                    </CardContent>
-                                </CardContent>
+                                {requestedAccessUsers?.map((pin) => <ToggleUser key={pin.id} pin={pin} />)}
+                                
                             </CardContent>
                         </Stack>
                         <Stack style={{ "margin-top": "20px" }}>
@@ -299,52 +257,7 @@ export default function CalendarWorkSpace() {
                         <Stack>
                             <CardContent className={cx(sty.minHeights, sty.padding0)}>
                                 {/* default state */}
-                                <CardContent className={cx(sty.padding0, sty.flexWS)}>
-                                    <CardContent style={{ "width": "100%", "display": "flex", "justify-content": "start", "align-items": "center", "padding": "0px", "margin-bottom": "20px" }} ClassName={cx(sty.userInfo, sty.tmsmStyle, sty.padding0)}>
-                                        <Typography variant="h5" className={cx(sty.pic, sty.picc, sty.tmsmStyle, sty.padding0)}>
-                                            TU
-                                        </Typography>
-                                        <CardContent className={cx(sty.userEmail, sty.flexUser, sty.tmsmStyle, sty.padding0)}>
-                                            <CardContent className={cx(sty.padding0)}>
-                                                <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
-                                                    Full Name
-                                                </Typography>
-                                                <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
-                                                    Email of user
-                                                </Typography>
-                                            </CardContent>
-                                             <CardContent  style={{"width":"100px"}}  className={cx(sty.ComposeBtns,sty.mrll, sty.tsStyle,sty.padding0)}>
-                                                <CardContent onClick={changeStyle4} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
-                                                    <Typography className={cx(sty.t1317,sty.padding0)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr2)}><img src={style5 ? dau : dad} alt="hero" /></ImageListItem>
-                                                    <Stack className={cx(sty.tsStyle, sty.rel)}>
-                                                        <Stack className={style5 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
-                                                            <CardContent className={cx(sty.users2, sty.padding0, sty.tsStyle)} onClick={changeStyle4}>
-                                                                <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-                                                                    Can Edit
-                                                                </Typography>
-                                                                <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-                                                                    Can View
-                                                                </Typography>
-                                                                <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-                                                                    Can Comment
-                                                                </Typography>
-                                                                <Typography variant="contained" className={cx(sty.pbtl, sty.colorr, sty.t1317, sty.padding0)}>
-                                                                    Revoke Access
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </Stack>
-                                                    </Stack>
-                                                </CardContent>
-                                            </CardContent>
-                                        </CardContent>
-                                    </CardContent>
-                                </CardContent>
-
-                                
-
-
-
+                                {requestedAccessUsers?.map((pin) => <ToggleUser key={pin.id} pin={pin} />)}
                             </CardContent>
                         </Stack>
                         <Stack style={{ "margin-top": "20px", "margin-bottom": "20px", "flex-direction": "row" }} className={cx(sty.flexWS)}>
@@ -353,7 +266,7 @@ export default function CalendarWorkSpace() {
                             </CardContent>
 
                             <CardContent  style={{"width":"105px"}}  className={cx(sty.ComposeBtns,sty.mrll, sty.tsStyle,sty.padding0)}>
-                                                <CardContent onClick={changeStyle6} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
+                                                <CardContent onClick={changeStyle6} className={cx(sty.ComposeBtns,sty.mrll,sty.cursor,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
                                                     <Typography className={cx(sty.t1317,sty.padding0,sty.p33)}>Anyone</Typography>
                                                     <ImageListItem className={cx(sty.imgr3)}><img src={style7 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
@@ -371,7 +284,7 @@ export default function CalendarWorkSpace() {
                                                 </CardContent>
                                             </CardContent>
 
-                                            <CardContent  style={{"width":"105px"}}  className={cx(sty.ComposeBtns,sty.mrll, sty.tsStyle,sty.padding0)}>
+                                            <CardContent  style={{"width":"105px"}}  className={cx(sty.ComposeBtns,sty.cursor,sty.mrll, sty.tsStyle,sty.padding0)}>
                                                 <CardContent onClick={changeStyle7} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
                                                     <Typography className={cx(sty.t1317,sty.padding0,sty.p33)}>Can Edit</Typography>
                                                     <ImageListItem className={cx(sty.imgr3)}><img src={style8 ? dau : dad} alt="hero" /></ImageListItem>

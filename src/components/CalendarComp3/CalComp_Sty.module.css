@@ -209,7 +209,7 @@ opacity: 1;
 }
 
 .jce {
-    justify-content:end;
+    justify-content:end !important;
     align-items: center;
 }
 .jcsb {
