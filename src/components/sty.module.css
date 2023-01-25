@@ -501,6 +501,9 @@ color: #925f00d2;
     padding-bottom: 0px !important;
 }
 
+.mrll {
+margin-left:0px !important;
+}
 
 .alpha , .mini , .cross , .attach {display: none;}
 
@@ -729,6 +732,22 @@ opacity: 1;
     margin-left:12px;
     padding:1px;
 }
+
+.imgr2 {
+    margin-left:18px;
+    padding:1px;
+}
+
+.p33 {
+    width: 100%;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.imgr3 {
+    margin-left: 26px;
+    padding: 1px;
+}
 .flexWS {
     display:flex;
     justify-content: space-between;
@@ -779,6 +798,22 @@ color: #000000;
 opacity: 1;
 }
 
+.pbtl {
+    padding-bottom:4px !important;
+    padding-top:4px !important;
+    padding-left:2px !important;
+}
+
+.users2 {
+    width:5.4rem;
+    margin-top:3px;
+    margin-bottom:3px;
+    font: normal normal 300 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
 .mar{
     margin:4px;
 }
@@ -794,13 +829,16 @@ opacity: 1;
 
 .abss{
     position: absolute;
-    top: 1rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    /* box-shadow: 0px 3px 6px #00000029; */
     padding: 2px !important;
-    border-radius: 5px;
-    z-index: 1;
-    right: -1rem;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #E9EDF2;
+    /* width: 100% !important; */
+    padding: 0px !important;
+    z-index: 1000;
+    transform: translate(-6.4rem, 0.7rem);
+
 }
 
 .mars span {
@@ -811,22 +849,31 @@ opacity: 1;
 }
 
 .colorr{
-    background: #FF0000 0% 0% no-repeat padding-box;
+    background: #ff8f8f 0% 0% no-repeat padding-box;
     border-radius: 5px;
-    opacity: 50%;
+    /* opacity: 50%; */
     display: block;
+    width: 97px;
     color: black;
     padding: 2px !important;
 }
 
+.ext {
+    width: 305px !important;
+    left: 2.5rem !important;
+}
+
 .absf {
-    position: fixed;
+    position: absolute;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    /* box-shadow: 0px 3px 6px #00000029; */
     padding: 0px !important;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #E9EDF2;
+    width: 98px !important;
+    /* padding: 0px !important; */
     z-index: 1000;
-    transform: translate(-5.7rem, 0.4rem);
+    transform: translate(-6.1rem, 0.8rem);
 }
 
 .op05 {

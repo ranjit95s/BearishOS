@@ -1,6 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
+// import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
 import weekly from "../img/Weekly.png";
 import dau from "../img/pinkdau.png";
@@ -22,15 +22,20 @@ export default function OneToOneMeeting2() {
         setChecked(event.target.checked);
     };
 
-    const [style4, setStyle4] = React.useState(false);
 
-    const changeStyle3 = () => {
-        if (style4) {
-            setStyle4(false);
-        } else {
-            setStyle4(true);
-        }
-    };
+
+    const [weeklys, setWeeklys] = React.useState([{ week:[
+                                                            {id:"1",name:"Sun",schedule:[]},
+                                                            {id:"2",name:"Mon",schedule:[]},
+                                                            {id:"3",name:"Tue",schedule:[]},
+                                                            {id:"4",name:"Wed",schedule:[]},
+                                                            {id:"5",name:"Thu",schedule:[]},
+                                                            {id:"6",name:"Fri",schedule:[]},
+                                                            {id:"7",name:"Sat",schedule:[]},
+                                                        ]
+                                                }]);
+
+
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -129,7 +134,11 @@ export default function OneToOneMeeting2() {
                                 Set Weekly Schedule
                             </Typography>
                         </CardContent>
-                        <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.mtm)}>
+
+                        
+                        {weeklys.map((weeklyy,weaklyyIndex) => {
+                            return (
+                                <CardContent key={weaklyyIndex} className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.mtm)}>
                             <CardContent
                                 className={cx(
                                     sty.headerStyle,
@@ -146,7 +155,7 @@ export default function OneToOneMeeting2() {
                                 <Typography
                                     className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
                                 >
-                                    Sun
+                                
                                 </Typography>
                                 <Typography
                                     className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
@@ -159,8 +168,11 @@ export default function OneToOneMeeting2() {
                                 <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
+                            );
+                        })}
+                        
 
-                        <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
+                        {/* <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
                             <CardContent
                                 className={cx(
                                     sty.headerStyle,
@@ -344,7 +356,7 @@ export default function OneToOneMeeting2() {
                                 <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
                                 <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
                             </ImageListItem>
-                        </CardContent>
+                        </CardContent> */}
 
                         {/* foot */}
                         <CardContent className={cx(calSty4.headerStyle)}>
@@ -406,7 +418,7 @@ export default function OneToOneMeeting2() {
                                     varient="h1"
                                     className={cx(calSty4.tsecStyle)}
                                 >
-                                    Close
+                                    Back
                                 </Typography>
                             </Button>
                             <Button className={cx(calSty4.flexdl2, calSty4.padd35)}>
@@ -414,7 +426,7 @@ export default function OneToOneMeeting2() {
                                     varient="h1"
                                     className={cx(calSty4.tsecStyle)}
                                 >
-                                    Next
+                                    Create
                                 </Typography>
                             </Button>
                         </CardActions>
