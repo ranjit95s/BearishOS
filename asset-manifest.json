@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BearishOS/static/css/main.da146a4e.css",
-    "main.js": "/BearishOS/static/js/main.e84ec0d2.js",
+    "main.css": "/BearishOS/static/css/main.9fe0316d.css",
+    "main.js": "/BearishOS/static/js/main.85b2e4f0.js",
     "static/media/source-serif-pro-all-400-normal.woff": "/BearishOS/static/media/source-serif-pro-all-400-normal.a8a93831984ffd4e8f7b.woff",
     "static/media/source-serif-pro-latin-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-latin-400-normal.f5b1bc3ff0438b15298d.woff2",
     "static/media/source-serif-pro-latin-ext-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-latin-ext-400-normal.eb9ad12b9dda04fce5af.woff2",
@@ -9,12 +9,32 @@
     "static/media/source-serif-pro-greek-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-greek-400-normal.5f27fe26decc1385118e.woff2",
     "static/media/source-serif-pro-cyrillic-ext-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-cyrillic-ext-400-normal.a16446d373777df62a7e.woff2",
     "static/media/source-serif-pro-vietnamese-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-vietnamese-400-normal.8fb8eabe508ffcd906af.woff2",
+    "static/media/gear.svg": "/BearishOS/static/media/gear.ee5567f577827e4038e03b38ed0e4ff3.svg",
+    "static/media/alarm.svg": "/BearishOS/static/media/alarm.a3b3312dd00fbf7d061040eac911686a.svg",
+    "static/media/pgroup.svg": "/BearishOS/static/media/pgroup.dcbf8349ab6d457843a8674732b848f8.svg",
+    "static/media/doc.svg": "/BearishOS/static/media/doc.5fee6681e619febdb77f026814c8adac.svg",
+    "static/media/loc.svg": "/BearishOS/static/media/loc.9e186c45a6d865d191d1bfbcb67d51cf.svg",
+    "static/media/pinkco.svg": "/BearishOS/static/media/pinkco.c9feba273d001d39ea662f1e6126f08e.svg",
+    "static/media/noti.svg": "/BearishOS/static/media/noti.3ddca71229341d5097e1b796a36f0c4d.svg",
+    "static/media/Weekly.svg": "/BearishOS/static/media/Weekly.670c2df9b8884452c5d47d9759f1d27f.svg",
+    "static/media/Close.svg": "/BearishOS/static/media/Close.9e7082975d39d44499c5cc9dbfc531fe.svg",
+    "static/media/plus.svg": "/BearishOS/static/media/plus.f4c904c8fa17580e9c7b6163dfed43e9.svg",
+    "static/media/clock.svg": "/BearishOS/static/media/clock.b717595da1d57d5f2c8cbc40b97335f3.svg",
+    "static/media/camOn.svg": "/BearishOS/static/media/camOn.ce15bc2e332e66622d605b130021f9ac.svg",
+    "static/media/micOn.svg": "/BearishOS/static/media/micOn.a6855e4477447b4dc7244f289d566dad.svg",
     "index.html": "/BearishOS/index.html",
-    "main.da146a4e.css.map": "/BearishOS/static/css/main.da146a4e.css.map",
-    "main.e84ec0d2.js.map": "/BearishOS/static/js/main.e84ec0d2.js.map"
+    "static/media/ad.svg": "/BearishOS/static/media/ad.95fd317db84450c00d9294691009b26d.svg",
+    "static/media/Access.svg": "/BearishOS/static/media/Access.cf598f8871a39b70c79945a3549a7410.svg",
+    "static/media/pinkdau.svg": "/BearishOS/static/media/pinkdau.f381f62dcd2ba9767b1348cba39b3d94.svg",
+    "static/media/edit.svg": "/BearishOS/static/media/edit.579b762172e60f9e57d126db45daae29.svg",
+    "static/media/dad.svg": "/BearishOS/static/media/dad.6e9237369a057a176327e167395cf70c.svg",
+    "static/media/dau.svg": "/BearishOS/static/media/dau.9f123fb530f52149a0230c0468b629c5.svg",
+    "static/media/search.svg": "/BearishOS/static/media/search.5c8ace101a9d985a28a0e01240273659.svg",
+    "main.9fe0316d.css.map": "/BearishOS/static/css/main.9fe0316d.css.map",
+    "main.85b2e4f0.js.map": "/BearishOS/static/js/main.85b2e4f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.da146a4e.css",
-    "static/js/main.e84ec0d2.js"
+    "static/css/main.9fe0316d.css",
+    "static/js/main.85b2e4f0.js"
   ]
 }
