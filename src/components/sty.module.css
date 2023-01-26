@@ -95,6 +95,10 @@ opacity: 1;
     align-items: center;
 }
 
+.jcs {
+    justify-content: start !important;
+}
+
 .signIn  {
     border: 1px solid #E9EDF2;
     border-radius: 5px;

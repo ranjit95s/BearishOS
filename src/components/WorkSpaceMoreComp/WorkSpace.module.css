@@ -1,0 +1,177 @@
+.boxStyle {
+    font-family:Source Serif Pro !important;
+    top: 33px;
+    left: 24px;
+    position:relative;
+    width: 350px;
+    height: 600px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.inStyle {
+    font-family:Source Serif Pro Bold  !important;
+    width: 325px;
+    /* height: 40px; */
+    box-shadow: none !important;
+    margin:auto;
+    overflow: visible !important;
+}
+
+.mrt10{
+    margin-top:0px !important;
+}
+
+.ref button {
+    margin-right: 12px;
+    background: none;
+    color: #2a9660;
+    opacity: 1 !important;
+    font-size: 13px !important;
+    border: none !important;
+}
+
+.headerStyle2{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px !important;
+    padding-bottom: 10px !important;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    padding: 0px;
+    /* align-items: center; */
+    /* width: 100%; */
+}
+.headerStyle3{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8px !important;
+    padding-bottom: 7px !important;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    padding: 0px;
+    /* align-items: center; */
+    /* width: 100%; */
+}
+
+.op1 {
+    opacity: 1 !important;
+    padding:0px !important;
+}
+
+.w122 button{
+    font-size: 13px !important;
+    width: 131px !important;
+    height: 30px !important;
+    overflow: hidden;
+    margin-top: 5px;
+    /* font-weight: 700 !important; */
+    margin-right: 0px !important;
+}
+
+.inputext{
+    text-align: left;
+font: normal normal normal 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.w250{
+    width:250px;
+}
+.w2502{
+    width:225px;
+}
+
+.op12 input , .op12 textarea {
+    opacity: 1 !important;
+    font-weight: normal !important;
+}
+
+.op12 input[type="text"]::placeholder, .op12 textarea::placeholder {
+    opacity: 1 !important;
+    font-weight: normal !important;
+}
+
+.op12 textarea {
+    height:4rem !important;
+}
+
+.headerStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px !important;
+    padding-bottom: 10px !important;
+    font-weight: bold;
+    padding: 0px;
+    align-items: center;
+}
+
+.wh1 {
+    width:250px !important;
+    height:100px;
+}
+
+.wh11 {
+    width: 225px;
+}
+
+.wh12 {
+    width: 240px;
+}
+
+
+.t1215 {
+    text-align: left;
+font: normal normal 300 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.tt1215{
+    text-align: left;
+font: normal normal 600 13px/17px Source Serif Pro !important;
+letter-spacing: 0px;
+color: #000000;
+opacity: 0.5;
+}
+
+.t2req{
+    text-align: left;
+font: normal normal bold 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.ts2req {
+    text-align: center;
+font: normal normal normal 11px/15px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.tmStyle15{
+        font: normal normal 300 15px/21px Source Serif Pro  !important;
+}
+
+.save button{
+    font-size: 12px !important;
+    width: 25px !important;
+    height: 30px !important;
+    overflow: hidden;
+    margin-top: 5px;
+    /* font-weight: 700 !important; */
+    margin-right: 0px !important;
+}
