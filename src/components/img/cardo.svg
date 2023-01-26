@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Group_2958" data-name="Group 2958" transform="translate(-4 -4)">
+    <g id="Light_1px_presentation" data-name="Light 1px/presentation" transform="translate(4 4)">
+      <rect id="Light_1px_presentation_background" data-name="Light 1px/presentation background" width="25" height="25" fill="#fff"/>
+      <path id="Combined_Shape" data-name="Combined Shape" d="M18.229,14.584H3.646A3.129,3.129,0,0,1,.521,11.458V1.041A.521.521,0,1,1,.521,0H21.354a.521.521,0,1,1,0,1.041V11.458c0,1.7-3.093,3.112-3.125,3.126ZM1.562,1.041V11.458a2.086,2.086,0,0,0,2.084,2.083H18.229a2.085,2.085,0,0,0,2.083-2.083V1.041ZM7.813,9.9a2.6,2.6,0,1,1,2.6-2.6A2.607,2.607,0,0,1,7.813,9.9Zm0-4.166A1.562,1.562,0,1,0,9.375,7.292,1.565,1.565,0,0,0,7.813,5.729Zm9.374,3.646H13.021a.521.521,0,0,1,0-1.042h4.166a.521.521,0,1,1,0,1.042Zm0-3.126H13.021a.521.521,0,1,1,0-1.041h4.166a.521.521,0,1,1,0,1.041Z" transform="translate(1.562 7.083)" fill="#e2875e"/>
+    </g>
+  </g>
+</svg>

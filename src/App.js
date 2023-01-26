@@ -10,7 +10,8 @@
 // import VideoCenterOne from './container/VideoCenterOne'
 // import CalendarComp4 from './container/CalendarComp4'
 // import WorkSpaceMoreComp from './container/WorkSpaceMoreComp'
-import MessageComp from './container/MessageComp'
+// import MessageComp from './container/MessageComp'
+import TaskCenter from './container/TaskCenter'
 import './App.css';
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
     {/* <VideoCenterOne /> */}
     {/* <CalendarComp4 /> */}
     {/* <WorkSpaceMoreComp /> */}
-    <MessageComp />
+    {/* <MessageComp /> */}
+    <TaskCenter />
     </div>
   );
 }
