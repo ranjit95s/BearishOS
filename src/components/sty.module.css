@@ -99,6 +99,18 @@ opacity: 1;
     justify-content: start !important;
 }
 
+.t666 {
+    display: flex;
+    justify-content: center !important;
+    margin-top:15px;
+    margin-bottom:15px;
+    text-align: center;
+font: normal normal 300 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 0.5;
+}
+
 .signIn  {
     border: 1px solid #E9EDF2;
     border-radius: 5px;

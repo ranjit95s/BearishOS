@@ -11,7 +11,8 @@
 // import CalendarComp4 from './container/CalendarComp4'
 // import WorkSpaceMoreComp from './container/WorkSpaceMoreComp'
 // import MessageComp from './container/MessageComp'
-import TaskCenter from './container/TaskCenter'
+// import TaskCenter from './container/TaskCenter'
+import CallCenter2 from './container/CallCenter2'
 import './App.css';
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
     {/* <CalendarComp4 /> */}
     {/* <WorkSpaceMoreComp /> */}
     {/* <MessageComp /> */}
-    <TaskCenter />
+    {/* <TaskCenter /> */}
+    <CallCenter2 />
     </div>
   );
 }
