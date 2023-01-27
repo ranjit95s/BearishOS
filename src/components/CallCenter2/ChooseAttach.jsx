@@ -290,26 +290,27 @@ export default function ChooseAttach() {
                                                         Comments
                                                     </Typography>
                                                 </CardContent>
-                                                <CardContent onClick={deletes1} className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                <CardContent  className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                     <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
                                                         <img src={folder} alt="dad" loading="lazy" />
                                                     </ImageListItem>
-                                                    <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                    <Typography onClick={deletes1} variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                         Delete
                                                     </Typography>
-                                                    <Stack style={{"width":"200px"}} className={deletes ? cx(sty.ddd, styCC.extra3, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                                    <Stack style={{"width":"200px"}} className={deletes ? cx(sty.ddd, styCC.extra4, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
                                                         <CardContent style={{ "padding": "10px" }} className={cx(sty.hoverBody, sty.w100)} >
-                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.hinput)}>
-                                                                Folder Name
+                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.dtext)}>
+                                                        Delete Workspace
                                                             </Typography>
-                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.hinput)}>
-                                                                Folder Name
+                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.ddtext)}>
+                                                        You are about to delete [Workspace] with [0000] item(s) within it. If you are sure you want to do this, type the name of the workspace below. This action can not be undone.
                                                             </Typography>
-                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.hinput)}>
-                                                                Folder Name
-                                                            </Typography>
-                                                            <CardContent className={cx(sty.btnStyle)} style={{ "margin-top": "10px" }}>
-                                                                <button className={cx(sty.btnStyles)}> Move Now </button>
+                                                            <CardContent style={{ "padding": "15px" }} className={cx(sty.hoverBody, sty.w100)} >
+                                                            <input placeholder="[Rename File]" className={cx(sty.borderStyle, styCC.redI)} type="text" name="link" id="link" />
+                                                            
+                                                        </CardContent>
+                                                            <CardContent className={cx(sty.btnStyle,styCC.redII)} style={{ "margin-top": "10px" }}>
+                                                                <button className={cx(sty.btnStyles,styCC.redII)}> Permanently Delete Now </button>
                                                             </CardContent>
                                                         </CardContent>
                                                     </Stack>

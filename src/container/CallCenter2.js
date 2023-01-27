@@ -12,7 +12,7 @@ import ChooseAttach from '../components/CallCenter2/ChooseAttach'
 function CallCenter2() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"display":"flex","flex-wrap": "wrap","min-height":"200vh"}}>
             {/* <AddAgendaItems/>  */}
             {/* <AddPreMeetingNotes/>  */}
             {/* <AddUpNext/>  */}
