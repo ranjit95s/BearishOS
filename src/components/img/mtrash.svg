@@ -1,0 +1,8 @@
+<svg id="Light_1px_trash" data-name="Light 1px/trash" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="Light_1px_trash_background" data-name="Light 1px/trash background" width="20" height="20" fill="#fff"/>
+  <g id="Group" transform="translate(2.083 2.083)">
+    <path id="Combined_Shape" data-name="Combined Shape" d="M12.083,15.833H3.75A2.086,2.086,0,0,1,1.666,13.75V3.333H.417a.417.417,0,1,1,0-.833h3.75V2.083A2.085,2.085,0,0,1,6.25,0H9.583a2.086,2.086,0,0,1,2.083,2.083V2.5h3.75a.417.417,0,0,1,0,.833h-1.25V13.75A2.086,2.086,0,0,1,12.083,15.833ZM2.5,3.333V13.75A1.252,1.252,0,0,0,3.75,15h8.333a1.252,1.252,0,0,0,1.25-1.25V3.333ZM6.25.833A1.251,1.251,0,0,0,5,2.083V2.5h5.833V2.083A1.251,1.251,0,0,0,9.583.833Z" transform="translate(0)"/>
+    <path id="Path_38_Copy_Stroke_" data-name="Path 38 Copy (Stroke)" d="M.833.417V4.583a.417.417,0,0,1-.833,0V.417a.417.417,0,0,1,.833,0Z" transform="translate(5.833 6.667)"/>
+    <path id="Path_38_Copy_Stroke_2" data-name="Path 38 Copy (Stroke)" d="M.833.417V4.583a.417.417,0,0,1-.833,0V.417a.417.417,0,0,1,.833,0Z" transform="translate(9.167 6.667)"/>
+  </g>
+</svg>
