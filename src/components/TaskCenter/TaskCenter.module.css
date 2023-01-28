@@ -31,8 +31,7 @@ opacity: 1;
 }
 
 .bgop {
-    background: #5EE2A0;
-    opacity: 75%;
+    background: #adffd6;
 }
 
 .imgu{
@@ -61,13 +60,16 @@ opacity: 1;
     width: 75px;
     display: flex;
     height: fit-content;
-    box-shadow: none;
-    background: #e9e9e9;
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+
     padding: 5px !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
 }
 
 .taskStyle2 {
@@ -76,13 +78,16 @@ opacity: 1;
     display: flex;
     height: -moz-fit-content;
     height: fit-content;
-    box-shadow: none;
-    background: #e9e9e9;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+
     padding: 10px !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
 }
 .taskStyle3 {
     padding: 0px !important;
@@ -90,11 +95,12 @@ opacity: 1;
     display: flex;
     height: -moz-fit-content;
     height: fit-content;
-    box-shadow: none;
-    background: #e9e9e9;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
     padding: 13px !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
 }
