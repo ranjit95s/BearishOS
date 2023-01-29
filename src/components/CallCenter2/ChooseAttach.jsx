@@ -132,7 +132,7 @@ export default function ChooseAttach() {
                             <Typography variant="h4"
                                 className={cx(styCC.textt, sty.pl4, sty.padding0)}
                             >
-                                Bearish OS Cloud Storage
+                                "Bearish OS" Cloud Storage
                             </Typography>
                             <CardContent className={cx(sty.signIn, sty.rel, styCC.ali, calSty.signCal, styCC.t61521, sty.inputStyle, sty.NickStyle)}>
                                 <ImageListItem style={{ "margin-right": "5px" }} >
@@ -179,7 +179,7 @@ export default function ChooseAttach() {
                                                         <CardContent style={{ "padding": "15px" }} className={cx(sty.hoverBody, sty.w100)} >
                                                             <input placeholder="[Rename File]" className={cx(sty.borderStyle, styCC.hinput)} type="text" name="link" id="link" />
                                                             <CardContent className={cx(sty.btnStyle)} style={{ "margin-top": "15px" }}>
-                                                                <button className={cx(sty.btnStyles)}> Rename </button>
+                                                                <button style={{"color":"seagreen"}} className={cx(sty.btnStyles)}> Rename </button>
                                                             </CardContent>
                                                         </CardContent>
                                                     </Stack>
@@ -261,7 +261,7 @@ export default function ChooseAttach() {
                                                                 Folder Name
                                                             </Typography>
                                                             <CardContent className={cx(sty.btnStyle)} style={{ "margin-top": "10px" }}>
-                                                                <button className={cx(sty.btnStyles)}> Move Now </button>
+                                                                <button style={{"color":"seagreen"}} className={cx(sty.btnStyles)}> Move Now </button>
                                                             </CardContent>
                                                         </CardContent>
                                                     </Stack>
@@ -298,19 +298,19 @@ export default function ChooseAttach() {
                                                         Delete
                                                     </Typography>
                                                     <Stack style={{"width":"200px"}} className={deletes ? cx(sty.ddd, styCC.extra4, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
-                                                        <CardContent style={{ "padding": "10px" }} className={cx(sty.hoverBody, sty.w100)} >
+                                                        <CardContent style={{ "padding": "0px" }} className={cx(sty.hoverBody, sty.w100)} >
                                                         <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.dtext)}>
                                                         Delete Workspace
                                                             </Typography>
                                                         <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.ddtext)}>
                                                         You are about to delete [Workspace] with [0000] item(s) within it. If you are sure you want to do this, type the name of the workspace below. This action can not be undone.
                                                             </Typography>
-                                                            <CardContent style={{ "padding": "15px" }} className={cx(sty.hoverBody, sty.w100)} >
-                                                            <input placeholder="[Rename File]" className={cx(sty.borderStyle, styCC.redI)} type="text" name="link" id="link" />
+                                                            <CardContent style={{ "padding": "7px" }} className={cx(sty.hoverBody, sty.w100,styCC.redI2)} >
+                                                            <input placeholder="Type name of workspace (case sensitive)" className={cx(sty.borderStyle, styCC.redI)} type="text" name="link" id="link" />
                                                             
                                                         </CardContent>
-                                                            <CardContent className={cx(sty.btnStyle,styCC.redII)} style={{ "margin-top": "10px" }}>
-                                                                <button className={cx(sty.btnStyles,styCC.redII)}> Permanently Delete Now </button>
+                                                            <CardContent className={cx(sty.btnStyle,styCC.redII2)} style={{ "margin-top": "10px","margin-bottom":"10px" }}>
+                                                                <button className={cx(styCC.btnStyles,styCC.redII)}> Permanently Delete Now </button>
                                                             </CardContent>
                                                         </CardContent>
                                                     </Stack>

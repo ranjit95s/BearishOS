@@ -11,11 +11,7 @@ import Congt from "../components/CalendarComp4/Congt";
 function CalendarComp4() {
   return (
     <div style={{ display: "flex", "flex-wrap": "wrap" }}>
-      <CVschedules />
-      <ChooseEventType />
-      <Success />
-      <Congt />
-      <OneToOneMeeting1 />
+     
       <OneToOneMeeting2 />
     </div>
   );

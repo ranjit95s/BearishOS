@@ -1,8 +1,10 @@
+/* eslint-disable array-callback-return */
 import * as React from "react";
 import Box from "@mui/material/Box";
 // import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
 import weekly from "../img/Weekly.svg";
+import rtrash from "../img/rtrash.svg";
 import dau from "../img/pinkdau.svg";
 import plus from "../img/plus.svg";
 import CardActions from "@mui/material/CardActions";
@@ -24,18 +26,39 @@ export default function OneToOneMeeting2() {
 
 
 
-    const [weeklys, setWeeklys] = React.useState([{ week:[
-                                                            {id:"1",name:"Sun",schedule:[]},
-                                                            {id:"2",name:"Mon",schedule:[]},
-                                                            {id:"3",name:"Tue",schedule:[]},
-                                                            {id:"4",name:"Wed",schedule:[]},
-                                                            {id:"5",name:"Thu",schedule:[]},
-                                                            {id:"6",name:"Fri",schedule:[]},
-                                                            {id:"7",name:"Sat",schedule:[]},
-                                                        ]
-                                                }]);
+    const [weeklys, setWeeklys] = React.useState([{ id: "1", name: "Sun", schedule: ['00:00am - 00:00am', '00:00am - 00:00am'] },
+    { id: "2", name: "Mon", schedule: ['00:00am - 00:00am', '00:00am - 00:00am'] },
+    { id: "3", name: "Tue", schedule: ['00:00am - 00:00am', '00:00am - 00:00am'] },
+    { id: "4", name: "Wed", schedule: [] },
+    { id: "5", name: "Thu", schedule: [] },
+    { id: "6", name: "Fri", schedule: [] },
+    { id: "7", name: "Sat", schedule: [] },
+    ]);
+    const updates = (id) => {
+        setWeeklys((prevState) =>
+            prevState.map((el) =>
+                el.id === id ? {
+                    ...el,
+                    schedule: el.schedule.concat('00:00am - 00:00am')
+                }
+                    : el
+            )
+        );
+    }
+    const removei = (id, index) => {
+        setWeeklys((prevState) =>
+            prevState.map((el) =>
+                el.id === id ? {
+                    ...el,
+                    schedule: el.schedule.slice(0, -1)
+                }
+                    : el
+            )
+        );
+    }
+    const copyTo = (fId, toId) => {
 
-
+    }
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -135,228 +158,53 @@ export default function OneToOneMeeting2() {
                             </Typography>
                         </CardContent>
 
-                        
-                        {weeklys.map((weeklyy,weaklyyIndex) => {
+
+                        {weeklys.map((weeklyy, weaklyyIndex) => {
                             return (
-                                <CardContent key={weaklyyIndex} className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.mtm)}>
-                            <CardContent
-                                className={cx(
-                                    sty.headerStyle,
-                                    calSty4.pspan,
-                                    sty.padding0, calSty.mr5,
-                                    calSty.w100, calSty.jcs
-                                )}
-                            >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                Sun
-                                </Typography>
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Unavailabe
-                                </Typography>
-                            </CardContent>
-                            <ImageListItem style={{ "display": "flex", "align-items": "center" }}>
-                                <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
-                                <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
-                            </ImageListItem>
-                        </CardContent>
+                                <CardContent style={{ "margin-top": "15px", "margin-bottom": "25px" }} key={weeklyy.id} className={cx(sty.padding0, calSty.dfjcb, calSty.w100, calSty.mtm)}>
+                                    <CardContent
+                                        className={cx(
+                                            sty.headerStyle,
+                                            calSty4.pspan,
+                                            sty.padding0, calSty.mr5,
+                                            calSty.w100, calSty.jcs
+                                        )}
+                                        style={{ "align-items": "self-start" }}
+                                    >
+                                        <Checkbox
+                                            checked={checked}
+                                            onChange={handleChange}
+                                            inputProps={{ "aria-label": "controlled" }}
+                                        />
+                                        <Typography
+                                            className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
+                                        >
+                                            {weeklyy.name}
+                                        </Typography>
+                                        <Typography
+                                            className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
+                                        >
+{weeklyy.schedule.length < 1 ? 'unavailable' : ''}
+                                            {weeklyy.schedule.map((scheduless, Index) =>
+                                                <Typography variant='h6' className={cx(calSty4.tls1117, sty.padding0, calSty4.s)}>
+                                                    <span>{scheduless}</span> <img id="my-element154" style={{ 'margin-left': "6px" }}
+                                                        onClick={() => removei(weeklyy.id, Index)}
+                                                        className={cx(sty.imgStyle)} src={rtrash} alt="close" loading="lazy" />
+                                                </Typography>)}
+
+                                        </Typography>
+                                    </CardContent>
+                                    <ImageListItem style={{ "display": "flex", "align-items": "center", "height": "25px" }}>
+                                        <img id="my-element154"
+                                            onClick={() => { updates(weeklyy.id) }}
+                                            className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
+                                        <img id="my-element163"
+
+                                            className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
+                                    </ImageListItem>
+                                </CardContent>
                             );
                         })}
-                        
-
-                        {/* <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
-                            <CardContent
-                                className={cx(
-                                    sty.headerStyle,
-                                    calSty4.pspan,
-                                    sty.padding0, calSty.mr5,
-                                    calSty.w100, calSty.jcs
-                                )}
-                            >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Mon
-                                </Typography>
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Unavailabe
-                                </Typography>
-                            </CardContent>
-                            <ImageListItem style={{ "display": "flex", "align-items": "center" }}>
-                                <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
-                                <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
-                            </ImageListItem>
-                        </CardContent>
-
-                        <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
-                            <CardContent
-                                className={cx(
-                                    sty.headerStyle,
-                                    calSty4.pspan,
-                                    sty.padding0, calSty.mr5,
-                                    calSty.w100, calSty.jcs
-                                )}
-                            >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Tue
-                                </Typography>
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Unavailabe
-                                </Typography>
-                            </CardContent>
-                            <ImageListItem style={{ "display": "flex", "align-items": "center" }}>
-                                <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
-                                <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
-                            </ImageListItem>
-                        </CardContent>
-
-                        <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
-                            <CardContent
-                                className={cx(
-                                    sty.headerStyle,
-                                    calSty4.pspan,
-                                    sty.padding0, calSty.mr5,
-                                    calSty.w100, calSty.jcs
-                                )}
-                            >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Wed
-                                </Typography>
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Unavailabe
-                                </Typography>
-                            </CardContent>
-                            <ImageListItem style={{ "display": "flex", "align-items": "center" }}>
-                                <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
-                                <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
-                            </ImageListItem>
-                        </CardContent>
-
-                        <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
-                            <CardContent
-                                className={cx(
-                                    sty.headerStyle,
-                                    calSty4.pspan,
-                                    sty.padding0, calSty.mr5,
-                                    calSty.w100, calSty.jcs
-                                )}
-                            >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Thu
-                                </Typography>
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Unavailabe
-                                </Typography>
-                            </CardContent>
-                            <ImageListItem style={{ "display": "flex", "align-items": "center" }}>
-                                <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
-                                <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
-                            </ImageListItem>
-                        </CardContent>
-
-                        <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
-                            <CardContent
-                                className={cx(
-                                    sty.headerStyle,
-                                    calSty4.pspan,
-                                    sty.padding0, calSty.mr5,
-                                    calSty.w100, calSty.jcs
-                                )}
-                            >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Fri
-                                </Typography>
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Unavailabe
-                                </Typography>
-                            </CardContent>
-                            <ImageListItem style={{ "display": "flex", "align-items": "center" }}>
-                                <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
-                                <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
-                            </ImageListItem>
-                        </CardContent>
-
-                        <CardContent className={cx(sty.padding0,calSty.dfjcb ,calSty.w100, calSty.org)}>
-                            <CardContent
-                                className={cx(
-                                    sty.headerStyle,
-                                    calSty4.pspan,
-                                    sty.padding0, calSty.mr5,
-                                    calSty.w100, calSty.jcs
-                                )}
-                            >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Sat
-                                </Typography>
-                                <Typography
-                                    className={cx(calSty4.tls1117, sty.pl4, sty.padding0)}
-                                >
-                                    Unavailabe
-                                </Typography>
-                            </CardContent>
-                            <ImageListItem style={{ "display": "flex", "align-items": "center" }}>
-                                <img id="my-element154"  className={cx(sty.imgStyle)} src={plus} alt="close" loading="lazy" />
-                                <img id="my-element163" className={cx(sty.imgStyle)} src={weekly} alt="close" loading="lazy" />
-                            </ImageListItem>
-                        </CardContent> */}
 
                         {/* foot */}
                         <CardContent className={cx(calSty4.headerStyle)}>
@@ -431,7 +279,7 @@ export default function OneToOneMeeting2() {
                             </Button>
                         </CardActions>
                     </Card>
-                   
+
                 </Box>
             </StyledEngineProvider>
         </>
