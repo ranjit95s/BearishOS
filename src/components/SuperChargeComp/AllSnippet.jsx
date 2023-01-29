@@ -4,7 +4,9 @@ import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.svg';
 import search from '../img/search.svg';
-import edit from '../img/edit.svg';
+import edit from '../img/edit1.svg';
+import edit23 from '../img/edit23.svg';
+import cy from '../img/copy1.svg';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -61,13 +63,13 @@ export default function Message() {
                                 </Typography>
                                 <CardContent style={{ "display": "flex" }} className={sty.padding0}>
                                     <ImageListItem >
-                                        <img src={Close} alt="dad" loading="lazy" className={stySC.mr2525} />
+                                        <img src={edit23} alt="dad" loading="lazy" className={stySC.mr2525} />
                                         <Typography variant="h5" className={cx(stySC.ttstyle3, sty.padding0)}>
                                             Edit
                                         </Typography>
                                     </ImageListItem>
                                     <ImageListItem style={{ "margin-left": "10px" }}>
-                                        <img src={Close} alt="dad" loading="lazy" className={stySC.mr2525} />
+                                        <img src={cy} alt="dad" loading="lazy" className={stySC.mr2525} />
                                         <Typography variant="h5" className={cx(stySC.ttstyle3, sty.padding0)}>
                                             Copy
                                         </Typography>

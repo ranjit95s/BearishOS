@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.svg';
+import info from '../img/info1.svg';
 import dad from '../img/dad.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -76,7 +77,7 @@ export default function AddAgendaItems() {
                                 >
                                     <span>Add the rough amount of time this agenda item should take in the meeting</span>
                                 </ReactTooltip>
-                                <img src={Close} alt="close" loading="lazy" />
+                                <img src={info} alt="close" loading="lazy" />
                             </ImageListItem>
                             </CardContent>
                             <CardContent className={styCC.padding0}>

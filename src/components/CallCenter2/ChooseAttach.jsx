@@ -5,6 +5,21 @@ import Close from '../img/Close.svg';
 import Blue from '../img/bluefile.svg';
 import folder from '../img/folderi.svg';
 import dad from '../img/dad.png';
+
+import shareG from '../img/shareG.svg';
+import dots from '../img/3dot.svg';
+import edit1 from '../img/edit1.svg';
+import add1 from '../img/Light 1px-add_circled.svg';
+import rtrash from '../img/rtrash.svg';
+import b1 from '../img/bo1.svg';
+import cl from '../img/cl.svg';
+import l1 from '../img/l1.svg';
+import wiki from '../img/wiki.svg';
+import note from '../img/note.svg';
+import lap from '../img/lap1.svg';
+import co from '../img/color.png';
+import sl from '../img/smile.svg';
+
 import search from '../img/search.svg';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -25,6 +40,9 @@ export default function ChooseAttach() {
         setChecked(event.target.checked);
     };
     const [style3, setStyle3] = React.useState(false);
+    const [style4, setStyle4] = React.useState(false);
+    const [style5, setStyle5] = React.useState(false);
+    const [style6, setStyle6] = React.useState(false);
 
     const [shareNow, setShareNow] = useState(false);
     const [rename, setRename] = useState(false);
@@ -71,6 +89,30 @@ export default function ChooseAttach() {
         }
         else {
             setStyle3(true);
+        }
+    };
+    const changeStyle3 = () => {
+        if (style4) {
+            setStyle4(false);
+        }
+        else {
+            setStyle4(true);
+        }
+    };
+    const changeStyle4 = () => {
+        if (style5) {
+            setStyle5(false);
+        }
+        else {
+            setStyle5(true);
+        }
+    };
+    const changeStyle5 = () => {
+        if (style6) {
+            setStyle6(false);
+        }
+        else {
+            setStyle6(true);
         }
     };
     const deletes1 = () => {
@@ -158,11 +200,11 @@ export default function ChooseAttach() {
                                             </Typography>
                                         </CardContent>
                                         <ImageListItem className={sty.rel} style={{ "margin-right": "5px" }}>
-                                            <img src={Close} alt="dad" loading="lazy" />
-                                            <Stack className={style3 ? cx(sty.ddd, styCC.extra, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                            <img src={dots} onClick={changeStyle3} alt="dad" loading="lazy" />
+                                            <Stack className={style4 ? cx(sty.ddd, styCC.extra, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
                                                 <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                     <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                        <img src={shareG} alt="dad" loading="lazy" />
                                                     </ImageListItem>
                                                     <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                         Share Now
@@ -170,7 +212,7 @@ export default function ChooseAttach() {
                                                 </CardContent>
                                                 <CardContent onClick={rename1} className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                     <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                        <img src={edit1} alt="dad" loading="lazy" />
                                                     </ImageListItem>
                                                     <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                         Rename
@@ -186,7 +228,7 @@ export default function ChooseAttach() {
                                                 </CardContent>
                                                 <CardContent onClick={addItem1} className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                     <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                        <img src={add1} alt="dad" loading="lazy" />
                                                     </ImageListItem>
                                                     <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                         Add Items
@@ -194,7 +236,7 @@ export default function ChooseAttach() {
                                                     <Stack className={addItem ? cx(sty.ddd, styCC.extra2, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
                                                         <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                             <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                                <img src={folder} alt="dad" loading="lazy" />
+                                                                <img src={b1} alt="dad" loading="lazy" />
                                                             </ImageListItem>
                                                             <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                                 Boards
@@ -202,7 +244,7 @@ export default function ChooseAttach() {
                                                         </CardContent>
                                                         <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                             <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                                <img src={folder} alt="dad" loading="lazy" />
+                                                                <img src={cl} alt="dad" loading="lazy" />
                                                             </ImageListItem>
                                                             <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                                 Checklists
@@ -210,7 +252,7 @@ export default function ChooseAttach() {
                                                         </CardContent>
                                                         <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                             <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                                <img src={folder} alt="dad" loading="lazy" />
+                                                                <img src={lap} alt="dad" loading="lazy" />
                                                             </ImageListItem>
                                                             <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                                 Whiteboards
@@ -218,7 +260,7 @@ export default function ChooseAttach() {
                                                         </CardContent>
                                                         <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                             <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                                <img src={folder} alt="dad" loading="lazy" />
+                                                                <img src={l1} alt="dad" loading="lazy" />
                                                             </ImageListItem>
                                                             <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                                 Lists
@@ -226,7 +268,7 @@ export default function ChooseAttach() {
                                                         </CardContent>
                                                         <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                             <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                                <img src={folder} alt="dad" loading="lazy" />
+                                                                <img src={wiki} alt="dad" loading="lazy" />
                                                             </ImageListItem>
                                                             <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                                 Docs & Wikis
@@ -234,7 +276,7 @@ export default function ChooseAttach() {
                                                         </CardContent>
                                                         <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                             <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                                <img src={folder} alt="dad" loading="lazy" />
+                                                                <img src={note} alt="dad" loading="lazy" />
                                                             </ImageListItem>
                                                             <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                                 Notes
@@ -268,7 +310,7 @@ export default function ChooseAttach() {
                                                 </CardContent>
                                                 <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                     <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                        <img src={co} alt="dad" loading="lazy" />
                                                     </ImageListItem>
                                                     <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                         Item Color
@@ -284,7 +326,7 @@ export default function ChooseAttach() {
                                                 </CardContent>
                                                 <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                     <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                        <img src={sl} alt="dad" loading="lazy" />
                                                     </ImageListItem>
                                                     <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                         Comments
@@ -292,7 +334,7 @@ export default function ChooseAttach() {
                                                 </CardContent>
                                                 <CardContent  className={cx(styCC.martr, styCC.iconF, sty.rel)}>
                                                     <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
-                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                        <img src={rtrash} alt="dad" loading="lazy" />
                                                     </ImageListItem>
                                                     <Typography onClick={deletes1} variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
                                                         Delete
@@ -309,7 +351,7 @@ export default function ChooseAttach() {
                                                             <input placeholder="Type name of workspace (case sensitive)" className={cx(sty.borderStyle, styCC.redI)} type="text" name="link" id="link" />
                                                             
                                                         </CardContent>
-                                                            <CardContent className={cx(sty.btnStyle,styCC.redII2)} style={{ "margin-top": "10px","margin-bottom":"10px" }}>
+                                                            <CardContent className={cx(sty.btnStyle,styCC.redII2)} style={{ "margin-top": "10px","margin-bottom":"10px","justify-content": "center" }}>
                                                                 <button className={cx(styCC.btnStyles,styCC.redII)}> Permanently Delete Now </button>
                                                             </CardContent>
                                                         </CardContent>
@@ -322,12 +364,192 @@ export default function ChooseAttach() {
                             </CardContent>
                         </Stack>
 
-                        <CardContent style={{ "width": "350px" }} className={cx(sty.borderStyle, calSty.mt10, calSty.t61521, calSty.dateTimeFlex)}>
-                            <Typography variant="h1" className={cx(calSty.t61521, calSty.tmr, calSty.op1)}>
+                        <CardContent style={{ "width": "350px" }} className={cx(sty.borderStyle,sty.rel ,calSty.mt10, calSty.dateTimeFlex)}>
+                            <Typography variant="h1" className={cx(calSty.tmr, calSty.op1)}>
                             </Typography>
                             <ImageListItem >
-                                <img src={dad} alt="dad" loading="lazy" />
+                                <img src={dad} onClick={changeStyle4} alt="dad" loading="lazy" />
                             </ImageListItem>
+                            <Stack className={style5 ? cx(sty.ddd, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                    <CardContent style={{ "margin-top": "5px", "margin-bottom": "8px" }} className={cx(sty.padding0, styCC.iconF)}>
+                                        <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                            <img src={search} alt="dad" loading="lazy" />
+                                        </ImageListItem>
+                                        <Typography variant="h1" className={cx(styCC.stext, calSty.tmr)}>
+                                            Search All Items
+                                        </Typography>
+                                    </CardContent>
+                                    <CardContent className={cx(sty.headerStyle, styCC.boxf, sty.padding0)}>
+                                        <CardContent className={cx(sty.padding0, styCC.iconF)}>
+                                            <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                <img src={folder} alt="dad" loading="lazy" />
+                                            </ImageListItem>
+                                            <Typography variant="h1" className={cx(styCC.stext, calSty.tmr)}>
+                                                Your folder name here
+                                            </Typography>
+                                        </CardContent>
+                                        <ImageListItem className={sty.rel} style={{ "margin-right": "5px" }}>
+                                            <img src={dots} onClick={changeStyle5} alt="dad" loading="lazy" />
+                                            <Stack className={style6 ? cx(sty.ddd, styCC.extra, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                                <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={shareG} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                        Share Now
+                                                    </Typography>
+                                                </CardContent>
+                                                <CardContent onClick={rename1} className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={edit1} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                        Rename
+                                                    </Typography>
+                                                    <Stack className={rename ? cx(sty.ddd, styCC.extra1, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                                        <CardContent style={{ "padding": "15px" }} className={cx(sty.hoverBody, sty.w100)} >
+                                                            <input placeholder="[Rename File]" className={cx(sty.borderStyle, styCC.hinput)} type="text" name="link" id="link" />
+                                                            <CardContent className={cx(sty.btnStyle)} style={{ "margin-top": "15px" }}>
+                                                                <button style={{"color":"seagreen"}} className={cx(sty.btnStyles)}> Rename </button>
+                                                            </CardContent>
+                                                        </CardContent>
+                                                    </Stack>
+                                                </CardContent>
+                                                <CardContent onClick={addItem1} className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={add1} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                        Add Items
+                                                    </Typography>
+                                                    <Stack className={addItem ? cx(sty.ddd, styCC.extra2, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                                        <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                            <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                                <img src={b1} alt="dad" loading="lazy" />
+                                                            </ImageListItem>
+                                                            <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                                Boards
+                                                            </Typography>
+                                                        </CardContent>
+                                                        <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                            <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                                <img src={cl} alt="dad" loading="lazy" />
+                                                            </ImageListItem>
+                                                            <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                                Checklists
+                                                            </Typography>
+                                                        </CardContent>
+                                                        <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                            <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                                <img src={lap} alt="dad" loading="lazy" />
+                                                            </ImageListItem>
+                                                            <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                                Whiteboards
+                                                            </Typography>
+                                                        </CardContent>
+                                                        <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                            <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                                <img src={l1} alt="dad" loading="lazy" />
+                                                            </ImageListItem>
+                                                            <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                                Lists
+                                                            </Typography>
+                                                        </CardContent>
+                                                        <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                            <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                                <img src={wiki} alt="dad" loading="lazy" />
+                                                            </ImageListItem>
+                                                            <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                                Docs & Wikis
+                                                            </Typography>
+                                                        </CardContent>
+                                                        <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                            <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                                <img src={note} alt="dad" loading="lazy" />
+                                                            </ImageListItem>
+                                                            <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                                Notes
+                                                            </Typography>
+                                                        </CardContent>
+                                                    </Stack>
+                                                </CardContent>
+                                                <CardContent onClick={moveToFolder1} className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography variant="h1" className={cx(styCC.ddt)}>
+                                                        Move To Folder
+                                                    </Typography>
+                                                    <Stack style={{"width":"200px"}} className={moveToFolder ? cx(sty.ddd, styCC.extra3, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                                        <CardContent style={{ "padding": "10px" }} className={cx(sty.hoverBody, sty.w100)} >
+                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.hinput)}>
+                                                                Folder Name
+                                                            </Typography>
+                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.hinput)}>
+                                                                Folder Name
+                                                            </Typography>
+                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.hinput)}>
+                                                                Folder Name
+                                                            </Typography>
+                                                            <CardContent className={cx(sty.btnStyle)} style={{ "margin-top": "10px" }}>
+                                                                <button style={{"color":"seagreen"}} className={cx(sty.btnStyles)}> Move Now </button>
+                                                            </CardContent>
+                                                        </CardContent>
+                                                    </Stack>
+                                                </CardContent>
+                                                <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={co} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                        Item Color
+                                                    </Typography>
+                                                </CardContent>
+                                                <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={folder} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                        Analysis
+                                                    </Typography>
+                                                </CardContent>
+                                                <CardContent className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={sl} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                        Comments
+                                                    </Typography>
+                                                </CardContent>
+                                                <CardContent  className={cx(styCC.martr, styCC.iconF, sty.rel)}>
+                                                    <ImageListItem style={{ "margin-right": "10px", "width": "25px" }}>
+                                                        <img src={rtrash} alt="dad" loading="lazy" />
+                                                    </ImageListItem>
+                                                    <Typography onClick={deletes1} variant="h1" className={cx(styCC.ddt, calSty.tmr)}>
+                                                        Delete
+                                                    </Typography>
+                                                    <Stack style={{"width":"200px"}} className={deletes ? cx(sty.ddd, styCC.extra4, styCC.abs, sty.padding0) : cx(sty.ddd, styCC.abs, sty.padding0, sty.spanHide)}>
+                                                        <CardContent style={{ "padding": "0px" }} className={cx(sty.hoverBody, sty.w100)} >
+                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.dtext)}>
+                                                        Delete Workspace
+                                                            </Typography>
+                                                        <Typography variant="h1" className={cx(styCC.ddt, styCC.mt,sty.w100,styCC.ddtext)}>
+                                                        You are about to delete [Workspace] with [0000] item(s) within it. If you are sure you want to do this, type the name of the workspace below. This action can not be undone.
+                                                            </Typography>
+                                                            <CardContent style={{ "padding": "7px" }} className={cx(sty.hoverBody, sty.w100,styCC.redI2)} >
+                                                            <input placeholder="Type name of workspace (case sensitive)" className={cx(sty.borderStyle, styCC.redI)} type="text" name="link" id="link" />
+                                                            
+                                                        </CardContent>
+                                                            <CardContent className={cx(sty.btnStyle,styCC.redII2)} style={{ "margin-top": "10px","margin-bottom":"10px","justify-content": "center" }}>
+                                                                <button className={cx(styCC.btnStyles,styCC.redII)}> Permanently Delete Now </button>
+                                                            </CardContent>
+                                                        </CardContent>
+                                                    </Stack>
+                                                </CardContent>
+                                            </Stack>
+                                        </ImageListItem>
+                                    </CardContent>
+                                </Stack>
                         </CardContent>
 
                         <Stack className={cx(styCC.mainStack, styCC.flow, calSty.mt10)}>

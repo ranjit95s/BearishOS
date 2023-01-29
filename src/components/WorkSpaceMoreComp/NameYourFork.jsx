@@ -26,7 +26,7 @@ export default function NameYourFork() {
                             <CardContent className={cx(sty2.mrt10,sty.signIn, sty2.tt1215, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Fork of Document' name="code" id="code" />
                                 <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
-                                    <CardContent className={cx(sty2.op1,sty.btnIn, sty2.tt1215, sty2.ref,sty.save)}>
+                                    <CardContent className={cx(sty2.op1,sty.btnIn, sty2.tt1215, sty2.ref,sty.save,sty2.hover)}>
                                         <Button size="small" variant="contained" className={cx(sty.tt1215)}>
                                             Go
                                         </Button>

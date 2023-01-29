@@ -20,19 +20,19 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-     {/* <CalendarComp2One /> */}
+     <CalendarComp2One />
      {/* <EmailComp/> */}
-      {/* <CalendarComp /> */}
-      {/* <CalendarComp2 /> */}
-      {/* <WorkSpaceCS /> */}
-      {/* <CalendarComp3 /> */}
-    {/* <VideoCenterOne /> */}
+      <CalendarComp />
+      <CalendarComp2 />
+      <WorkSpaceCS />
+      <CalendarComp3 />
+    <VideoCenterOne />
     <CalendarComp4 />
-    {/* <WorkSpaceMoreComp /> */}
-    {/* <MessageComp /> */}
-    {/* <TaskCenter /> */}
-    {/* <CallCenter2 /> */}
-    {/* <SuperChargeComp/> */}
+    <WorkSpaceMoreComp />
+    <MessageComp />
+    <TaskCenter />
+    <CallCenter2 />
+    <SuperChargeComp/>
     </div>
   );
 }

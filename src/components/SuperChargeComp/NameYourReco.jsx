@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.svg';
+import info from '../img/info1.svg';
 import dad from '../img/dad.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -47,7 +47,7 @@ export default function NameYourReco() {
                                 Choose Video Folder
                             </Typography>
                             <ImageListItem style={{ "display": "flex" }}>
-                                <img src={dad} alt="dad" loading="lazy" />
+                                <img src={info} alt="dad" loading="lazy" />
                                 <img src={dad} style={{ "margin-left": "15px" }} alt="dad" loading="lazy" />
                             </ImageListItem>
                             <Stack style={{ "width": "200px" }} className={choose ? cx(sty.ddd, calSty.extra, stySC.abs, sty.padding0) : cx(sty.ddd, stySC.abs, sty.padding0, sty.spanHide)}>

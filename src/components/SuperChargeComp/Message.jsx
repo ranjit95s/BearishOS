@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.svg';
 import search from '../img/search.svg';
-import edit from '../img/edit.svg';
+import edit from '../img/edit1.svg';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';

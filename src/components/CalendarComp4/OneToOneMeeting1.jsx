@@ -2,8 +2,8 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
-import dad from "../img/dad.svg";
-import dau from "../img/dau.svg";
+import dad from "../img/dad.png";
+import dau from "../img/dau.png";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -29,6 +29,19 @@ export default function OneToOneMeeting1() {
         } else {
             setStyle4(true);
         }
+    };
+    const [inputValue, setInputValue] = React.useState("");
+    const [changeF, setChangeF] = React.useState([{fc:false,sc:false}])
+    const onChangeHandler = event => {
+    setInputValue(event.target.value);
+    if(event.target.value.length >= 17){
+        setChangeF({sc:true})}
+    else if(event.target.value.length >= 9 && event.target.value.length <= 17){
+        // console.log("hi")
+    setChangeF({fc:true})}
+    else{
+        setChangeF({fc:false},{sc:false})
+    }
     };
     return (
         <>
@@ -177,8 +190,8 @@ export default function OneToOneMeeting1() {
                                             <Stack
                                                 className={
                                                     style4
-                                                        ? cx(sty.ddd, sty.abs, sty.padding0)
-                                                        : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)
+                                                        ? cx(sty.ddd, calSty4.abs, sty.padding0)
+                                                        : cx(sty.ddd,calSty4.abs, sty.padding0, sty.spanHide)
                                                 }
                                             >
                                                 <CardContent
@@ -317,8 +330,8 @@ export default function OneToOneMeeting1() {
                             </ImageListItem>
                         </CardContent>
                         <CardContent className={cx(calSty4.headerStyle)}>
-                            <Typography varient="h1" className={cx(calSty4.secheadse)}>
-                                app.bearishos.com/user-name
+                            <Typography varient="h1" className={changeF.fc ? cx(calSty4.small1) : changeF.sc ? cx(calSty4.tbs1117,calSty4.op1) : cx(calSty4.secheadse)}>
+                                app.bearishos.com/user-name/{inputValue}
                             </Typography>
                         </CardContent>
                         <CardContent
@@ -332,7 +345,7 @@ export default function OneToOneMeeting1() {
                                 calSty.mtm
                             )}
                         >
-                            <input type="text" placeholder="Any text" name="code" id="code" />
+                            <input onChange={onChangeHandler} type="text" placeholder="Any text" name="code" id="code" />
                         </CardContent>
                         <CardActions style={{"margin-top":"10px"}} className={cx(calSty4.cobtn,calSty.jce)}>
                             <Button className={cx(calSty4.flexdl2,calSty4.padd35)}>

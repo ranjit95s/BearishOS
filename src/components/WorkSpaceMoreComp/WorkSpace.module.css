@@ -14,6 +14,11 @@
     margin-bottom:20px;
 }
 
+.hover {
+    background: #ffffff 0% 0% no-repeat padding-box !important;
+    opacity: 75% !important;
+}
+
 .inStyle {
     font-family:Source Serif Pro Bold  !important;
     width: 325px;

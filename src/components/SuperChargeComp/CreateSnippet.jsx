@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.svg';
-import plus from '../img/plus.svg';
+import plus from '../img/add1.svg';
 import edit from '../img/edit.svg';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';

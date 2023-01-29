@@ -35,6 +35,10 @@ letter-spacing: 0px !important;
     overflow: scroll;
 }
 
+.flow::-webkit-scrollbar{
+    display:none;
+}
+
 .flowT {
     text-align: left;
 font: normal normal normal 13px/17px Source Serif Pro;

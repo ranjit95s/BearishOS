@@ -4,6 +4,16 @@ import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.svg';
 import dad from '../img/dad.png';
+
+import play from '../img/play.svg';
+import pause from '../img/pause.svg';
+import edit1 from '../img/edit1.svg';
+import end from '../img/end.svg';
+import sf from '../img/sq1.svg';
+import so from '../img/sq2.svg';
+import lt from '../img/lt.svg';
+
+
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -96,31 +106,31 @@ export default function NameYourPro1() {
                         </Typography>
                         <CardContent style={{"padding-top":"0px","padding-bottom":"0px"}}>
                             <ImageListItem onClick={handleFun1} className={start ? cx(stySC.imgu, stySC.mt,stySC.bgg) : cx(stySC.imgu, stySC.mt)}>
-                                <img src={Close} className={stySC.imgStyle} alt="close" loading="lazy" />
+                                <img src={play} className={stySC.imgStyle} alt="close" loading="lazy" />
                                 <Typography variant="h5" className={stySC.ttstyle3}>
                                     Start
                                 </Typography>
                             </ImageListItem>
                             <ImageListItem onClick={handleFun2} className={pause ? cx(stySC.imgu, stySC.mt,stySC.bgg) : cx(stySC.imgu, stySC.mt)}>
-                                <img src={Close} className={stySC.imgStyle} alt="close" loading="lazy" />
+                                <img src={pause} className={stySC.imgStyle} alt="close" loading="lazy" />
                                 <Typography variant="h5" className={stySC.ttstyle3}>
                                     Pause
                                 </Typography>
                             </ImageListItem>
                             <ImageListItem onClick={handleFun3} className={end ? cx(stySC.imgu, stySC.mt,stySC.bgg) : cx(stySC.imgu, stySC.mt)}>
-                                <img src={Close} className={stySC.imgStyle} alt="close" loading="lazy" />
+                                <img src={end} className={stySC.imgStyle} alt="close" loading="lazy" />
                                 <Typography variant="h5" className={stySC.ttstyle3}>
                                     End
                                 </Typography>
                             </ImageListItem>
                             <ImageListItem className={cx(stySC.imgu, stySC.mt)}>
-                                <img src={Close} className={stySC.imgStyle} alt="close" loading="lazy" />
+                                <img src={edit1} className={stySC.imgStyle} alt="close" loading="lazy" />
                                 <Typography variant="h5" className={stySC.ttstyle3}>
                                 Details
                                 </Typography>
                             </ImageListItem>
                             <ImageListItem onClick={ss} className={cx(stySC.imgu, stySC.mt,sty.padding0)}>
-                                <img src={Close} className={stySC.imgStyle} alt="close" loading="lazy" />
+                                <img src={screenshot ? so : sf} className={stySC.imgStyle} alt="close" loading="lazy" />
                                 <Typography style={{"letter-spacing": "-1px"}} variant="h5" className={stySC.ttstyle3}>
                                     ScreenShot {screenshot ? 'On' : 'Off'}
                                 </Typography>
@@ -129,7 +139,7 @@ export default function NameYourPro1() {
                     </Card>
                     <Stack onClick={hideBar} className={cx(sty.ddd, calSty.extra, stySC.abs2, sty.padding0)}>
                     <ImageListItem className={cx(stySC.imgu2, stySC.mt,sty.padding0)}>
-                                <img src={Close} className={stySC.imgStyle} alt="close" loading="lazy" />
+                                <img src={lt} className={stySC.imgStyle} alt="close" loading="lazy" />
                             </ImageListItem>
                             </Stack>
                 </Box>
