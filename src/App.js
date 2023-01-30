@@ -14,14 +14,15 @@ import MessageComp from './container/MessageComp'
 import TaskCenter from './container/TaskCenter'
 import CallCenter2 from './container/CallCenter2'
 import SuperChargeComp from './container/SuperChargeComp'
+import Login from './container/Login'
 
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
-     <CalendarComp2One />
-     {/* <EmailComp/> */}
+    {/*  <CalendarComp2One />
+     <EmailComp/>
       <CalendarComp />
       <CalendarComp2 />
       <WorkSpaceCS />
@@ -32,7 +33,9 @@ function App() {
     <MessageComp />
     <TaskCenter />
     <CallCenter2 />
-    <SuperChargeComp/>
+  <SuperChargeComp/> */}
+  <Login />
+
     </div>
   );
 }
