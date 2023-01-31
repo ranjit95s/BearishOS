@@ -92,7 +92,6 @@ export default function CreateID() {
                                                 </Typography>
                                             );
                                         } )}
-                                        
                                             </CardContent>
                                         </Stack>
                                     </Stack>
@@ -109,7 +108,6 @@ export default function CreateID() {
                                             Create an Account
                                         </Stack>
                                     </Stack>
-
                                 </Stack>
                             </Stack>
                         </Stack>

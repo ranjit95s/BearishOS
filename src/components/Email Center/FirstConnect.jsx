@@ -1,73 +1,72 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "./img/Close.svg";
-import sem from "./img/sem.png";
-import ex from "./img/smallEx.png";
-import sol from "./img/sol.png";
+import Close from "../img/Close.svg";
+import sem from "../img/sem.png";
+import ex from "../img/smallEx.png";
+import sol from "../img/sol.png";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import cx from "classnames";
 import { StyledEngineProvider } from "@mui/material/styles";
-import sty from "./sty.module.css";
+import classes from './EmailCenter.module.css'
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
 export default function FirstConnect() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="firstConnect" className={cx(sty.boxStyle)}>
-                    <Card className={cx(sty.inStyle)}>
-                        <CardContent className={cx(sty.headerStyle)}>
-                            <Typography varient="h1" className={cx(sty.tlStyle)}>
+                <Box component="firstConnect" className={classes.boxStyle}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.titleStyle}>
+                            <Typography variant="h1" className={classes.t61825}>
                                 Connect An Account
                             </Typography>
-                            <ImageListItem id="my-element">
+                            <ImageListItem id="firstConnect">
                                 <ReactTooltip
-                                    className={sty.tooltip}
-                                    anchorId="my-element"
+                                    className={classes.tooltip}
+                                    anchorId="firstConnect"
                                     type="light"
                                     effect="solid"
                                 >
                                     <span>Close</span>
                                 </ReactTooltip>
-                                <img src={Close} alt="close" loading="lazy" />
+                                <img src={Close} alt={''} loading="lazy" />
                             </ImageListItem>
                         </CardContent>
-                        <CardActions className={cx(sty.signSec)}>
-                            <Button className={cx(sty.signIn, sty.tlStyle)}>
-                                <img src={sem} alt="email" />
+                        <CardActions className={classes.signSection}>
+                            <Button className={classes.signIn}>
+                                <img src={sem} alt={''} />
                                 <Typography
-                                    varient="h1"
-                                    className={cx(sty.inText, sty.tmStyle)}
+                                    variant="h1"
+                                    className={classes.signOption}
                                 >
                                     Google Gmail
-                                    <span className={cx(sty.spanStyle, sty.tbsStyle)}>
+                                    <span className={classes.spanStyle}>
                                         {" "}
                                         Alpha{" "}
                                     </span>
                                 </Typography>
                             </Button>
-                            <Button className={cx(sty.signIn, sty.tlStyle)}>
-                                <img src={sol} alt="email" />
+                            <Button className={classes.signIn}>
+                                <img src={sol} alt={''} />
                                 <Typography
-                                    varient="h1"
-                                    className={cx(sty.inText, sty.tmStyle)}
+                                    variant="h1"
+                                    className={classes.signOption}
                                 >
                                     Microsoft Outlook
                                 </Typography>
                             </Button>
-                            <Button className={cx(sty.signIn, sty.tlStyle)}>
-                                <img src={ex} alt="email" />
+                            <Button className={classes.signIn}>
+                                <img src={ex} alt={''} />
                                 <Typography
-                                    varient="h1"
-                                    className={cx(sty.inText, sty.tmStyle)}
+                                    variant="h1"
+                                    className={classes.signOption}
                                 >
                                     Microsoft Exchange
-                                    <span className={cx(sty.spanStyle, sty.tbsStyle)}>
+                                    <span className={classes.spanStyle}>
                                         {" "}
                                         Soon{" "}
                                     </span>

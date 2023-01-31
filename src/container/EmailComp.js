@@ -1,20 +1,20 @@
 import React from 'react'
 import "@fontsource/source-serif-pro";
 import '../components/sty.module.css';
-import FirstConnect from '../components/FirstConnect'
-import AlphaAccess from '../components/Gmail/AlphaAccess'
-import TicklingtheBackendGmail from '../components/Gmail/TicklingtheBackendGmail'
-import TicklingtheBackendLook from '../components/MicroLook/TicklingtheBackendLook'
-import SuccessGmail from '../components/Gmail/SuccessGmail'
-import SuccessLook from '../components/MicroLook/SuccessLook'
-import EmbarrassingGmail from '../components/Gmail/EmbarrassingGmail'
-import EmbarrassingLook from '../components/MicroLook/EmbarrassingLook'
-import EnterName from '../components/Gmail/EnterName'
+import FirstConnect from '../components/Email Center/FirstConnect'
+import AlphaAccess from '../components/Email Center/AlphaAccess'
+import TicklingtheBackendGmail from '../components/Email Center/TicklingtheBackendGmail'
+import TicklingtheBackendLook from '../components/Email Center/TicklingtheBackendLook'
+import SuccessGmail from '../components/Email Center/SuccessGmail'
+import SuccessLook from '../components/Email Center/SuccessLook'
+import EmbarrassingGmail from '../components/Email Center/EmbarrassingGmail'
+import EmbarrassingLook from '../components/Email Center/EmbarrassingLook'
+import EnterName from '../components/Email Center/EnterName'
 
 function EmailComp() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"display":"flex","flexWrap": "wrap"}}>
             <FirstConnect/>
             <AlphaAccess/>
             <TicklingtheBackendGmail/>

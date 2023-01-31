@@ -21,8 +21,8 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-    {/*  <CalendarComp2One />
      <EmailComp/>
+    {/*  <CalendarComp2One />
       <CalendarComp />
       <CalendarComp2 />
       <WorkSpaceCS />
@@ -33,8 +33,8 @@ function App() {
     <MessageComp />
     <TaskCenter />
     <CallCenter2 />
-  <SuperChargeComp/> */}
-  <Login />
+  <SuperChargeComp/> 
+  <Login />*/}
 
     </div>
   );

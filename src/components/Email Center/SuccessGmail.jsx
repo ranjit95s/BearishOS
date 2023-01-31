@@ -8,36 +8,36 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import cx from 'classnames';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { StyledEngineProvider } from '@mui/material/styles';
-import sty from '../sty.module.css';
+import classes from './Success.module.css'
 
 export default function SuccessGmail() {
     return (
         <>
         <StyledEngineProvider injectFirst>
-            <Box component="SuccessGmail" className={cx(sty.boxStyle)} style={{"height":"200px"}}>
-                <Card className={cx(sty.inStyle)}>
-                    <CardContent className={cx(sty.headerStyle)}>
-                        <Typography varient="h1" className={cx(sty.tlStyle)}>
+            <Box component="SuccessGmail" className={classes.boxStyle}>
+                <Card className={classes.boxIn}>
+                    <CardContent className={classes.titleStyle}>
+                        <Typography variant="h1" className={classes.t61825}>
                         Success
                         </Typography>
-                        <ImageListItem id="my-element3">
-                                <ReactTooltip className={sty.tooltip} anchorId="my-element3" type='light' effect='solid'>
+                        <ImageListItem id="SuccessGmail">
+                                <ReactTooltip className={classes.tooltip} anchorId="SuccessGmail" type='light' effect='solid'>
                                     <span>Close</span>
                                 </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                     </CardContent>
-                    <CardActions  className={cx(sty.signSec)}>
-                    <Button className={cx(sty.signIn, sty.tlStyle)}>
+                    <CardActions className={classes.signSection}>
+                    <Button className={classes.signIn}>
                         <img src={sem} alt="email" />
-                        <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
+                        <Typography variant="h1"
+                                    className={classes.signOption}>
                             Google Gmail
                         </Typography>
                     </Button>
-                    <Typography className={cx(sty.info,sty.tsStyle)}>
+                    <Typography className={classes.info}>
                     Your intelligent connection to Google Gmail was a success.
                     </Typography>
                     </CardActions>
