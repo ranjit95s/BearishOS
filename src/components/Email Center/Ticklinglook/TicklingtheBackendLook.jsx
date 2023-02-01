@@ -29,7 +29,7 @@ const TicklingtheBackendGmail = () => {
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                     </CardContent>
-                    <CardActions  className={classes.signSection}>
+                    <CardActions className={classes.signSection}>
                     <Button className={classes.signIn}>
                         <img src={sem} alt="email" />
                         <Typography variant="h1"

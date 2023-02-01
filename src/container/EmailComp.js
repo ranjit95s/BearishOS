@@ -11,11 +11,14 @@ import EmbarrassingGmail from '../components/Email Center/EmbarrassingGmail'
 import EmbarrassingLook from '../components/Email Center/EmbarrassingLook'
 import EnterName from '../components/Email Center/EnterName'
 
+
+import FirstConnect1 from '../components/Email Center/FirstConnect/FirstConnect'
 function EmailComp() {
 
     return (
         <div style={{"display":"flex","flexWrap": "wrap"}}>
             <FirstConnect/>
+            <FirstConnect1/>
             <AlphaAccess/>
             <TicklingtheBackendGmail/>
             <SuccessGmail/>

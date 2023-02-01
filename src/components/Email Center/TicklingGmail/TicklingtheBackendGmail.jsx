@@ -9,7 +9,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import { StyledEngineProvider } from '@mui/material/styles';
-import sty from '../sty.module.css';
 import classes from './TicklingGmail.module.css'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 const TicklingtheBackendGmail = () => {
@@ -23,7 +22,7 @@ const TicklingtheBackendGmail = () => {
                         Tickling the Backend
                         </Typography>
                         <ImageListItem id="TicklingtheBackendGmail">
-                                <ReactTooltip className={sty.tooltip} anchorId="TicklingtheBackendGmail" type='light' effect='solid'>
+                                <ReactTooltip className={classes.tooltip} anchorId="TicklingtheBackendGmail" type='light' effect='solid'>
                                     <span>Close</span>
                                 </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />

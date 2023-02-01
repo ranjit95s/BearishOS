@@ -38,7 +38,7 @@ export default function SuccessGmail() {
                         </Typography>
                     </Button>
                     <Typography className={classes.info}>
-                    Your intelligent connection to Google Gmail was a success.
+                            Your intelligent connection to Google Gmail was a success.
                     </Typography>
                     </CardActions>
                 </Card>

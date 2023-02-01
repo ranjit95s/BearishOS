@@ -8,47 +8,46 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
-import sty from '../sty.module.css';
+import classes from './Embarrassing.module.css'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function EmbarrassingGC() {
     return (
         <>
         <StyledEngineProvider injectFirst>
-            <Box component="EmbarrassingGmail" className={cx(sty.boxStyle)}>
-                <Card className={cx(sty.inStyle)}>
-                    <CardContent className={cx(sty.headerStyle)}>
-                        <Typography varient="h1" className={cx(sty.tlStyle)}>
+            <Box component="EmbarrassingGmailCalendar" className={classes.boxStyle}>
+                <Card className={classes.boxIn}>
+                    <CardContent className={classes.titleStyle}>
+                        <Typography variant="h1" className={classes.t61825}>
                             Well this is Embarrassing
                         </Typography>
-                        <ImageListItem id="my-element17">
-                                <ReactTooltip className={sty.tooltip} anchorId="my-element17" type='light' effect='solid'>
+                        <ImageListItem id="my-EmbarrassingGmailCalendar">
+                                <ReactTooltip className={classes.tooltip} anchorId="my-EmbarrassingGmailCalendar" type='light' effect='solid'>
                                     <span>Close</span>
                                 </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                     </CardContent>
-                    <CardActions  className={cx(sty.signSec)}>
-                    <Button className={cx(sty.signIn, sty.tlStyle)}>
+                    <CardActions className={classes.signSection}>
+                    <Button className={classes.signIn}>
                         <img src={sem} alt="email" />
-                        <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
+                        <Typography variant="h1"
+                                    className={classes.signOption}>
                             Google Calendar
                         </Typography>
                     </Button>
-                    <Typography className={cx(sty.info,sty.tsStyle)}>
+                    <Typography variant="h1" className={classes.info} >
                     Your intelligent connection to Google Calendar failed. Please press connect and try to connect your
-                     account again. Need help? Submit a ticket below.
+                    account again. Need help? Submit a ticket below.
                     </Typography>
-                    <CardActions className={cx(sty.cobtn)}>
-                            <Button className={cx(sty.flexdl2)}>
+                    <CardActions className={classes.cobtn}>
+                            <Button className={classes.flexdl2}>
                                 <Typography
                                     variant="h1"
-                                    className={cx(sty.tmStyle)}
+                                    className={classes.tsty}
                                 >
                                 Submit a Ticket
                                 </Typography>
-                                
                             </Button>
                         </CardActions>
                     </CardActions>

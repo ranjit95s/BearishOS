@@ -11,20 +11,21 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
+import classes from './Embarrassing.module.css'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function EmbarrassingDP() {
     return (
         <>
         <StyledEngineProvider injectFirst>
-            <Box component="EmbarrassingGmail" className={cx(sty.boxStyle)}>
-                <Card className={cx(sty.inStyle)}>
-                    <CardContent className={cx(sty.headerStyle)}>
-                        <Typography varient="h1" className={cx(sty.tlStyle)}>
+            <Box component="EmbarrassingGmail" className={classes.boxStyle}>
+                <Card className={classes.boxIn}>
+                    <CardContent className={classes.titleStyle}>
+                        <Typography varient="h1" className={classes.t61825}>
                             Well this is Embarrassing
                         </Typography>
                         <ImageListItem id="my-element33">
                                 <ReactTooltip
-                                    className={sty.tooltip}
+                                    className={classes.tooltip}
                                     anchorId="my-element33"
                                     type="light"
                                     effect="solid"
@@ -34,22 +35,23 @@ export default function EmbarrassingDP() {
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                     </CardContent>
-                    <CardActions  className={cx(sty.signSec)}>
-                    <Button className={cx(sty.signIn, sty.tlStyle)}>
+                    <CardActions className={classes.signSection}>
+                    <Button className={classes.signIn}>
                         <img src={sem} alt="email" />
-                        <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
+                        <Typography variant="h1"
+                                    className={classes.signOption}>
                             Dropbox
                         </Typography>
                     </Button>
-                    <Typography className={cx(sty.info,sty.tsStyle)}>
+                    <Typography className={classes.info}>
                     Your intelligent connection to Dropbox failed. Please press connect and try to connect your
                      account again. Need help? Submit a ticket below.
                     </Typography>
-                    <CardActions className={cx(sty.cobtn)}>
-                            <Button className={cx(sty.flexdl2)}>
+                    <CardActions className={classes.cobtn}>
+                            <Button className={classes.flexdl2}>
                                 <Typography
-                                    variant="h1"
-                                    className={cx(sty.tmStyle)}
+                                   variant="h1"
+                                   className={classes.tsty}
                                 >
                                 Submit a Ticket
                                 </Typography>
