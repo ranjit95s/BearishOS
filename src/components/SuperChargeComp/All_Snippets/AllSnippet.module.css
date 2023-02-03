@@ -1,0 +1,185 @@
+.boxStyle {
+    font-family: Source Serif Pro !important;
+    top: 33px;
+    left: 24px;
+    position: relative; /* imp */
+    width: 310px;
+    height: fit-content;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.boxIn {
+    width: 285px;
+    box-shadow: none;
+    margin: auto;
+    overflow:visible !important;
+}
+
+.titleStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px !important;
+    /* padding-bottom: 10px !important; */
+    font-weight: bold;
+    padding: 0px;
+    align-items: center;
+}
+
+.t61825 {
+    font: normal normal 600 18px/25px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+.tooltip {
+    background: darkgray !important;
+    font-size: 13px !important;
+    color: white !important;
+    font-family: 'Source Serif Pro' !important;
+    opacity: 75% !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    top: -27px !important;
+    font-weight: 100 !important;
+}
+
+.sim1 {
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    opacity: 1;
+    /* width: 100%; */
+    background: #ebebeb;
+    cursor: pointer;
+    padding: 3px !important;
+    /* padding-bottom: 8px !important; */
+    margin-top: 18px;
+    margin-left: 0px !important;
+    display: flex;
+    margin-bottom: 18px;
+    flex-direction: row;
+    /* position: relative; */
+    justify-content: left;
+    align-items: center;
+    width: 275px;
+    justify-content: space-between !important;
+    font: normal normal 600 15px/21px Source Serif Pro  !important;
+}
+
+.df {
+    display: flex;
+    align-items: center;
+    padding: 0px !important;
+}
+
+.searcgM {
+    font: normal normal 600 11px/15px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-right: 15px;
+    padding:0px !important;
+}
+
+.searcgM input {    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 15px;
+    font-family: Source Serif Pro;
+    color: #000000;
+    opacity: 0.5;
+    font-weight: 600;
+    font: normal normal 600 11px/15px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.searcgM input::placeholder{
+    font: normal normal 600 11px/15px Source Serif Pro !important;
+    color: #000000;
+}
+
+.padding0m0 {
+    padding: 0px !important;
+    margin-top: 0px;
+}
+
+.flexWS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px !important;
+}
+
+.userStyle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px !important;
+    margin-bottom: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    font: normal normal 300 15px/21px Source Serif Pro  !important;
+    opacity: 1;
+}
+
+.th1521 {
+    padding: 0px !important;
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.fp0 {
+    display: flex;
+    padding: 0px !important;
+}
+
+.mr2525 {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.bt{
+    font: normal normal 300 11px/15px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px !important;
+}
+
+.iconU {
+    padding: 7px !important;
+    border-radius: 50%;
+    font-weight: 700 !important;
+    border: 1px solid gray;
+    margin-right: 10px;
+    font: normal normal 300 15px/21px Source Serif Pro;
+}
+
+.flexU {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px !important;
+    font: normal normal 300 15px/21px Source Serif Pro  !important;
+}
+
+.padding0 {
+    padding: 0px !important;
+}

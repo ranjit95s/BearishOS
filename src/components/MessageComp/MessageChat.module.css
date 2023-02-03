@@ -1,0 +1,133 @@
+.boxStyle{
+    height: fit-content;
+    width: 340px;
+    font-family: Source Serif Pro !important;
+    top: 33px;
+    left: 24px;
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.boxIn {
+    background: #E9EDF2 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    border: 1px solid rgba(233, 237, 242, 1);
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.title {
+    padding: 0px !important;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0px !important;
+    justify-content: center;
+}
+
+.textStyle{
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    display: block;
+}
+
+.imgStyle {
+    margin-left: 12px;
+    width: 25px !important;
+    padding: 0px !important;
+}
+
+.mgsBox {
+    width: 310px;
+    height: unset;
+    margin-top: 10px !important;
+    font-family: Source Serif Pro Bold  !important;
+    box-shadow: none !important;
+    margin: auto;
+    overflow: visible !important;
+}
+
+.spanHide {
+    display: none;
+}
+
+.flexWS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px !important;
+}
+
+.userStyle{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0px !important;
+    margin-bottom: 20px;
+}
+
+.iconU {
+    padding: 7px !important;
+    border-radius: 50%;
+    font-weight: 700 !important;
+    border: 1px solid gray;
+    margin-right: 10px;
+    font: normal normal 300 15px/21px Source Serif Pro;
+}
+
+.flexU {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px !important;
+    font: normal normal 300 15px/21px Source Serif Pro  !important;
+}
+
+.padding0 {
+    padding: 0px !important;
+}
+
+.fn {
+    text-align: left;
+    font: normal normal 300 15px/21px Source Serif Pro  !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.en {
+    font: normal normal 300 11px/17px Source Serif Pro  !important;
+}
+
+.msgSec {
+    background-color: #5EE2A0;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 0.75;
+    height: 20rem;
+}
+
+.sendPart {
+    background: #E9EDF2 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 0.75;
+    height: 25px;
+    padding: 0px !important;
+}

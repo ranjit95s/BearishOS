@@ -22,6 +22,7 @@ import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 import calSty from './CalComp_Sty.module.css';
+import classes from './CalendarEventRemindar.module.css';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function CalendarEventRemindar() {
     const [checked, setChecked] = React.useState(true);
@@ -31,42 +32,34 @@ export default function CalendarEventRemindar() {
 
     const [timeZoneShow, setTimeZoneShow] = React.useState(false);
     const timeZS = () => {
-        if (timeZoneShow) {
+        if (timeZoneShow) 
             setTimeZoneShow(false);
-        }
-        else {
+        else 
             setTimeZoneShow(true);
-        }
     };
 
     const [remindarShow, setRemidarShow] = React.useState(false);
     const remindarS = () => {
-        if (remindarShow) {
+        if (remindarShow) 
             setRemidarShow(false);
-        }
-        else {
+        else 
             setRemidarShow(true);
-        }
     };
 
     const [pMTS, setPMTS] = React.useState(false);
     const pmtS = () => {
-        if (pMTS) {
+        if (pMTS) 
             setPMTS(false);
-        }
-        else {
+        else 
             setPMTS(true);
-        }
     };
 
     const [aDS, setADS] = React.useState(false);
     const adS = () => {
-        if (aDS) {
+        if (aDS) 
             setADS(false);
-        }
-        else {
+        else 
             setADS(true);
-        }
     };
 
     const [startDate, setStartDate] = React.useState('00/00/0000');

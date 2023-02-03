@@ -11,20 +11,21 @@ import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
+import classes from './Video_CSS.module.css';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function WellMeeting() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="EnterName" style={{ "height": "350px" }} className={cx(sty.boxStyle)}>
-                    <Card className={cx(sty.inStyle)}>
-                        <CardContent className={cx(sty.headerStyle)}>
-                            <Typography varient="h1" className={cx(sty.tlStyle)}>
+                <Box component="well" className={classes.boxStyle}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.titleStyle}>
+                            <Typography variant="h1" className={classes.t61825}>
                                 Welcome to the Meeting
                             </Typography>
                             <ImageListItem id="my-element57">
                                 <ReactTooltip
-                                    className={sty.tooltip}
+                                    className={classes.tooltip}
                                     anchorId="my-element57"
                                     type="light"
                                     effect="solid"
@@ -34,27 +35,27 @@ export default function WellMeeting() {
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
-                        <CardActions className={cx(sty.signSec)}>
-                        <Typography className={cx(sty.info2, sty.tmsmStyle)}>
+                        <CardActions className={classes.signSection}>
+                        <Typography className={classes.info}>
                                 Help Bearish better identify you in the meeting.
                             </Typography>
-                            <CardContent className={cx(sty.wellM)}>
-                                <CardContent className={cx(sty.signIn, sty.wellC ,sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                            <CardContent className={classes.WellM}>
+                                <CardContent style={{"width":"45%"}} className={classes.inputStyle}>
                                     <input type="text" placeholder='First Name' name="code" id="code" />
                                 </CardContent>
-                                <CardContent className={cx(sty.signIn,sty.wellC ,sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                                <CardContent style={{"width":"45%"}} className={classes.inputStyle}>
                                     <input type="text" placeholder='Last Name' name="code" id="code" />
                                 </CardContent>
                             </CardContent>
-                            <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                            <CardContent className={classes.inputStyle}>
                                 <input type="text" placeholder='Email Address' name="code" id="code" />
                             </CardContent>
-                            <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                            <CardContent className={classes.inputStyle}>
                                 <input type="text" placeholder='Meeting Name' name="code" id="code" />
                             </CardContent>
-                            <CardContent className={cx(sty.btns,sty.wbtn)}>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
-                                    <Button variant="contained" className={cx(sty.tmStyle)}>
+                            <CardContent className={classes.bottomBtn}>
+                                <CardContent className={classes.btnMain}>
+                                    <Button variant="contained">
                                         Enter Call
                                     </Button>
                                 </CardContent>

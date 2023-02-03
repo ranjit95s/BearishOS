@@ -6,26 +6,17 @@ import Close from '../img/Close.svg';
 import dad from '../img/dad.png';
 
 import play from '../img/play.svg';
-import pause from '../img/pause.svg';
+import pauses from '../img/pause.svg';
 import edit1 from '../img/edit1.svg';
-import end from '../img/end.svg';
+import ends from '../img/end.svg';
 import sf from '../img/sq1.svg';
 import so from '../img/sq2.svg';
 import lt from '../img/lt.svg';
-
-
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import logoM from '../img/LogoM.png'
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import calSty from '../CalendarComp3/CalComp_Sty.module.css'
-import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
-import sty from '../sty.module.css';
-import stySC from './superC.module.css';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import classes from './panel.module.css';
 export default function NameYourPro1() {
     const [choose, setChoose] = useState(false);
     const [start, setStart] = useState(false);
@@ -93,53 +84,53 @@ export default function NameYourPro1() {
         <>
         {/* #adffd6 */}
             <StyledEngineProvider injectFirst>
-                <Box component="EnterName" style={{ "width": "110px","height":"fit-content" }} className={hide ? cx(sty.boxStyle,stySC.left,sty.rel) : cx(sty.boxStyle,sty.rel)}>
-                    <Card className={cx(stySC.f)} style={{"height":"fit-content" }}>
-                        <Typography variant="h5" className={cx(stySC.ttstyle, stySC.mt,stySC.op05)}>
+                <Box component="recoPanel" className={hide ? classes.boxStyleL : classes.boxStyle}>
+                    <Card className={classes.f}>
+                        <Typography variant="h5" className={classes.mainT}>
                             Session Name Here
                         </Typography>
-                        <Typography variant="h5" className={cx(stySC.ttstyle, stySC.mt,stySC.op05)}>
+                        <Typography variant="h5" className={classes.mainT}>
                             Session Length
                         </Typography>
-                        <Typography variant="h5" className={cx(stySC.ttstyle3, stySC.mt)}>
+                        <Typography variant="h5" className={classes.timer}>
                             00:00:00
                         </Typography>
-                        <CardContent style={{"padding-top":"0px","padding-bottom":"0px"}}>
-                            <ImageListItem onClick={handleFun1} className={start ? cx(stySC.imgu, stySC.mt,stySC.bgg) : cx(stySC.imgu, stySC.mt)}>
-                                <img src={play} className={stySC.imgStyle} alt="close" loading="lazy" />
-                                <Typography variant="h5" className={stySC.ttstyle3}>
+                        <CardContent className={classes.ptpb}>
+                            <ImageListItem onClick={handleFun1} className={start ? classes.bgimgu : classes.imgu}>
+                                <img src={play} className={classes.imgStyle} alt="close" loading="lazy" />
+                                <Typography variant="h5" className={classes.ttstyle3}>
                                     Start
                                 </Typography>
                             </ImageListItem>
-                            <ImageListItem onClick={handleFun2} className={pause ? cx(stySC.imgu, stySC.mt,stySC.bgg) : cx(stySC.imgu, stySC.mt)}>
-                                <img src={pause} className={stySC.imgStyle} alt="close" loading="lazy" />
-                                <Typography variant="h5" className={stySC.ttstyle3}>
+                            <ImageListItem onClick={handleFun2} className={pause ? classes.bgimgu : classes.imgu}>
+                                <img src={pauses} className={classes.imgStyle} alt="close" loading="lazy" />
+                                <Typography variant="h5" className={classes.ttstyle3}>
                                     Pause
                                 </Typography>
                             </ImageListItem>
-                            <ImageListItem onClick={handleFun3} className={end ? cx(stySC.imgu, stySC.mt,stySC.bgg) : cx(stySC.imgu, stySC.mt)}>
-                                <img src={end} className={stySC.imgStyle} alt="close" loading="lazy" />
-                                <Typography variant="h5" className={stySC.ttstyle3}>
+                            <ImageListItem onClick={handleFun3} className={end ? classes.bgimgu : classes.imgu}>
+                                <img src={ends} className={classes.imgStyle} alt="close" loading="lazy" />
+                                <Typography variant="h5" className={classes.ttstyle3}>
                                     End
                                 </Typography>
                             </ImageListItem>
-                            <ImageListItem className={cx(stySC.imgu, stySC.mt)}>
-                                <img src={edit1} className={stySC.imgStyle} alt="close" loading="lazy" />
-                                <Typography variant="h5" className={stySC.ttstyle3}>
+                            <ImageListItem className={classes.imgu}>
+                                <img src={edit1} className={classes.imgStyle} alt="close" loading="lazy" />
+                                <Typography variant="h5" className={classes.ttstyle3}>
                                 Details
                                 </Typography>
                             </ImageListItem>
-                            <ImageListItem onClick={ss} className={cx(stySC.imgu, stySC.mt,sty.padding0)}>
-                                <img src={screenshot ? so : sf} className={stySC.imgStyle} alt="close" loading="lazy" />
-                                <Typography style={{"letter-spacing": "-1px"}} variant="h5" className={stySC.ttstyle3}>
+                            <ImageListItem onClick={ss} style={{"padding":"0px"}} className={classes.imgu}>
+                                <img src={screenshot ? so : sf} className={classes.imgStyle} alt="close" loading="lazy" />
+                                <Typography style={{"letter-spacing": "-1px"}} variant="h5" className={classes.ttstyle3}>
                                     ScreenShot {screenshot ? 'On' : 'Off'}
                                 </Typography>
                             </ImageListItem>
                         </CardContent>
                     </Card>
-                    <Stack onClick={hideBar} className={cx(sty.ddd, calSty.extra, stySC.abs2, sty.padding0)}>
-                    <ImageListItem className={cx(stySC.imgu2, stySC.mt,sty.padding0)}>
-                                <img src={lt} className={stySC.imgStyle} alt="close" loading="lazy" />
+                    <Stack onClick={hideBar} className={classes.hid}>
+                    <ImageListItem className={classes.hid2}>
+                                <img src={lt} className={classes.imgStyle} alt="close" loading="lazy" />
                             </ImageListItem>
                             </Stack>
                 </Box>

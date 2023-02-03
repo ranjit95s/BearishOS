@@ -8,24 +8,23 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import cx from "classnames";
 import { StyledEngineProvider } from "@mui/material/styles";
-import sty from "../sty.module.css";
+import classes from './Message.module.css'
 import { Tooltip as ReactTooltip } from "react-tooltip";
 export default function ComingSoonRoom() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="AlphaAccess" className={cx(sty.boxStyle)}>
-                    <Card className={cx(sty.inStyle)}>
-                        <CardContent className={cx(sty.headerStyle)}>
-                            <Typography varient="h1" className={cx(sty.tlStyle)}>
+                <Box component="roomsoon" className={classes.boxStyle}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.titleStyle}>
+                            <Typography variant="h1" className={classes.t61825}>
                                 Coming Soon
                             </Typography>
-                            <ImageListItem id="my-element04">
+                            <ImageListItem id="my-roomsoon">
                                 <ReactTooltip
-                                    anchorId="my-element04"
-                                    className={sty.tooltip}
+                                    anchorId="my-roomsoon"
+                                    className={classes.tooltip}
                                     type="light"
                                     effect="solid"
                                 >
@@ -34,23 +33,20 @@ export default function ComingSoonRoom() {
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
-                        <CardActions className={cx(sty.signSec)}>
-                            <Button className={cx(sty.signIn, sty.tlStyle)}>
+                        <CardActions className={classes.signSection}>
+                            <Button className={classes.signIn}>
                                 <img src={sem} alt="email" />
                                 <Typography
-                                    varient="h1"
-                                    className={cx(sty.inText, sty.tmStyle)}
-                                >
+                                    variant="h1"
+                                    className={classes.signOption}>
                                     Bearish Group Room
                                 </Typography>
                             </Button>
-                            <Typography className={cx(sty.info, sty.tsStyle)}>
-                            This feature is in the final stages of development. If you’re an
-                             alpha user you can activate it by entering your alpha 
-                            user code below. If not, sit tight, alpha features and updates happen every Friday.
+                            <Typography className={classes.info}>
+                            This feature is in the final stages of development. If you’re an alpha user you can activate it by entering your alpha user code below. If not, sit tight, alpha features and updates happen every Friday.
                             </Typography>
                             <CardContent
-                                className={cx(sty.signIn, sty.tmStyle, sty.inputStyle)}
+                               className={classes.inputStyle}
                             >
                                 <input
                                     type="text"

@@ -3,19 +3,16 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.svg';
-
-import camOff from '../img/camOff.png';
 import camOn from '../img/camOn.svg';
-import micOff from '../img/micOff.png';
 import micOn from '../img/micOn.svg';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import loading from '../img/loading.png';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
+import classes from './Video_CSS.module.css';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 
@@ -25,35 +22,31 @@ export default function AskingJoinMeeting() {
     const [cameraOn, setCameraON] = React.useState(false);
 
     const turnOnMic = () => {
-        if(microphone){
+        if(microphone)
             setMicrophone(false);
-        }
-        else {
+        else 
             setMicrophone(true);
-        }
     };
 
         const turnOnCam = () => {
-        if(cameraOn){
+        if(cameraOn)
             setCameraON(false);
-        }
-        else {
+        else 
             setCameraON(true);
-        }
     };
 
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="EnterName" style={{ "height": "350px" }} className={cx(sty.boxStyle)}>
-                    <Card className={cx(sty.inStyle)}>
-                        <CardContent className={cx(sty.headerStyle)}>
-                            <Typography varient="h1" className={cx(sty.tlStyle)}>
+                <Box component="ask" className={classes.boxStyle}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.titleStyle}>
+                            <Typography variant="h1" className={classes.t61825}>
                                 Asking to Join the Meeting
                             </Typography>
                             <ImageListItem id="my-element47">
                                 <ReactTooltip
-                                    className={sty.tooltip}
+                                    className={classes.tooltip}
                                     anchorId="my-element47"
                                     type="light"
                                     effect="solid"
@@ -63,17 +56,17 @@ export default function AskingJoinMeeting() {
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
-                        <CardActions className={cx(sty.signSec)}>
-                            <Typography className={cx(sty.info2, sty.tmsmStyle)}>
+                        <CardActions className={classes.signSection}>
+                            <Typography className={classes.info}>
                                 Your host will let you into the meeting soon. You can test your mic and video while you wait below
                             </Typography>
-                            <Stack className={cx(sty.CameraON, sty.borderStyle)}></Stack>
-                            <CardContent className={cx(sty.btns,sty.ask)}>
+                            <Stack className={classes.CameraON}></Stack>
+                            <CardContent className={classes.askBtn}>
                                 <ImageListItem style={{"display":"flex"}}>
-                                    <ImageListItem className={microphone ? cx(sty.askp,sty.pink) : cx(sty.askp)} onClick={turnOnMic}>
+                                    <ImageListItem className={microphone ? classes.askpp : classes.askp} onClick={turnOnMic}>
                                         <img src={micOn} alt="close" loading="lazy" />
                                     </ImageListItem>
-                                    <ImageListItem className={cameraOn ? cx(sty.askp,sty.pink) : cx(sty.askp)} onClick={turnOnCam}>
+                                    <ImageListItem className={cameraOn ? classes.askpp : classes.askp} onClick={turnOnCam}>
                                         <img src={camOn}  alt="close" loading="lazy" />
                                     </ImageListItem>
                                 </ImageListItem>

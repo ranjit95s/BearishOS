@@ -39,11 +39,9 @@ import newN from '../img/bdoc.svg';
 import CreateE from '../img/bcal.svg';
 import Agg from '../img/Close.svg';
 
-import CardContent from '@mui/material/CardContent';
-import cx from 'classnames';
 import TaskCenterC from './TaskCenterC'
 import { StyledEngineProvider } from '@mui/material/styles';
-import styt from './TaskCenter.module.css';
+import classes from './TaskCenter.module.css';
 export default function TaskCenterM() {
 
     const task4 = [{'id':'1','src':sCall,'name':'Start Call'},
@@ -51,7 +49,7 @@ export default function TaskCenterM() {
         {'id':'3','src':newT,'name':'New Task'},
         {'id':'4','src':newN,'name':'New Note'},
         {'id':'5','src':CreateE,'name':'Create Event'},
-        {'id':'2','src':Agg,'name':'Assigne'},
+        {'id':'6','src':Agg,'name':'Assigne'},
         ];
 
     const task3 = [{'id':'1','src':AddImage,'name':'Add Image'},
@@ -59,7 +57,7 @@ export default function TaskCenterM() {
         {'id':'3','src':Download,'name':'Download'},
         {'id':'4','src':Print,'name':'Print'},
         {'id':'5','src':Comments,'name':'Comments'},
-        {'id':'2','src':call,'name':'Start a Call'},
+        {'id':'6','src':call,'name':'Start a Call'},
         {'id':'7','src':openM,'name':'Open Messages'},
         ];
 
@@ -68,7 +66,7 @@ export default function TaskCenterM() {
         {'id':'3','src':Priv,'name':'Assignee'},
         {'id':'4','src':lab,'name':'Label'},
         {'id':'5','src':repo,'name':'Reporter'},
-        {'id':'2','src':Appro,'name':'Approval'},
+        {'id':'6','src':Appro,'name':'Approval'},
         {'id':'7','src':add,'name':'Add'},
         {'id':'8','src':attach,'name':'Attach'},
         {'id':'9','src':deletes,'name':'Delete'}];
@@ -78,7 +76,7 @@ export default function TaskCenterM() {
         {'id':'3','src':Line,'name':'Line'},
         {'id':'4','src':Triangle,'name':'Triangle'},
         {'id':'5','src':Circle,'name':'Circle'},
-        {'id':'2','src':Square,'name':'Square'},
+        {'id':'6','src':Square,'name':'Square'},
         {'id':'7','src':Arrow,'name':'Arrow'},
         {'id':'8','src':Write,'name':'Write'},
         {'id':'9','src':Upload,'name':'Upload'},
@@ -87,27 +85,27 @@ export default function TaskCenterM() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="Task" className={cx(styt.padding0,styt.mp)}>
-                    <Card className={cx(styt.taskStyle)}>
-                        <Typography variant="h5" className={styt.mainT}>
+                <Box component="Task" className={classes.mp}>
+                    <Card className={classes.taskStyle}>
+                        <Typography variant="h5" className={classes.mainT}>
                             Tools
                         </Typography>
                         {task1?.map((pin) => <TaskCenterC key={pin.id} pin={pin} />)}
                     </Card>
-                    <Card style={{"width":"94px"}} className={cx(styt.taskStyle2)}>
-                        <Typography variant="h5" className={styt.mainT}>
+                    <Card style={{"width":"94px"}} className={classes.taskStyle2}>
+                        <Typography variant="h5" className={classes.mainT}>
                         Bulk Edit
                         </Typography>
                         {task2?.map((pin) => <TaskCenterC key={pin.id} pin={pin} />)}
                     </Card>
-                    <Card style={{"width":"120px"}} className={cx(styt.taskStyle)}>
-                        <Typography variant="h5" className={styt.mainT}>
+                    <Card style={{"width":"120px"}} className={classes.taskStyle}>
+                        <Typography variant="h5" className={classes.mainT}>
                             Tools
                         </Typography>
                         {task3?.map((pin) => <TaskCenterC key={pin.id} pin={pin} />)}
                     </Card>
-                    <Card style={{"width":"120px"}} className={cx(styt.taskStyle3)}>
-                        <Typography variant="h5" className={styt.mainT}>
+                    <Card style={{"width":"120px"}} className={classes.taskStyle3}>
+                        <Typography variant="h5" className={classes.mainT}>
                             Tools
                         </Typography>
                         {task4?.map((pin) => <TaskCenterC key={pin.id} pin={pin} />)}
