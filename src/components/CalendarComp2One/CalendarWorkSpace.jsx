@@ -1,6 +1,5 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-// import Popover from '@mui/material/Popover';
 import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
 import Close from "../img/Close.svg";
@@ -13,11 +12,9 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import ReqUser from "./ReqUser";
 import ToggleUser from "./ToggleUser";
-// import CardActions from '@mui/material/CardActions';
 import CardContent from "@mui/material/CardContent";
-import cx from "classnames";
 import { StyledEngineProvider } from "@mui/material/styles";
-import sty from "../sty.module.css";
+import aaa from './share.module.css'
 // import Select from '@mui/material/Select';
 // import TextField from '@mui/material/TextField';
 import { Tooltip as ReactTooltip } from "react-tooltip";
@@ -114,17 +111,17 @@ export default function CalendarWorkSpace() {
 
     // const displayRequestedAccessUsers
     //         = requestedAccessUsers.map((d) =>
-    //         <CardContent key={d.id} className={cx(sty.padding0, sty.flexWS)} style={{ "flex-direction": "column", "margin-bottom": "20px" }}>
-    //         <CardContent style={{ "width": "100%", "display": "flex", "justify-content": "start", "align-items": "center", "padding": "0px", "margin-bottom": "20px" }} ClassName={cx(sty.userInfo, sty.tmsmStyle, sty.padding0)}>
+    //         <CardContent key={d.id} className={aaa.pflexWS} style={{ "flex-direction": "column", "margin-bottom": "20px" }}>
+    //         <CardContent style={{ "width": "100%", "display": "flex", "justify-content": "start", "align-items": "center", "padding": "0px", "margin-bottom": "20px" }} className={aaa.userInfo}>
     //             <Typography variant="h5" className={cx(sty.pic, sty.picc, sty.tmsmStyle, sty.padding0)}>
     //                 {d.ProfilePic}
     //             </Typography>
     //             <CardContent className={cx(sty.userEmail, sty.flexUser, sty.tmsmStyle, sty.padding0)}>
-    //                 <CardContent className={cx(sty.padding0)}>
-    //                     <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
+    //                 <CardContent className={aaa.padding0}>
+    //                     <Typography variant="h5" className={aaa.fn}>
     //                         {d.Name}
     //                     </Typography>
-    //                     <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
+    //                     <Typography variant="h6" className={aaa.en}>
     //                         {d.Email}
     //                     </Typography>
     //                 </CardContent>
@@ -135,7 +132,7 @@ export default function CalendarWorkSpace() {
     //                 <CardContent onClick={changeStyle3} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
     //                     <Typography className={cx(sty.t1317,sty.padding0)}>Can Edit</Typography>
     //                     <ImageListItem className={cx(sty.imgr2)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
-    //                     <Stack className={cx(sty.tsStyle, sty.rel)}>
+    //                     <Stack className={aaa.relts}>
     //                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
     //                             <CardContent className={cx(sty.users2, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
     //                                 <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
@@ -176,28 +173,26 @@ export default function CalendarWorkSpace() {
             <StyledEngineProvider injectFirst>
                 <Box
                     component="CWorkSpace"
-                    style={{ height: "600px", width: "400px" }}
-                    className={cx(sty.boxStyle)}
+                    className={aaa.boxStyle}
                 >
-                    <Card className={cx(sty.inStyle)} style={{ width: "350px" }}>
-                        <CardContent className={cx(sty.headerStyle)}>
-                            <Typography varient="h1" className={cx(sty.tlStyle)}>
+                    <Card className={aaa.boxIn}>
+                        <CardContent className={aaa.headerStyle}>
+                            <Typography varient="h1" className={aaa.tlStyle}>
                                 Share This {workSpaceName}
                             </Typography>
                             <ImageListItem
-                                className={cx(sty.rel)}
-                                style={{ display: "flex", "align-items": "center" }}
+                                className={aaa.relflex}
                             >
                                 <img
                                     src={access}
-                                    className={cx(sty.cursor)}
+                                    className={aaa.cursor}
                                     id="my-element26"
                                     onClick={changeStyle5}
                                     alt="close"
                                     loading="lazy"
                                 />
                                 <ReactTooltip
-                                    className={sty.tooltip}
+                                    className={aaa.tooltip}
                                     anchorId="my-element26"
                                     type="light"
                                     effect="solid"
@@ -208,17 +203,17 @@ export default function CalendarWorkSpace() {
                                     style={{ width: "300px", left: "-18rem", top: "2rem" }}
                                     className={
                                         style6
-                                            ? cx(sty.ddd, sty.abs, sty.padding0)
-                                            : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)
+                                            ? aaa.abs
+                                            : aaa.spanHide
                                     }
                                 >
-                                    <CardContent className={cx(sty.headerStyle)}>
-                                        <Typography varient="h1" className={cx(sty.tmStyle)}>
+                                    <CardContent className={aaa.headerStyle}>
+                                        <Typography varient="h1" className={aaa.tmStyle}>
                                             Access Requested By
                                         </Typography>
                                         <ImageListItem id="my-element27">
                                             <ReactTooltip
-                                                className={sty.tooltip}
+                                                className={aaa.tooltip}
                                                 anchorId="my-element27"
                                                 type="light"
                                                 effect="solid"
@@ -226,7 +221,7 @@ export default function CalendarWorkSpace() {
                                                 <span>Close</span>
                                             </ReactTooltip>
                                             <img
-                                                className={sty.cursor}
+                                                className={aaa.cursor}
                                                 src={Close}
                                                 alt="close"
                                                 loading="lazy"
@@ -238,7 +233,7 @@ export default function CalendarWorkSpace() {
                                     ))}
                                 </Stack>
                                 <ReactTooltip
-                                    className={sty.tooltip}
+                                    className={aaa.tooltip}
                                     anchorId="my-element30"
                                     type="light"
                                     effect="solid"
@@ -248,32 +243,26 @@ export default function CalendarWorkSpace() {
                                 <img
                                     src={Close}
                                     id="my-element30"
-                                    className={cx(sty.imgStyle, sty.cursor)}
+                                    className={aaa.imgStyle}
                                     alt="close"
                                     loading="lazy"
                                 />
                             </ImageListItem>
                         </CardContent>
                         <Stack>
-                            <Typography variant="h1" className={cx(sty.tmsmStyle)}>
-                                You are about to share [Name of Workspace], and all items within
+                            <Typography variant="h1" className={aaa.tmsmStyle}>
+                                You are about to share {workSpaceName}, and all items within
                                 this workspace.
                             </Typography>
                         </Stack>
                         <Stack>
                             <CardContent
-                                className={cx(
-                                    sty.signIn,
-                                    sty.rel,
-                                    sty.tmStyle,
-                                    sty.inputStyle,
-                                    sty.NickStyle
-                                )}
+                                className={aaa.inputStyle}
                             >
                                 <img src={search} alt="close" loading="lazy" />
                                 <input
                                     onClick={changeStyle2}
-                                    className={cx(sty.imgr)}
+                                    className={aaa.imgr}
                                     type="text"
                                     placeholder="Invite User by Email"
                                     name="Cal"
@@ -282,51 +271,34 @@ export default function CalendarWorkSpace() {
                                 <Stack
                                     className={
                                         style3
-                                            ? cx(sty.ddd, sty.ext, sty.abs, sty.padding0)
-                                            : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)
+                                            ? aaa.abs2
+                                            : aaa.spanHide
                                     }
                                 >
-                                    <CardContent className={cx(sty.padding0, sty.flexWS)}>
+                                    <CardContent className={aaa.pflexWS}>
                                         <CardContent
-                                            style={{
-                                                width: "100%",
-                                                display: "flex",
-                                                "justify-content": "start",
-                                                "align-items": "center",
-                                                padding: "0px",
-                                                "margin-bottom": "20px",
-                                            }}
-                                            ClassName={cx(sty.userInfo, sty.tmsmStyle, sty.padding0)}
+                                            
+                                            className={aaa.userInfo}
                                         >
                                             <Typography
                                                 variant="h5"
-                                                className={cx(
-                                                    sty.pic,
-                                                    sty.picc,
-                                                    sty.tmsmStyle,
-                                                    sty.padding0
-                                                )}
+                                                className={aaa.pic}
                                             >
                                                 TU
                                             </Typography>
                                             <CardContent
-                                                className={cx(
-                                                    sty.userEmail,
-                                                    sty.flexUser,
-                                                    sty.tmsmStyle,
-                                                    sty.padding0
-                                                )}
+                                                className={aaa.userE}
                                             >
-                                                <CardContent className={cx(sty.padding0)}>
+                                                <CardContent className={aaa.padding0}>
                                                     <Typography
                                                         variant="h5"
-                                                        className={cx(sty.fn, sty.tmsmStyle)}
+                                                        className={aaa.fn}
                                                     >
                                                         Full Name
                                                     </Typography>
                                                     <Typography
                                                         variant="h6"
-                                                        className={cx(sty.en, sty.tssStyle)}
+                                                        className={aaa.en}
                                                     >
                                                         Email of user
                                                     </Typography>
@@ -334,47 +306,29 @@ export default function CalendarWorkSpace() {
                                             </CardContent>
                                         </CardContent>
                                     </CardContent>
-                                    <CardContent className={cx(sty.padding0, sty.flexWS)}>
+                                    <CardContent className={aaa.pflexWS}>
                                         <CardContent
-                                            style={{
-                                                width: "100%",
-                                                display: "flex",
-                                                "justify-content": "start",
-                                                "align-items": "center",
-                                                padding: "0px",
-                                                "margin-bottom": "20px",
-                                            }}
-                                            ClassName={cx(sty.userInfo, sty.tmsmStyle, sty.padding0)}
+                                            className={aaa.userInfo}
                                         >
                                             <Typography
                                                 variant="h5"
-                                                className={cx(
-                                                    sty.pic,
-                                                    sty.picc,
-                                                    sty.tmsmStyle,
-                                                    sty.padding0
-                                                )}
+                                                className={aaa.pic}
                                             >
                                                 TU
                                             </Typography>
                                             <CardContent
-                                                className={cx(
-                                                    sty.userEmail,
-                                                    sty.flexUser,
-                                                    sty.tmsmStyle,
-                                                    sty.padding0
-                                                )}
+                                                className={aaa.userE}
                                             >
-                                                <CardContent className={cx(sty.padding0)}>
+                                                <CardContent className={aaa.padding0}>
                                                     <Typography
                                                         variant="h5"
-                                                        className={cx(sty.fn, sty.tmsmStyle)}
+                                                        className={aaa.fn}
                                                     >
                                                         Full Name
                                                     </Typography>
                                                     <Typography
                                                         variant="h6"
-                                                        className={cx(sty.en, sty.tssStyle)}
+                                                        className={aaa.en}
                                                     >
                                                         Email of user
                                                     </Typography>
@@ -386,7 +340,7 @@ export default function CalendarWorkSpace() {
                             </CardContent>
                         </Stack>
                         <Stack>
-                            <CardContent className={cx(sty.minHeight, sty.padding0)}>
+                            <CardContent className={aaa.minHeight}>
                                 {/* default state */}
                                 {requestedAccessUsers?.map((pin) => (
                                     <ToggleUser key={pin.id} pin={pin} />
@@ -394,12 +348,12 @@ export default function CalendarWorkSpace() {
                             </CardContent>
                         </Stack>
                         <Stack style={{ "margin-top": "20px" }}>
-                            <Typography variant="h1" className={cx(sty.tmsmStyle)}>
+                            <Typography variant="h1" className={aaa.tmsmStyle}>
                                 All Current Members
                             </Typography>
                         </Stack>
                         <Stack>
-                            <CardContent className={cx(sty.minHeights, sty.padding0)}>
+                            <CardContent className={aaa.minHeight2}>
                                 {/* default state */}
                                 {requestedAccessUsers?.map((pin) => (
                                     <ToggleUser key={pin.id} pin={pin} />
@@ -407,67 +361,49 @@ export default function CalendarWorkSpace() {
                             </CardContent>
                         </Stack>
                         <Stack
-                            style={{
-                                "margin-top": "20px",
-                                "margin-bottom": "20px",
-                                "flex-direction": "row",
-                            }}
-                            className={cx(sty.flexWS)}
+                            className={aaa.flexWS}
                         >
                             <CardContent
-                                className={cx(sty.ComposeBtns, sty.mrll, sty.tmsmStyle)}
+                                className={aaa.composeMrll}
                             >
-                                <Typography className={cx(sty.tmsmStyle)}>
+                                <Typography className={aaa.tmsmStyle}>
                                     Sharable Link
                                 </Typography>
                             </CardContent>
 
                             <CardContent
                                 style={{ width: "105px" }}
-                                className={cx(
-                                    sty.ComposeBtns,
-                                    sty.mrll,
-                                    sty.tsStyle,
-                                    sty.padding0
-                                )}
+                                className={aaa.composeMrll1}
                             >
                                 <CardContent
                                     onClick={changeStyle6}
-                                    className={cx(
-                                        sty.ComposeBtns,
-                                        sty.mrll,
-                                        sty.cursor,
-                                        sty.pl4,
-                                        sty.borderStyle,
-                                        sty.tsStyle,
-                                        sty.padding0
-                                    )}
+                                    className={aaa.composeMrll2}
                                 >
-                                    <Typography className={cx(sty.t1317, sty.padding0, sty.p33)}>
+                                    <Typography className={aaa.bbtext}>
                                         Anyone
                                     </Typography>
-                                    <ImageListItem className={cx(sty.imgr3)}>
+                                    <ImageListItem className={aaa.imgr3}>
                                         <img
                                             style={{ width: "20px" }}
                                             src={style7 ? dau : dad}
                                             alt="hero"
                                         />
                                     </ImageListItem>
-                                    <Stack className={cx(sty.tsStyle, sty.rel)}>
+                                    <Stack className={aaa.relts}>
                                         <Stack
                                             className={
                                                 style7
-                                                    ? cx(sty.ddd, sty.abss, sty.padding0)
-                                                    : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)
+                                                    ? aaa.abs3
+                                                    : aaa.spanHide
                                             }
                                         >
                                             <CardContent
-                                                className={cx(sty.users, sty.padding0, sty.tsStyle)}
+                                                className={aaa.usersp}
                                                 onClick={changeStyle6}
                                             >
                                                 <Typography
                                                     variant="h1"
-                                                    className={cx(sty.mars, sty.tsStyle, sty.padding0)}
+                                                    className={aaa.mars}
                                                 >
                                                     Anyone <br></br>{" "}
                                                     <span>
@@ -477,7 +413,7 @@ export default function CalendarWorkSpace() {
                                                 </Typography>
                                                 <Typography
                                                     variant="h1"
-                                                    className={cx(sty.mars, sty.tsStyle, sty.padding0)}
+                                                    className={aaa.mars}
                                                 >
                                                     Share <br></br>{" "}
                                                     <span>
@@ -490,91 +426,57 @@ export default function CalendarWorkSpace() {
                                     </Stack>
                                 </CardContent>
                             </CardContent>
-
                             <CardContent
                                 style={{ width: "105px" }}
-                                className={cx(
-                                    sty.ComposeBtns,
-                                    sty.cursor,
-                                    sty.mrll,
-                                    sty.tsStyle,
-                                    sty.padding0
-                                )}
+                                className={aaa.composeMrll1}
                             >
                                 <CardContent
                                     onClick={changeStyle7}
-                                    className={cx(
-                                        sty.ComposeBtns,
-                                        sty.mrll,
-                                        sty.pl4,
-                                        sty.borderStyle,
-                                        sty.tsStyle,
-                                        sty.padding0
-                                    )}
+                                    className={aaa.composeMrll2}
                                 >
-                                    <Typography className={cx(sty.t1317, sty.padding0, sty.p33)}>
+                                    <Typography className={aaa.bbtext}>
                                         Can Edit
                                     </Typography>
-                                    <ImageListItem className={cx(sty.imgr3)}>
+                                    <ImageListItem className={aaa.imgr3}>
                                         <img
                                             style={{ width: "20px" }}
                                             src={style8 ? dau : dad}
                                             alt="hero"
                                         />
                                     </ImageListItem>
-                                    <Stack className={cx(sty.tsStyle, sty.rel)}>
+                                    <Stack className={aaa.relts}>
                                         <Stack
                                             className={
                                                 style8
-                                                    ? cx(sty.ddd, sty.abss, sty.padding0)
-                                                    : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)
+                                                    ? aaa.abs3
+                                                    : aaa.spanHide
                                             }
                                         >
                                             <CardContent
-                                                className={cx(sty.users, sty.padding0, sty.tsStyle)}
+                                                className={aaa.usersp}
                                                 onClick={changeStyle7}
                                             >
                                                 <Typography
                                                     variant="h1"
-                                                    className={cx(
-                                                        sty.pbtl,
-                                                        sty.mars,
-                                                        sty.tsStyle,
-                                                        sty.padding0
-                                                    )}
+                                                    className={aaa.typo}
                                                 >
                                                     This Link <br></br> <span>will allow users to </span>
                                                 </Typography>
                                                 <Typography
                                                     variant="h1"
-                                                    className={cx(
-                                                        sty.pbtl,
-                                                        sty.mar,
-                                                        sty.t1317,
-                                                        sty.padding0
-                                                    )}
+                                                    className={aaa.marpbtl}
                                                 >
                                                     Edit
                                                 </Typography>
                                                 <Typography
                                                     variant="h1"
-                                                    className={cx(
-                                                        sty.pbtl,
-                                                        sty.mar,
-                                                        sty.t1317,
-                                                        sty.padding0
-                                                    )}
+                                                    className={aaa.marpbtl}
                                                 >
                                                     View
                                                 </Typography>
                                                 <Typography
                                                     variant="h1"
-                                                    className={cx(
-                                                        sty.pbtl,
-                                                        sty.mar,
-                                                        sty.t1317,
-                                                        sty.padding0
-                                                    )}
+                                                    className={aaa.marpbtl}
                                                 >
                                                     Comment
                                                 </Typography>
@@ -586,12 +488,7 @@ export default function CalendarWorkSpace() {
                         </Stack>
                         <Stack>
                             <CardContent
-                                className={cx(
-                                    sty.signIn,
-                                    sty.tmStyle,
-                                    sty.inputStyle,
-                                    sty.NickStyle
-                                )}
+                                className={aaa.inputStyle}
                             >
                                 <input
                                     type="text"
@@ -603,17 +500,14 @@ export default function CalendarWorkSpace() {
                         </Stack>
                         <Stack>
                             <CardContent
-                                style={{ display: "flex", "justify-content": "end" }}
-                                className={cx(sty.btns, sty.ebtns)}
+                               
+                                className={aaa.btn}
                             >
                                 <CardContent
-                                    style={{ display: "flex", "justify-content": "end" }}
-                                    className={cx(sty.btnIn, sty.ebtnIn, sty.tsStyle, sty.ref)}
+                                    className={aaa.btnIn}
                                 >
                                     <Button
-                                        style={{ "margin-right": "0px" }}
                                         variant="contained"
-                                        className={cx(sty.tmStyle, sty.ewid)}
                                     >
                                         Update
                                     </Button>

@@ -22,28 +22,20 @@ function VideoCenterOne() {
 
     return (
         <div style={{"display":"flex","flex-wrap": "wrap"}}>
-            <CreateNewMeetingLoad/>
             <CreateNewMeetingLoad1/>
 
-            <CreateNewMeetingGo/>
             <CreateNewMeetingGo1/>
 
-            <ScheduleAMeeting/>
             <ScheduleAMeeting1/>
 
-            <ReacordandTranscribeCall/>
             <ReacordandTranscribeCall1/>
 
-            <JoinMeetingLoad/>
             <JoinMeetingLoad1/>
 
-            <JoinMeetingGo/>
             <JoinMeetingGo1/>
 
-            <WellMeeting/>
             <WellMeeting1/>
 
-            <AskingJoinMeeting/>
             <AskingJoinMeeting1/>
         </div>
     )

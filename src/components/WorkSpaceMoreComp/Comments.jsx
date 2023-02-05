@@ -35,9 +35,6 @@ export default function Comments() {
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
-                        
-
-
                     </Card>
                 </Box>
             </StyledEngineProvider>

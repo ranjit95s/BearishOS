@@ -29,11 +29,11 @@ function App() {
       {/* <CalendarComp3 /> */}
     {/* <VideoCenterOne /> */}
     {/* <CalendarComp4 /> */}
-    {/* <WorkSpaceMoreComp /> */}
+    <WorkSpaceMoreComp />
     {/* <MessageComp /> */}
     {/* <TaskCenter /> */}
   {/* <SuperChargeComp/>  */}
-    <CallCenter2 />
+    {/* <CallCenter2 /> */}
   {/* <Login /> */}
 
     </div>

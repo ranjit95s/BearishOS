@@ -1,0 +1,149 @@
+.boxStyle {
+    height: 100px;
+    width: 250px !important;
+    font-family: Source Serif Pro !important;
+    top: 33px;
+    left: 24px;
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.t1215 {
+    text-align: left;
+    font: normal normal 300 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;}
+
+.boxIn {
+    font-family: Source Serif Pro Bold  !important;
+    width: 225px;
+    /* height: 40px; */
+    box-shadow: none !important;
+    margin: auto;
+    overflow: visible !important;
+}
+
+.headerStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 15px !important;
+    padding-bottom: 10px !important;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    padding: 0px;
+    /* align-items: center; */
+    /* width: 100%; */
+}
+
+.t1215 {
+    text-align: left;
+    font: normal normal 300 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.signSec {
+    margin-top: 0px !important;
+    /* margin-top: -10px; */
+    padding: 0px;
+    display: block;
+}
+
+.inputStyle {
+    text-align: left;
+    font: normal normal 600 13px/17px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+    margin-top: 0px !important;
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    /* opacity: 1; */
+    width: 100%;
+    background: #ffffff;
+    cursor: pointer;
+    padding: 8px !important;
+    padding-bottom: 8px !important;
+    /* margin-top: 18px; */
+    margin-left: 0px !important;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: left !important;
+    align-items: center;
+}
+
+.inputStyle input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 15px;
+    font-family: Source Serif Pro;
+    color: #000000;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.inputStyle input::placeholder {
+    font-size: 15px;
+    font-family: Source Serif Pro;
+    color: #000000;
+}
+
+.btn {
+    margin-top: 0px;
+    padding-bottom: 0px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    cursor: pointer;
+    padding: 5px !important;
+    margin-left: 0px !important;
+    /* padding-bottom: 0px !important; */
+}
+
+.btnIn {
+    text-align: left;
+    font: normal normal 600 13px/17px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1 !important;
+    padding: 0px !important;
+}
+
+.btnIn button {
+    border-radius: 5px;
+    box-shadow: none;
+    text-transform: capitalize;
+    /* margin-right: 12px; */
+    background: none;
+    color: #2a9660;
+    opacity: 1 !important;
+    /* font-size: 13px !important; */
+    border: none !important;
+    font-size: 12px !important;
+    width: 20px !important;
+    height: 20px !important;
+    overflow: hidden;
+    font-weight: 700 !important;
+    margin-right: 0px !important;
+}
+
+.btnIn button:hover{
+    box-shadow: none;
+    background: #ffffff 0% 0% no-repeat padding-box !important;
+    opacity: 75% !important;
+}

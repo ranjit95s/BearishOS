@@ -1,0 +1,480 @@
+.boxStyle {
+    width: 300px;
+    /* min-height: 475px; */
+    /* max-height: 475px; */
+    height: max-content;
+    font-family: Source Serif Pro !important;
+    top: 33px;
+    left: 24px;
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.boxIn {
+    width: 285px;
+    margin-bottom: 20px;
+    height: max-content;
+    font-family: Source Serif Pro Bold  !important;
+    box-shadow: none !important;
+    margin: auto;
+    overflow: visible !important;
+}
+
+.mr {
+    margin-bottom: 10px;
+}
+
+
+.headerStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px !important;
+    margin-bottom: 25px ;
+    font-weight: bold;
+    padding: 0px;
+    align-items: center;
+    position: relative;
+}
+
+.icg {
+    margin-right:15px;
+}
+
+.icg img {
+    object-fit: cover !important;
+}
+
+.headerStyle2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0px !important;
+    padding-bottom: 8px !important;
+    font-weight: bold;
+    padding: 0px;
+    align-items: center;
+    position: relative;
+}
+
+.inputStyle {
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro !important;
+    letter-spacing: 0px  !important;
+    color: #000000  !important;
+    /* margin-right: 15px; */
+    padding: 4px !important;
+    margin-top: 0px !important;
+    /* width: 283px; */
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    opacity: 1;
+    width: 100%;
+    background: #ffffff;
+    margin-left: 0px !important;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: left !important;
+    align-items: center;
+}
+
+.inputStyle input, .inputStyle textarea {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 15px;
+    font-family: Source Serif Pro;
+    color: #000000;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.inputStyle input::placeholder , .inputStyle textarea::placeholder {
+    font-size: 15px;
+    font-family: Source Serif Pro;
+    color: #000000;
+}
+
+.tooltip {
+    background: darkgray !important;
+    font-size: 13px !important;
+    color: white !important;
+    font-family: 'Source Serif Pro' !important;
+    opacity: 75% !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    top: -27px !important;
+    font-weight: 100 !important;
+}
+
+.tllStyle {
+    text-align: left;
+    font: normal normal 300 18px/25px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.pwmt {
+    width: 100% !important;
+    margin-top: 11px;
+    padding: 0px !important;
+}
+
+.boxIn2 {
+    width: 285px;
+    margin-bottom: 20px !important;
+    height: max-content;
+    font-family: Source Serif Pro Bold  !important;
+    box-shadow: none !important;
+    margin: auto;
+    overflow: visible !important;
+}
+
+.sechead {
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.98;
+}
+
+.het > span , .jsc > span{
+    padding: 0px !important;
+    margin-right: 5px;
+}
+
+.pwmtm {
+    padding: 0px !important;
+    width:100%;
+    margin-top: -10px !important;
+}
+
+.het {
+    width: 100% !important;
+    justify-content: start;
+    margin-right: 5px;
+    padding: 0px !important;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    align-items: center;
+}
+
+.het svg {
+    color: lightgrey;
+}
+
+.cmbtn {
+    margin-left: 0px !important;
+    margin-right: 5px;
+        padding: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-left: 12px;
+        padding: 1.2px;
+        font: normal normal 300 11px/21px Source Serif Pro  !important;
+}
+
+.cmbtn2 {
+    margin-left: 0px !important;
+        padding: 0px !important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #E9EDF2;
+        border-radius: 5px;
+        /* padding: 2px 6px; */
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        cursor:pointer;
+}
+
+.ddrop {
+    text-align: left;
+    font: normal normal 300 11px/15px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding-right: 15px !important;
+    padding-left: 4px !important;
+    /* padding: 0px !important; */
+}
+
+.trel {
+    position: relative;
+    font: normal normal 300 11px/21px Source Serif Pro  !important;
+}
+
+.spanHide {
+    display:none;
+}
+
+.abs {
+    position: absolute;
+    top: 1rem;
+    padding: 0px !important;
+    left: -6rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.upts {
+    width: 6.4rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font: normal normal 300 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding: 0px !important;
+    font: normal normal 300 11px/21px Source Serif Pro  !important;
+}
+
+.op {
+    margin: 4px;
+    padding: 0px !important;
+    text-align: left;
+    font: normal normal 300 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.opc {
+    background: #f88b8b 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    /* opacity: 50%; */
+    display: block;
+    width: 97px;
+    color: black;
+    padding: 2px !important;
+    margin: 4px;
+}
+
+.secheadsec {
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-right: 5px;
+}
+.secheadsec2 {
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-right: 15px;
+}
+
+.pwmt16 {
+    width: 100% !important;
+    margin-top: 16px;
+    padding: 0px !important;
+}
+
+.jsc svg {
+    color: lightgray;
+}
+
+.jsc {
+    width: 100% !important;
+    justify-content: start;
+    margin-right: 15px;
+    padding-bottom: 0px !important;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.timer1 {
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro !important;
+    letter-spacing: 0px  !important;
+    color: #000000  !important;
+    opacity: 0.5  !important;
+    padding: 0px !important;
+}
+
+.timer2 {
+    display: flex;
+    justify-content: space-between;
+        width: 100% !important;
+            text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro !important;
+    letter-spacing: 0px  !important;
+    color: #000000  !important;
+    opacity: 0.5  !important;
+    margin-top: -10px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    padding: 2px 6px;
+    opacity: 1;
+}
+
+.tbs1117 {
+    text-align: left;
+    font: normal normal 600 11px/15px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 3px 7px;
+    opacity: 1;
+}
+
+.top1 {
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1  !important;
+}
+
+.imgStyle {
+    margin-left: 12px;
+    width: 25px !important;
+}
+
+.small1 {
+    text-align: left;
+    font: normal normal 600 13px/17px Source Serif Pro !important;
+    letter-spacing: 0px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #000000;
+    opacity: 1;
+}
+
+.tbs1117 {
+    text-align: left;
+    font: normal normal 600 11px/15px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 3px 7px;
+    opacity: 1 !important;
+}
+
+.cobtn {
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.flexl2 {
+    padding: 3px 5px !important;
+    margin-bottom: 0px !important;
+    background: none;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    /* align-items: start; */
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 15px;
+    /* margin-left: 0px !important; */
+}
+
+.wpm {
+    margin-top: 11px;
+    padding: 0px !important;
+    width: 200px;
+}
+
+.tsec {
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+    text-transform: none;
+}
+
+.mains {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px !important;
+}
+
+.mainss {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 5px;
+    width: 100%;
+    font-weight: bold;
+    padding: 0px !important;
+
+}
+
+.mainss svg {
+    color: lightgray;
+}
+
+.mainss > span {
+    padding: 0px !important;
+    margin-right: 5px;
+}
+
+.weekname {
+    text-align: left;
+    font: normal normal 300 11px/15px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding-right: 15px !important;
+    padding-left: 4px !important;
+    /* padding-top: 3px; */
+    /* padding: 0px !important; */
+}
+
+.s {
+    text-align: left;
+    font: normal normal 300 11px/15px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding-right: 15px !important;
+    width: 140%;
+    display: flex;
+    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
+    flex-direction: row;
+    padding-left: 0rem !important;
+    padding: 0px !important;
+}
+
+.s span{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 0;
+    display: flex;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+}

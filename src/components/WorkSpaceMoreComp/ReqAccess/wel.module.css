@@ -1,0 +1,168 @@
+.boxStyle {
+    height: 250px;
+    width: 250px !important;
+    font-family: Source Serif Pro !important;
+    top: 33px;
+    left: 24px;
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.boxIn {
+    font-family: Source Serif Pro Bold  !important;
+    width: 225px;
+    /* height: 40px; */
+    box-shadow: none !important;
+    margin: auto;
+    overflow: visible !important;
+}
+
+.headerStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px !important;
+    padding-bottom: 10px !important;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    padding: 0px;
+    /* align-items: center; */
+    /* width: 100%; */
+}
+
+.mainT {
+    text-align: left;
+    font: normal normal bold 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.headerStyle2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8px !important;
+    padding-bottom: 7px !important;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    padding: 0px;
+    /* align-items: center; */
+    /* width: 100%; */
+}
+
+.mainT2 {
+    text-align: center;
+    font: normal normal normal 11px/15px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.btns {
+    margin-top: 8px;
+    padding-bottom: 0px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px !important;
+    margin-left: 0px !important;
+}
+
+.btnIn {
+    /* padding-bottom: 0px !important; */
+    padding: 0px !important;
+    font: normal normal 300 11px/21px Source Serif Pro  !important;
+}
+
+.btnIn button {
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    /* border: none; */
+    box-shadow: none;
+    background: rgba(127, 218, 172, 0.4) no-repeat padding-box;
+    color: #2a9660;
+    text-transform: capitalize;
+    font-size: 13px !important;
+    width: 25px !important;
+    height: 30px !important;
+    overflow: hidden;
+    margin-top: 5px;
+    font-weight: 300 !important;
+    margin-right: 0px !important;
+    font-family: Source Serif Pro;
+    /* font: normal normal 300 15px/21px Source Serif Pro  !important; */
+}
+
+.btnIn button:hover{
+    box-shadow: none;
+    background: rgba(127, 218, 172, 0.4) no-repeat padding-box;
+    color: #2a9660;
+}
+
+.signSec {
+    margin-top: -10px;
+    padding: 0px;
+    display: block;
+}
+
+.wellM {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputStyle {
+    text-align: left;
+    font: normal normal normal 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+    padding: 8px !important;
+    padding-bottom: 8px !important;
+    margin-top: 18px;
+    margin-left: 0px !important;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: left !important;
+    align-items: center;
+}
+
+.inputStyle input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.inputStyle input::placeholder {
+    text-align: left;
+    font: normal normal normal 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
