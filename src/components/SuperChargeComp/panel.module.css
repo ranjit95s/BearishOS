@@ -117,10 +117,10 @@
     border-radius: 5px;
     z-index: 1;
 }
-
+/* 
 li img {
     object-fit: none !important;
-}
+} */
 
 .hid2 {
     width: -moz-fit-content;

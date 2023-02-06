@@ -89,7 +89,9 @@
     width: 15px !important;
 }
 
-li img {object-fit: cover !important;}
+/* li img {object-fit: cover !important;} */
+
+
 
 .abs {
     position: absolute;

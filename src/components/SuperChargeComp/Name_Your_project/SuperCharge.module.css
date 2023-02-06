@@ -73,9 +73,9 @@
 }
 
 .textM {
-    font: normal normal 600 11px/15px Source Serif Pro !important;
+    font: normal normal 600 13px/17px Source Serif Pro !important;
     letter-spacing: 0px;
-    color: #000000;    
+    color: #000000;
     opacity: 0.5 !important;
     margin-right: 15px;
 }
@@ -89,6 +89,8 @@
     width: 15px !important;
 } */
 
+/* li img {object-fit: cover !important;} */
+
 .abs {
     position: absolute;
     top: 1.8rem;
@@ -100,6 +102,20 @@
     border-radius: 5px;
     z-index: 1;
     padding: 0px !important;
+}
+
+.tooltip2 {
+    background: darkgray !important;
+    font-size: 13px !important;
+    color: white !important;
+    font-family: 'Source Serif Pro' !important;
+    opacity: 75% !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    width: 158px !important;
+    left: -1.8rem !important;
+    top: -4.8rem !important;
+    font-weight: 100 !important;
 }
 
 .spanHide {
@@ -160,14 +176,14 @@
     width: 100%;
     color: #000000;
     opacity: 0.5;
-    font: normal normal 600 11px/15px Source Serif Pro !important;
+    font: normal normal 600 13px/17px Source Serif Pro !important;
     letter-spacing: 0px;
 }
 
 .inCreate input::placeholder {
     color: #000000;
-    opacity: 0.5;
-    font: normal normal 600 11px/15px Source Serif Pro !important;
+    /* opacity: 0.5; */
+    font: normal normal 600 13px/17px Source Serif Pro !important;
 }
 
 .spanVis {
@@ -209,7 +225,7 @@
     overflow: hidden;
     font-weight: 700 !important;
     margin-right: 0px !important;
-    font: normal normal 600 11px/15px Source Serif Pro  !important;
+    font: normal normal 600 15px/15px Source Serif Pro  !important;
 }
 
 
@@ -235,7 +251,7 @@
 .bbcreate button {
     padding-bottom: 0px !important;
     padding: 0px !important;
-    font: normal normal 600 15px/15px Source Serif Pro !important;
+    font: normal normal 600 13px/17px Source Serif Pro !important;
     letter-spacing: 0px;
     opacity: 1 !important;
     border: 1px solid #E9EDF2;

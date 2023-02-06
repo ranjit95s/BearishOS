@@ -12,3 +12,19 @@
                                                 <MenuItem className={cx(sty.userEmail,sty.tmsmStyle)} value="can view">can view</MenuItem>
                                             </TextField>
                                         </Stack>
+
+
+                                        text-align: left;
+font: normal normal 600 15px/21px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 0.5;
+
+Propose Multiple Times allows your guest to choose from one of many times.
+
+
+text-align: left;
+font: normal normal normal 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;

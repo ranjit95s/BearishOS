@@ -196,6 +196,7 @@ opacity: 0.5;
 .mr2525 {
     width: 25px !important;
     height: 25px !important;
+    object-fit:none !important;
 
 }
 .signIn1{    border: 1px solid #E9EDF2;

@@ -1,26 +1,27 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "../img/Close.svg";
-import Blue from "../img/bluefile.svg";
-import folder from "../img/folderi.svg";
-import dad from "../img/dad.png";
+import Close from "../../img/Close.svg";
+import Blue from "../../img/bluefile.svg";
+import folder from "../../img/folderi.svg";
+import dad from "../../img/dad.png";
 
-import shareG from "../img/shareG.svg";
-import dots from "../img/3dot.svg";
-import edit1 from "../img/edit1.svg";
-import add1 from "../img/Light 1px-add_circled.svg";
-import rtrash from "../img/rtrash.svg";
-import b1 from "../img/bo1.svg";
-import cl from "../img/cl.svg";
-import l1 from "../img/l1.svg";
-import wiki from "../img/wiki.svg";
-import note from "../img/note.svg";
-import lap from "../img/lap1.svg";
-import co from "../img/color.png";
-import sl from "../img/smile.svg";
-
-import search from "../img/search.svg";
+import shareG from "../../img/shareG.svg";
+import dots from "../../img/3dot.svg";
+import edit1 from "../../img/edit1.svg";
+import add1 from "../../img/Light 1px-add_circled.svg";
+import rtrash from "../../img/rtrash.svg";
+import b1 from "../../img/bo1.svg";
+import cl from "../../img/cl.svg";
+import l1 from "../../img/l1.svg";
+import wiki from "../../img/wiki.svg";
+import note from "../../img/note.svg";
+import lap from "../../img/lap1.svg";
+import co from "../../img/color.png";
+import sl from "../../img/smile.svg";
+import sq2 from "../../img/sq2.svg";
+import sq from "../../img/sq1.svg";
+import search from "../../img/search.svg";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
@@ -28,11 +29,11 @@ import Checkbox from "@mui/material/Checkbox";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import cx from "classnames";
+// import cx from "classnames";
 import { StyledEngineProvider } from "@mui/material/styles";
-import sty from "../sty.module.css";
-import styCC from "./CallCenter.module.css";
-import calSty from "../CalendarComp3/CalComp_Sty.module.css";
+import sty from "../../sty.module.css";
+// import styCC from "./CallCenter.module.css";
+// import calSty from "../../CalendarComp3/CalComp_Sty.module.css";
 import aaa from './chooseAttach.module.css'
 import { Tooltip as ReactTooltip } from "react-tooltip";
 export default function ChooseAttach() {
@@ -50,6 +51,14 @@ export default function ChooseAttach() {
     const [addItem, setAddItem] = useState(false);
     const [moveToFolder, setMoveToFolder] = useState(false);
     const [deletes, setDeletes] = useState(false);
+
+    const [checker, setChecker] = React.useState(true)
+    const checkercheck = (id) =>{
+            if(checker){
+                setChecker(false);
+            }else{
+                setChecker(true);
+    }}
 
     const shareNow1 = () => {
         if (shareNow) {
@@ -151,7 +160,7 @@ export default function ChooseAttach() {
                         <Stack className={aaa.mainStack}>
                             <CardContent
                                 className={
-                                    sty.ComposeBtns
+                                    aaa.ComposeBtns
                                 }
                             >
                                 <Typography
@@ -611,10 +620,12 @@ export default function ChooseAttach() {
 
                         <CardContent
                             className={aaa.an}
+
                         >
                             <Typography
                                 variant="h1"
                                 className={aaa.em}
+                                onClick={changeStyle4}
                             ></Typography>
                             <ImageListItem>
                                 <img
@@ -642,7 +653,7 @@ export default function ChooseAttach() {
                                             variant="h1"
                                             className={aaa.stext}
                                         >
-                                            Search All Items
+                                            Search All Folder
                                         </Typography>
                                     </CardContent>
                                     <CardContent
@@ -1050,11 +1061,9 @@ export default function ChooseAttach() {
                             <CardContent
                                 className={aaa.inStack}
                             >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
+                                <ImageListItem className={aaa.checkers}>
+                                            <img src={checker ? sq : sq2} onClick={() => checkercheck(1)} alt="dad" loading="lazy" />
+                                        </ImageListItem>
                                 <ImageListItem style={{ "marginRight": "5px" }}>
                                     <img src={Blue} alt="dad" loading="lazy" />
                                 </ImageListItem>

@@ -96,6 +96,7 @@
     width: 24px !important;
     margin-bottom: 2px;
     height: 26px !important;
+    object-fit: none !important;
 }
 
 .ttstyle3 {
@@ -115,11 +116,62 @@
     opacity: 1;
     padding: 10px !important;
     border-radius: 5px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
-li img {
-    object-fit: none !important;
+.pos {
+    height:150px;
+    position:relative;
+}
+
+.imgu img {
+    object-fit:none !important;
+}
+
+.dtext {
+    text-align: left;
+    font: normal normal 600 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #000000;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.abs {
+    position: absolute;
+    top: 13.8rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    /* padding: 10px !important; */
+    width: 11rem;
+    left: 0px;
+    left: -10rem;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 0px !important;
+}
+
+.peek {
+     /* background: black; */
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+     width: 25px;
+     /* box-shadow: 0px 3px 6px #00000029; */
+     height: 25px;
+     transform: rotate(45deg);
+     position: absolute;
+     right: -14px;
+     /* border: 1px solid lightgray; */
+     z-index: 0;
+     top: 4rem;
+     opacity: 62%;
+     border-right: 1px solid lightgrey;
+     border-top: 1px solid lightgrey;
+}
+
+.spanHide {
+    display:none;
 }
 
 .hid2 {

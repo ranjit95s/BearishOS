@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "../img/Close.svg";
-import remove from "../img/remove.svg";
-import greenCheck from "../img/greenCheck.svg";
+import Close from "../../img/Close.svg";
+import remove from "../../img/remove.svg";
+import greenCheck from "../../img/greenCheck.svg";
+
+import laugh from "../../img/laugh.svg";
+import attachment from "../../img/attachment.png";
+import pic from "../../img/pic.png";
+import s1 from "../../img/s1.svg";
+
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -30,13 +36,13 @@ export default function MessageChat() {
                             <Typography className={t106.textStyle}>Full Name</Typography>
                         </CardContent>
                         <CardContent className={t106.title}>
-                            <ImageListItem onClick={openChange} id="my-element12"><img src={remove} alt="hero" className={t106.imgStyle} />
-                                <ReactTooltip className={t106.tooltip} anchorId="my-element12" type='light' effect='solid'>
+                            <ImageListItem onClick={openChange} id="my-element1266"><img src={remove} alt="hero" className={t106.imgStyle} />
+                                <ReactTooltip className={t106.tooltip} anchorId="my-element1266" type='light' effect='solid'>
                                     <span>Minimize</span>
                                 </ReactTooltip>
                             </ImageListItem>
                             <ImageListItem id="my-element13"><img src={Close} alt="hero" className={t106.imgStyle} />
-                                <ReactTooltip className={t106.tooltip} anchorId="my-element13" type='light' effect='solid'>
+                                <ReactTooltip className={t106.tooltip1} anchorId="my-element13" type='light' effect='solid'>
                                     <span>Close</span>
                                 </ReactTooltip>
                             </ImageListItem>
@@ -46,9 +52,11 @@ export default function MessageChat() {
                     <Card className={isOpen ? t106.mgsBox : t106.spanHide}>
                         <CardContent className={t106.flexWS} >
                             <CardContent className={t106.userStyle}>
-                                <Typography variant="h5" className={t106.iconU}>
+                                {/* <Typography variant="h5" className={t106.iconU}>
                                     LB
-                                </Typography>
+                                </Typography> */}
+                                <ImageListItem style={{"marginRight":"10px"}} id="my-element1l323"><img src={pic} alt="hero" className={t106.imgStyle} />
+                            </ImageListItem>
                                 <CardContent className={t106.flexU}>
                                     <CardContent className={t106.padding0}>
                                         <Typography variant="h5" className={t106.fn}>
@@ -58,7 +66,7 @@ export default function MessageChat() {
                                             narutouzumaki2002@gmail.com
                                         </Typography>
                                     </CardContent>
-                                    <CardContent className={t106.padding0}>
+                                    <CardContent className={t106.green}>
                                         <ImageListItem id="my-element132"><img src={greenCheck} alt="hero" className={t106.imgStyle} />
                                             <ReactTooltip className={t106.tooltip} anchorId="my-element132" type='light' effect='solid'>
                                                 <span>Added State</span>
@@ -70,7 +78,15 @@ export default function MessageChat() {
                         </CardContent>
                         <CardContent className={t106.msgSec}>Message Components</CardContent>
                     </Card>
-                        <CardContent className={isOpen ? t106.sendPart : t106.spanHide}>Send</CardContent>
+                        <CardContent className={isOpen ? t106.sendPart : t106.spanHide}>
+                        <ImageListItem id="my-element1323"><img src={laugh} alt="hero" className={t106.imgStyle} />
+                            </ImageListItem>
+                            <ImageListItem id="my-element1323"><img src={attachment} alt="hero" className={t106.imgStyle} />
+                            </ImageListItem>
+                            <textarea name="text" placeholder="Type your message here..."></textarea>
+                             <ImageListItem id="my-element1433"><img src={s1} alt="hero" className={t106.imgStyle} />
+                            </ImageListItem>
+                        </CardContent>
                 </Box>
             </StyledEngineProvider>
         </>

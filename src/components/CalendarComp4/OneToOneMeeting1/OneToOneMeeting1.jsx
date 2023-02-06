@@ -2,25 +2,46 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
-import dad from "../img/dad.png";
-import dau from "../img/dau.png";
+import dad from "../../img/dad.png";
+import dau from "../../img/dau.png";
+import sq2 from "../../img/sq2.svg";
+import sq from "../../img/sq1.svg";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import cx from "classnames";
 import { StyledEngineProvider } from "@mui/material/styles";
-import sty from "../sty.module.css";
-import calSty4 from "./CalSty4.module.css";
-import aaa from "./OneToOneMeeting1.module.css";
-import calSty from "../CalendarComp3/CalComp_Sty.module.css";
+import classes from "./OneToOneMeeting1.module.css";
 import Checkbox from "@mui/material/Checkbox";
 export default function OneToOneMeeting1() {
     const [checked, setChecked] = React.useState(true);
     const handleChange = (event) => {
         setChecked(event.target.checked);
     };
+
+    const [checker, setChecker] = React.useState({intoF:false,within:false,indefinitely:false})
+    const checkercheck = (id) =>{
+        if(id === 1) {
+            if(checker.intoF){
+                setChecker({...checker,intoF:false});
+            }else{
+                setChecker({...checker,intoF:true});
+            }
+        }else if(id === 2){
+            if(checker.within){
+                setChecker({...checker,within:false});
+            }else{
+                setChecker({...checker,within:true});
+            }
+        }else{
+            if(checker.indefinitely){
+                setChecker({...checker,indefinitely:false});
+            }else{
+                setChecker({...checker,indefinitely:true});
+            }
+        }
+    }
 
     const [style4, setStyle4] = React.useState(false);
 
@@ -52,18 +73,18 @@ export default function OneToOneMeeting1() {
             <StyledEngineProvider injectFirst>
                 <Box
                     component="firstConnect"
-                    className={aaa.boxStyle}
+                    className={classes.boxStyle}
                 >
-                    <Card className={aaa.boxIn}>
-                        <CardContent className={aaa.headerStyle}>
-                            <Typography varient="h1" className={aaa.tllStyle}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.headerStyle}>
+                            <Typography varient="h1" className={classes.tllStyle}>
                                 One on One Meetings
                             </Typography>
                         </CardContent>
-                        <CardContent className={aaa.pwmt}>
-                            <CardContent className={aaa.headerStyle2}>
+                        <CardContent className={classes.pwmt}>
+                            <CardContent className={classes.headerStyle2}>
                                 <CardContent
-                                    className={aaa.inputStyle}
+                                    className={classes.inputStyle}
                                 >
                                     <input
                                         type="text"
@@ -74,10 +95,10 @@ export default function OneToOneMeeting1() {
                                 </CardContent>
                             </CardContent>
                         </CardContent>
-                        <CardContent className={aaa.pwmt}>
-                            <CardContent className={aaa.headerStyle2}>
+                        <CardContent className={classes.pwmt}>
+                            <CardContent className={classes.headerStyle2}>
                                 <CardContent
-                                    className={aaa.inputStyle}
+                                    className={classes.inputStyle}
                                 >
                                     <input
                                         type="text"
@@ -88,10 +109,10 @@ export default function OneToOneMeeting1() {
                                 </CardContent>
                             </CardContent>
                         </CardContent>
-                        <CardContent className={aaa.pwmt}>
-                            <CardContent className={aaa.headerStyle2}>
+                        <CardContent className={classes.pwmt}>
+                            <CardContent className={classes.headerStyle2}>
                                 <CardContent
-                                    className={aaa.inputStyle}
+                                    className={classes.inputStyle}
                                 >
                                     <textarea
                                         type="text"
@@ -105,24 +126,22 @@ export default function OneToOneMeeting1() {
                         </CardContent>
                     </Card>
                     <hr></hr>
-                    <Card className={aaa.boxIn2}>
-                        <CardContent className={aaa.headerStyle}>
-                            <Typography varient="h1" className={aaa.sechead}>
+                    <Card className={classes.boxIn2}>
+                        <CardContent className={classes.headerStyle}>
+                            <Typography varient="h1" className={classes.sechead}>
                                 Data Range
                             </Typography>
                         </CardContent>
-                        <CardContent className={aaa.pwmtm}>
+                        <CardContent className={classes.pwmtm}>
                             <CardContent
-                                className={aaa.het}
+                                className={classes.het}
                             >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
+                                <ImageListItem className={classes.checkers}>
+                                            <img src={checker.intoF ? sq : sq2} onClick={() => checkercheck(1)} alt="dad" loading="lazy" />
+                                        </ImageListItem>
                                 <CardContent
                                     style={{ width: "35px", "marginRight":"5px" }}
-                                    className={aaa.inputStyle}
+                                    className={classes.inputStyle}
                                 >
                                     <input
                                         type="number"
@@ -133,55 +152,55 @@ export default function OneToOneMeeting1() {
                                     />
                                 </CardContent>
                                 <CardContent
-                                    className={aaa.cmbtn}
+                                    className={classes.cmbtn}
                                     style=  {{"marginRight": "5px"}}
                                 >
                                     <CardContent
-                                        className={aaa.cmbtn2}
+                                        className={classes.cmbtn2}
                                     >
                                         <Typography
                                             onClick={changeStyle3}
-                                            className={aaa.ddrop}
+                                            className={classes.ddrop}
                                         >
                                             Weekdays
                                         </Typography>
                                         <ImageListItem>
                                             <img src={style4 ? dau : dad} alt="hero" />
                                         </ImageListItem>
-                                        <Stack className={aaa.trel}>
+                                        <Stack className={classes.trel}>
                                             <Stack
                                                 className={
                                                     style4
-                                                        ? aaa.abs
-                                                        : aaa.spanHide
+                                                        ? classes.abs
+                                                        : classes.spanHide
                                                 }
                                             >
                                                 <CardContent
-                                                    className={aaa.upts}
+                                                    className={classes.upts}
                                                     onClick={changeStyle3}
                                                     style=  {{"marginRight": "5px"}}
                                                 >
                                                     <Typography
                                                         variant="h1"
-                                                        className={aaa.op}
+                                                        className={classes.op}
                                                     >
                                                         Can Edit
                                                     </Typography>
                                                     <Typography
                                                         variant="h1"
-                                                        className={aaa.op}
+                                                        className={classes.op}
                                                     >
                                                         Can View
                                                     </Typography>
                                                     <Typography
                                                         variant="h1"
-                                                        className={aaa.op}
+                                                        className={classes.op}
                                                     >
                                                         Can Comment
                                                     </Typography>
                                                     <Typography
                                                         variant="contained"
-                                                        className={aaa.opc}
+                                                        className={classes.opc}
                                                     >
                                                         Revoke Access
                                                     </Typography>
@@ -192,49 +211,45 @@ export default function OneToOneMeeting1() {
                                 </CardContent>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.secheadsec}
+                                    className={classes.secheadsec}
                                 >
                                     Into the future
                                 </Typography>
                             </CardContent>
                         </CardContent>
-                        <CardContent className={aaa.pwmt16}>
+                        <CardContent className={classes.pwmt16}>
                             <CardContent
-                                className={aaa.jsc}
+                                className={classes.jsc}
                             >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
+                                <ImageListItem className={classes.checkers}>
+                                            <img src={checker.within ? sq : sq2} onClick={() => checkercheck(2)} alt="dad" loading="lazy" />
+                                        </ImageListItem>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.secheadsec2}
+                                    className={classes.secheadsec2}
                                 >
                                     Within a Date Range
                                 </Typography>
                                 <CardContent
                             style=  {{"marginRight": "15px"}}
-                                    className={aaa.timer1}
+                                    className={classes.timer1}
                                 >
-                                    <Typography variant="h1" className={aaa.tbs1117}>
+                                    <Typography variant="h1" className={classes.tbs1117}>
                                         00/00 - 00/00
                                     </Typography>
                                 </CardContent>
                             </CardContent>
                         </CardContent>
-                        <CardContent className={aaa.pwmt16}>
+                        <CardContent className={classes.pwmt16}>
                             <CardContent
-                                className={aaa.jsc}
+                                className={classes.jsc}
                             >
-                                <Checkbox
-                                    checked={checked}
-                                    onChange={handleChange}
-                                    inputProps={{ "aria-label": "controlled" }}
-                                />
+                                <ImageListItem className={classes.checkers}>
+                                            <img src={checker.indefinitely ? sq : sq2} onClick={() => checkercheck(3)} alt="dad" loading="lazy" />
+                                        </ImageListItem>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.secheadsec2}
+                                    className={classes.secheadsec2}
                                 >
                                     Indefinitely into the future
                                 </Typography>
@@ -242,46 +257,46 @@ export default function OneToOneMeeting1() {
                         </CardContent>
                     </Card>
                     <hr></hr>
-                    <Card className={aaa.boxIn2}>
-                        <CardContent className={aaa.headerStyle}>
-                            <Typography varient="h1" className={aaa.sechead}>
+                    <Card className={classes.boxIn2}>
+                        <CardContent className={classes.headerStyle}>
+                            <Typography varient="h1" className={classes.sechead}>
                                 Duration of Event
                             </Typography>
                         </CardContent>
                         <CardContent
-                            className={aaa.timer2}
+                            className={classes.timer2}
                         >
                             <Typography
                                 variant="h1"
-                                className={aaa.top1}
+                                className={classes.top1}
                             >
                                 Location, Virtual Bearish OS
                             </Typography>
                             <ImageListItem>
                                 <img
-                                    className={aaa.imgStyle}
+                                    className={classes.imgStyle}
                                     src={dad}
                                     alt="dad"
                                     loading="lazy"
                                 />
                             </ImageListItem>
                         </CardContent>
-                        <CardContent className={aaa.headerStyle}>
+                        <CardContent className={classes.headerStyle}>
                             <Typography
                                 varient="h1"
                                 className={
                                     changeF.fc
-                                        ? aaa.small1
+                                        ? classes.small1
                                         : changeF.sc
-                                            ? aaa.tbs1117
-                                            : aaa.secheadsec
+                                            ? classes.tbs1117
+                                            : classes.secheadsec
                                 }
                             >
                                 app.bearishos.com/user-name/{inputValue}
                             </Typography>
                         </CardContent>
                         <CardContent
-                            className={aaa.inputStyle}
+                            className={classes.inputStyle}
                         >
                             <input
                                 onChange={onChangeHandler}
@@ -292,15 +307,15 @@ export default function OneToOneMeeting1() {
                             />
                         </CardContent>
                         <CardActions
-                            className={aaa.cobtn}
+                            className={classes.cobtn}
                         >
-                            <Button className={aaa.flexl2}>
-                                <Typography variant="h1" className={aaa.tsec}>
+                            <Button className={classes.flexl2}>
+                                <Typography variant="h1" className={classes.tsec}>
                                     Close
                                 </Typography>
                             </Button>
-                            <Button className={aaa.flexl2}>
-                                <Typography variant="h1" className={aaa.tsec}>
+                            <Button className={classes.flexl2}>
+                                <Typography variant="h1" className={classes.tsec}>
                                     Next
                                 </Typography>
                             </Button>

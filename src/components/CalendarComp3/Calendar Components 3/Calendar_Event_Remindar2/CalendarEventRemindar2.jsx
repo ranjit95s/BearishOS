@@ -3,23 +3,23 @@ import Box from "@mui/material/Box";
 // import Popover from '@mui/material/Popover';
 import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "../img/Close.svg";
-import alarm from "../img/alarm.svg";
-import pinkco from "../img/pinkco.svg";
-import noti from "../img/noti.svg";
-import edit from "../img/edit.svg";
-import pgroup from "../img/pgroup.svg";
-import doc from "../img/doc.svg";
-import loc from "../img/loc.svg";
+import Close from "../../../img/Close.svg";
+import alarm from "../../../img/alarm.svg";
+import pinkco from "../../../img/pinkco.svg";
+import noti from "../../../img/noti.svg";
+import edit from "../../../img/edit.svg";
+import pgroup from "../../../img/pgroup.svg";
+import doc from "../../../img/doc.svg";
+import loc from "../../../img/loc.svg";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import cx from "classnames";
+// import cx from "classnames";
 import { StyledEngineProvider } from "@mui/material/styles";
-import sty from "../sty.module.css";
+// import sty from "../../../sty.module.css";
 import aaa from "./CalendarEventRemindar2.module.css";
-import calSty from "./CalComp_Sty.module.css";
+// import calSty from "./CalComp_Sty.module.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 export default function CalendarEventRemindar2() {
     return (
@@ -83,7 +83,7 @@ export default function CalendarEventRemindar2() {
                                         className={aaa.t61521op}
                                     >
                                         Thursday, January 12th{" "}
-                                        <span className={calSty.dot}> • </span> 6:00 - 6:30 pm
+                                        <span className={aaa.dot}> • </span> 6:00 - 6:30 pm
                                     </Typography>
                                 </CardContent>
                             </CardContent>

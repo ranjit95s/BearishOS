@@ -2,19 +2,14 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
-import info from '../img/info1.svg';
-import dad from '../img/dad.png';
+import info from '../../img/info1.svg';
+import dad from '../../img/dad.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import logoM from '../img/LogoM.png'
-import CardActions from '@mui/material/CardActions';
+import logoM from '../../img/add1.svg'
 import CardContent from '@mui/material/CardContent';
-import calSty from '../CalendarComp3/CalComp_Sty.module.css'
-import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
-import sty from '../sty.module.css';
-import stySC from './superC.module.css';
 import classes from './SuperCharge.module.css';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 export default function NameYourReco() {
@@ -48,8 +43,19 @@ export default function NameYourReco() {
                                 Choose Video Folder
                             </Typography>
                             <ImageListItem className={classes.imgFlex}>
-                                <img src={info} className={classes.w14} alt="dad" loading="lazy" />
-                                <img src={dad} style={{ "marginLeft": "15px" }} alt="dad" loading="lazy" />
+                                <img src={dad} style={{ "marginRight": "15px" }} alt="dad" loading="lazy" />
+                            <ReactTooltip
+                                        className={classes.tooltip2}
+                                        anchorId="my-yt"
+                                        type="light"
+                                        effect="solid"
+                                    >
+                                        <span>
+                                            Add the rough amount of time this agenda item should
+                                            take in the meeting
+                                        </span>
+                                    </ReactTooltip>
+                                <img src={info} id="my-yt" className={classes.w14} alt="dad" loading="lazy" />
                             </ImageListItem>
                             <Stack className={choose ? classes.abs : classes.spanHide}>
                                 <CardContent  className={classes.hoverBody} >

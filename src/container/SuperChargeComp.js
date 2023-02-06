@@ -11,17 +11,23 @@ import CreateSnippet from '../components/SuperChargeComp/CreateSnippet'
 import AllSnippet from '../components/SuperChargeComp/AllSnippet'
 import Oops from '../components/SuperChargeComp/Oops'
 
+import NameYourProj12 from '../components/SuperChargeComp/Name_Your_project/NameYourProj'
+import NameYourReco12 from '../components/SuperChargeComp/Name_Your_Recording/NameYourReco'
 
+import NameYourProj123 from '../components/SuperChargeComp/Project_Control/NameYourProj1'
+import NameYourReco123 from '../components/SuperChargeComp/Recording_Controls/NameYourReco1'
 
 function SuperChargeComp() {
 
     return (
         <div style={{"display":"flex","flex-wrap": "wrap"}}>
-            <NameYourReco/> 
-            <NameYourReco1/> 
+            {/* <NameYourReco/>  */}
+            <NameYourReco12/> 
+            <NameYourReco123/> 
             <Success/> 
-            <NameYourProj/> 
-            <NameYourProj1/> 
+            {/* <NameYourProj/>  */}
+            <NameYourProj12/> 
+            <NameYourProj123/> 
             <Message/> 
             <CreateSnippet/> 
             <AllSnippet/> 

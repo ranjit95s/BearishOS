@@ -7,17 +7,18 @@ import AddUpNext from '../components/CallCenter2/AddUpNext'
 import ChooseAttach from '../components/CallCenter2/ChooseAttach'
 import ConnectAcc from '../components/CallCenter2/ConnectAcc'
 
-
+import ChooseAttach1 from '../components/CallCenter2/Choose_Attachment/ChooseAttach'
 
 function CallCenter2() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap","min-height":"200vh"}}>
-            <AddAgendaItems/> 
-            <AddPreMeetingNotes/> 
-            <AddUpNext/> 
-            <ChooseAttach/> 
-            <ConnectAcc/> 
+        <div style={{"display":"flex","flex-wrap": "wrap","min-height":"150vh"}}>
+             <AddAgendaItems/>  
+             <AddPreMeetingNotes/>  
+             <AddUpNext/>  
+            {/* <ChooseAttach/>  */}
+            <ChooseAttach1/> 
+             <ConnectAcc/>  
         </div>
     )
 }

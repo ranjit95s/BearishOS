@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.svg';
-import dad from '../img/dad.png';
+import Close from '../../img/Close.svg';
+import dad from '../../img/dad.png';
 
-import play from '../img/play.svg';
-import pauses from '../img/pause.svg';
-import edit1 from '../img/edit1.svg';
-import ends from '../img/end.svg';
-import sf from '../img/sq1.svg';
-import so from '../img/sq2.svg';
-import lt from '../img/lt.svg';
+import play from '../../img/play.svg';
+import pauses from '../../img/pause.svg';
+import edit1 from '../../img/edit1.svg';
+import ends from '../../img/end.svg';
+import sf from '../../img/sq1.svg';
+import so from '../../img/sq2.svg';
+import lt from '../../img/lt.svg';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -114,13 +114,13 @@ export default function NameYourPro1() {
                                     End
                                 </Typography>
                             </ImageListItem>
-                            <ImageListItem className={classes.imgu}>
+                            <ImageListItem onClick={choose1} className={classes.imgu}>
                                 <img src={edit1} className={classes.imgStyle} alt="close" loading="lazy" />
                                 <Typography variant="h5" className={classes.ttstyle3}>
                                 Details
                                 </Typography>
                             </ImageListItem>
-                            <ImageListItem onClick={ss} className={classes.imgu}>
+                            <ImageListItem style={{"padding":"0px"}} onClick={ss} className={classes.imgu}>
                                 <img src={screenshot ? so : sf} className={classes.imgStyle} alt="close" loading="lazy" />
                                 <Typography style={{"letter-spacing": "-1px"}} variant="h5" className={classes.ttstyle3}>
                                     ScreenShot {screenshot ? 'On' : 'Off'}
@@ -128,6 +128,12 @@ export default function NameYourPro1() {
                             </ImageListItem>
                         </CardContent>
                     </Card>
+                    <Stack className={choose ? classes.abs : classes.spanHide}>
+                                <CardContent  className={classes.pos} >
+                                    
+                                <Stack className={classes.peek}></Stack>
+                                </CardContent>
+                            </Stack>
                     <Stack onClick={hideBar} className={classes.hid}>
                     <ImageListItem className={classes.hid2}>
                                 <img src={lt} className={classes.imgStyle} alt="close" loading="lazy" />

@@ -3,17 +3,19 @@ import Box from "@mui/material/Box";
 // import Popover from '@mui/material/Popover';
 import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "../img/Close.svg";
-import clock from "../img/clock.svg";
-import alarm from "../img/alarm.svg";
-import dad from "../img/ad.svg";
-import noti from "../img/noti.svg";
-import addC from "../img/addC.png";
-import pgroup from "../img/pgroup.svg";
+import Close from "../../../img/Close.svg";
+import clock from "../../../img/clock.svg";
+import alarm from "../../../img/alarm.svg";
+import dad from "../../../img/ad.svg";
+import noti from "../../../img/noti.svg";
+import addC from "../../../img/addC.png";
+import pgroup from "../../../img/pgroup.svg";
 import Checkbox from "@mui/material/Checkbox";
-import doc from "../img/doc.svg";
-import loc from "../img/loc.svg";
-import logoM from "../img/LogoM.png";
+import doc from "../../../img/doc.svg";
+import sq2 from "../../../img/sq2.svg";
+import sq from "../../../img/sq1.svg";
+import loc from "../../../img/loc.svg";
+import logoM from "../../../img/LogoM.png";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -61,6 +63,22 @@ export default function CalendarEventRemindar() {
         "Propose Multiple Times"
     );
 
+    const [checker, setChecker] = React.useState({allDay:true,calls:false})
+    const checkercheck = (id) =>{
+        if(id === 1) {
+            if(checker.allDay){
+                setChecker({...checker,allDay:false});
+            }else{
+                setChecker({...checker,allDay:true});
+            }
+        }else{
+            if(checker.calls){
+                setChecker({...checker,calls:false});
+            }else{
+                setChecker({...checker,calls:true});
+            }
+        }
+    }
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -146,17 +164,20 @@ export default function CalendarEventRemindar() {
                                     </CardContent>
                                 </CardContent>
                                 <CardContent
-                                    style={{"justifyContent":"start"}}
+                                    style={{"justifyContent":"start","marginTop":"10px","marginBottom":"10px"}}
                                     className={aaa.headerCard}
                                 >
                                     <Typography variant="h1" className={aaa.t61521op}>
                                         All day
                                     </Typography>
-                                    <Checkbox
+                                    {/* <Checkbox
                                         checked={checked}
                                         onChange={handleChange}
                                         inputProps={{ "aria-label": "controlled" }}
-                                    />
+                                    /> */}
+                                    <ImageListItem className={aaa.checkers}>
+                                            <img src={checker.allDay ? sq : sq2} onClick={() => checkercheck(1)} alt="dad" loading="lazy" />
+                                        </ImageListItem>
                                 </CardContent>
                                 <CardContent
                                     className={aaa.headerCard}
@@ -424,17 +445,15 @@ export default function CalendarEventRemindar() {
                                 className={aaa.mtm}
                             >
                                 <CardContent
-                                style={{"justifyContent":"start"}}
+                                style={{"justifyContent":"start","marginTop":"10px"}}
                                     className={aaa.headerCard}
                                 >
                                     <Typography variant="h1" className={aaa.t61521op}>
                                         Add Bearish Call
                                     </Typography>
-                                    <Checkbox
-                                        checked={checked}
-                                        onChange={handleChange}
-                                        inputProps={{ "aria-label": "controlled" }}
-                                    />
+                                    <ImageListItem className={aaa.checkers}>
+                                            <img src={checker.calls ? sq : sq2} onClick={() => checkercheck(2)} alt="dad" loading="lazy" />
+                                        </ImageListItem>
                                 </CardContent>
                             </CardContent>
                         </Stack>

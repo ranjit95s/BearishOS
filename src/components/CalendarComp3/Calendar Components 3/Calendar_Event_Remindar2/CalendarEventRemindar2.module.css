@@ -16,6 +16,12 @@
     margin-bottom: 20px;
 }
 
+.dot {
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
 .boxIn {
     width: 350px;
     height: max-content;
@@ -55,7 +61,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 0px !important;
-    padding-bottom: 8px !important;
+    padding-bottom: 0px !important;
     font-weight: bold;
     padding: 0px;
     align-items: center;
@@ -188,9 +194,9 @@
     color: #000000  !important;
     /* opacity: 0.5  !important; */
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E9EDF2;
+    /* border: 1px solid #E9EDF2; */
     border-radius: 5px;
-    padding: 2px 6px;
+    padding: 2px 0px;
     opacity: 1;
 }
 
@@ -288,34 +294,34 @@
 }
 
 .confref button {
-    border: 1px solid #E9EDF2;
-    border-radius: 5px;
-    /* border: none; */
-    box-shadow: none;
-    text-transform: capitalize;
-    background: rgba(127, 218, 172, 0.4) no-repeat padding-box;
-    color: #2a9660;
-    font-size: 12px !important;
-    width: 20px !important;
-    height: 20px !important;
-    overflow: hidden;
-    font-weight: 700 !important;
-    margin-right: 0px !important;
-    font: normal normal 600 15px/21px Source Serif Pro  !important;
+       /* border: 1px solid #E9EDF2; */
+       border-radius: 5px;
+       /* border: none; */
+       /* box-shadow: none; */
+       text-transform: capitalize;
+       background: rgba(127, 218, 172, 0.4) no-repeat padding-box;
+       color: #2a9660;
+       font-size: 12px !important;
+       width: 0 !important;
+       height: 25px !important;
+       overflow: hidden;
+       font-weight: 700 !important;
+       margin-right: 0px !important;
+       font: normal normal 600 15px/21px Source Serif Pro  !important;
 }
 
 .confout button {
-    border: 1px solid #E9EDF2;
+    /* border: 1px solid #E9EDF2; */
     border-radius: 5px;
     /* border: none; */
-    box-shadow: none;
+    /* box-shadow: none; */
     text-transform: capitalize;
     /* margin-right: 12px; */
     background: rgba(240, 41, 41, 0.4) no-repeat padding-box;
     color: #b90101;
     font-size: 12px !important;
-    width: 20px !important;
-    height: 20px !important;
+    width: 0 !important;
+    height: 25px !important;
     overflow: hidden;
     font-weight: 700 !important;
     margin-right: 0px !important;
@@ -348,7 +354,7 @@
     color: #000000;
     opacity: 1;
     margin-top: 5px;
-    margin-left: 41px;
+    /* margin-left: 41px; */
 }
 
 .tnnorg {
@@ -374,17 +380,17 @@
     font: normal normal 600 15px/21px Source Serif Pro !important;
     letter-spacing: 0px  !important;
     color: #000000  !important;
-    opacity: 75%  !important;
+    opacity: 0.5  !important;
 }
 
 .confref button:hover{
-    box-shadow: none;
+    /* box-shadow: none; */
     background: rgba(127, 218, 172, 0.4) no-repeat padding-box;
     color: #2a9660;
 }
 
 .confout button:hover {
-    box-shadow: none;
+    /* box-shadow: none; */
     /* margin-right: 12px; */
     background: rgba(240, 41, 41, 0.4) no-repeat padding-box;
     color: #b90101;
