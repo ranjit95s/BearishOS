@@ -232,8 +232,9 @@
     color: #000000 !important;
 }
 
-.inputStyle input[type="number"]::-webkit-scrollbar{
-    display: none !important;
+.inputStyle input[type=number]::-webkit-inner-spin-button,.inputStyle input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
 }
 
 .addnow {

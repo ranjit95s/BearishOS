@@ -22,6 +22,25 @@ export default function ReqUser({pin}) {
                 setStyle4(true);
             }
         };
+    
+    const [op, setOp] = useState('Can Edit');
+    const selects = (id) => {
+        if (id === 1) {
+            setOp('Can Edit');
+            setStyle4(false);
+        }
+        else if (id === 2) {
+            setOp('Can View');
+            setStyle4(false);
+        }
+        else if (id === 3){
+            setOp('Can Comments')
+            setStyle4(false);
+        }else {
+            console.log('Revoke Access')
+            setStyle4(false);
+        }
+    };
     // const pin = [{"id":"1","ProfilePic":"TU","Name":"Full Name 1","Email":"narutouzumaki2002@gmail.com"},{"id":"2","ProfilePic":"TU","Name":"Full Name 2","Email":"narutouzumaki2002@gmail.com"}];
 
     return (
@@ -45,21 +64,21 @@ export default function ReqUser({pin}) {
             <Stack className={aaa.flexAccess}>
             <CardContent  style={{"width":"100px"}}  className={aaa.cmsp}>
                     <CardContent onClick={changeStyle3} className={aaa.cbumpt}>
-                        <Typography className={aaa.t1317p}>Can Edit</Typography>
+                        <Typography className={aaa.t1317p}>{op}</Typography>
                         <ImageListItem className={aaa.imgr2}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                         <Stack className={aaa.relts}>
                             <Stack className={style4 ? aaa.abs4 : aaa.spanHide}>
-                                <CardContent className={aaa.users2} onClick={changeStyle3}>
-                                    <Typography variant="h1" className={aaa.marpbtl}>
+                                <CardContent className={aaa.users2}>
+                                    <Typography variant="h1" onClick={(e) => {e.stopPropagation(); selects(1)}} className={aaa.marpbtl}>
                                         Can Edit
                                     </Typography>
-                                    <Typography variant="h1" className={aaa.marpbtl}>
+                                    <Typography variant="h1" onClick={(e) => {e.stopPropagation(); selects(2)}} className={aaa.marpbtl}>
                                         Can View
                                     </Typography>
-                                    <Typography variant="h1" className={aaa.marpbtl}>
+                                    <Typography variant="h1" onClick={(e) => {e.stopPropagation(); selects(3)}} className={aaa.marpbtl}>
                                         Can Comment
                                     </Typography>
-                                    <Typography variant="contained" className={aaa.colories}>
+                                    <Typography variant="contained" onClick={(e) => {e.stopPropagation(); selects(4)}} className={aaa.colories}>
                                         Revoke Access
                                     </Typography>
                                 </CardContent>

@@ -113,6 +113,27 @@ opacity: 45%;
     color: #000000;
 }
 
+.inputStyle input[type=number]::-webkit-inner-spin-button,.inputStyle input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.mars {
+    margin: 7px 3px;
+    font: normal normal 600 11px/15px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding: 0px !important;
+}
+
+.mars span, .typo span {
+    font: normal normal 300 11px/15px Source Serif Pro;
+    letter-spacing: -0.1px;
+    color: #000000;
+    opacity: 1;
+}
+
 .tooltip {
     background: darkgray !important;
     font-size: 13px !important;
@@ -197,22 +218,27 @@ opacity: 45%;
 
 .cmbtn2 {
     margin-left: 0px !important;
-        padding: 0px !important;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        border: 1px solid #E9EDF2;
-        border-radius: 5px;
-        /* padding: 2px 6px; */
-        opacity: 1;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        cursor:pointer;
+    padding: 0px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    /* padding: 2px 6px; */
+    opacity: 1;
+    display: flex;
+    position: relative;
+    width: 100px;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+    height: 25px;
 }
 
 .ddrop {
     text-align: left;
     font: normal normal 300 11px/15px Source Serif Pro;
     letter-spacing: 0px;
+    position: absolute;
+    left: 0;
     color: #000000;
     opacity: 1;
     padding-right: 15px !important;
@@ -231,22 +257,25 @@ opacity: 45%;
 
 .abs {
     position: absolute;
-    top: 1rem;
+    top: 0.8rem;
+    width: 100px;
     padding: 0px !important;
-    left: -6rem;
+    left: -6.2rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    /* box-shadow: 0px 3px 6px #00000029; */
     border-radius: 5px;
     z-index: 1;
+    border: 1px solid #efefef;
 }
 
 .upts {
-    width: 6.4rem;
+    width: 100%;
     margin-top: 3px;
     margin-bottom: 3px;
     font: normal normal 300 13px/17px Source Serif Pro;
     letter-spacing: 0px;
     color: #000000;
+    /* padding-left: 2px !important; */
     opacity: 1;
     padding: 0px !important;
     font: normal normal 300 11px/21px Source Serif Pro  !important;

@@ -68,6 +68,19 @@ export default function OneToOneMeeting1() {
             setChangeF({ fc: false }, { sc: false });
         }
     };
+    const [calDay, setCalDay] = React.useState('Calendar Days')
+    
+    const sele = (id) => {
+        if (id === 1){
+            setCalDay('Calendar Days')
+            setStyle4(false);
+        }
+        else if (id === 2){
+            setCalDay('Weekdays')
+            setStyle4(false);
+        }
+    }
+
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -140,7 +153,7 @@ export default function OneToOneMeeting1() {
                                             <img src={checker.intoF ? sq : sq2} onClick={() => checkercheck(1)} alt="dad" loading="lazy" />
                                         </ImageListItem>
                                 <CardContent
-                                    style={{ width: "35px", "marginRight":"5px" }}
+                                    style={{ width: "40px", "marginRight":"5px","height":"25px" }}
                                     className={classes.inputStyle}
                                 >
                                     <input
@@ -162,7 +175,7 @@ export default function OneToOneMeeting1() {
                                             onClick={changeStyle3}
                                             className={classes.ddrop}
                                         >
-                                            Weekdays
+                                            {calDay}
                                         </Typography>
                                         <ImageListItem>
                                             <img src={style4 ? dau : dad} alt="hero" />
@@ -180,30 +193,28 @@ export default function OneToOneMeeting1() {
                                                     onClick={changeStyle3}
                                                     style=  {{"marginRight": "5px"}}
                                                 >
-                                                    <Typography
-                                                        variant="h1"
-                                                        className={classes.op}
-                                                    >
-                                                        Can Edit
-                                                    </Typography>
-                                                    <Typography
-                                                        variant="h1"
-                                                        className={classes.op}
-                                                    >
-                                                        Can View
-                                                    </Typography>
-                                                    <Typography
-                                                        variant="h1"
-                                                        className={classes.op}
-                                                    >
-                                                        Can Comment
-                                                    </Typography>
-                                                    <Typography
-                                                        variant="contained"
-                                                        className={classes.opc}
-                                                    >
-                                                        Revoke Access
-                                                    </Typography>
+                                                     <Typography
+                                                    variant="h1"
+                                                    className={classes.mars}
+                                                    onClick={(e) => {e.stopPropagation(); sele(1)}}
+                                                >
+                                                    Calendar Days <br></br>{" "}
+                                                    <span>
+                                                        {" "}
+                                                        Count every single day even days when you aren’t free{" "}
+                                                    </span>
+                                                </Typography>
+                                                <Typography
+                                                    variant="h1"
+                                                    className={classes.mars}
+                                                    onClick={(e) => {e.stopPropagation(); sele(2)}}
+                                                >
+                                                   Weekdays <br></br>{" "}
+                                                    <span>
+                                                        {" "}
+                                                        Exclude weekends and only count Mondays to Fridays
+                                                    </span>
+                                                </Typography>
                                                 </CardContent>
                                             </Stack>
                                         </Stack>

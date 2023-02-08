@@ -42,7 +42,7 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.5;
-    margin-right: 5rem;
+    margin-right: 87.08px;
 }
 
 .tooltip {
@@ -82,18 +82,20 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.5;
-    margin-right: 3rem;
+    margin-right: 48.08px
 }
 
 .flexdl2 {
     background: none;
     flex-direction: column;
     border: 1px solid lightgray;
+    width: 150px;
     /* align-items: start; */
     border-radius: 5px;
+    margin-left: 0px !important;
     opacity: 1;
     margin-bottom: 15px;
-    /* margin-left: 0px !important; */
+    margin-left: 0px !important;
 }
 
 .tsecStyle {

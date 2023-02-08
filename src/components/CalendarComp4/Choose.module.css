@@ -1,5 +1,5 @@
 .boxStyle {
-    width: 350px;
+    width: 300px;
     height: max-content;
     font-family: Source Serif Pro !important;
     top: 33px;
@@ -15,7 +15,7 @@
 }
 
 .boxIn {
-    width: 325px;
+    width: 275px;
     height: max-content;
     box-shadow: none !important;
     margin: auto;
@@ -27,7 +27,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 10px !important;
-    margin-bottom: 25px !important;
+    margin-bottom: 20px !important;
     font-weight: bold;
     padding: 0px;
     align-items: center;

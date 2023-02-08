@@ -21,7 +21,6 @@ export default function ChooseEventType() {
                         </CardContent>
                         <CardActions className={aaa.signHover}>
                             <Button className={aaa.ais}
-                            
                             >
                                 <Typography
                                     variant="h1"

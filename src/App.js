@@ -23,10 +23,10 @@ function App() {
     <div className='App'>
       {/* <WorkSpaceCS /> */}
       {/* <EmailComp/> */}
-      <CalendarComp2One />
+      {/* <CalendarComp2One /> */}
       {/* <CalendarComp /> */}
       {/* <CalendarComp2 /> */}
-      <CalendarComp3 />
+      {/* <CalendarComp3 /> */}
     {/* <VideoCenterOne /> */}
     <CalendarComp4 />
     <MessageComp />

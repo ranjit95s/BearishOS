@@ -42,7 +42,7 @@ export default function Congt() {
                     app.bearishos.com/name/custom
                     </Typography>
                     <CardActions className={aaa.cobtn}>
-                            <Button className={aaa.flexdl2}>
+                            <Button className={aaa.flexdl2} style={{"width":"100px"}}>
                                 <Typography
                                     varient="h1"
                                     className={aaa.tsecStyle}

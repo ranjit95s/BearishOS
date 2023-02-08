@@ -26,10 +26,34 @@ export default function CalendarWorkSpace() {
     const [style8, setStyle8] = React.useState(false);
     const [style9, setStyle9] = React.useState(false);
     const [workSpaceName, setWorkSpaceName] = React.useState("[WorkSpace]");
-    // const [accessOne, setAccessOne] = React.useState('can edit');
-    // const handleChange = (event) => {
-    //     setAccessOne(event.target.value)
-    // }
+    const [shareableLink, setShareableLink] = React.useState({anyShare:'Anyone',canDo:'Can Edit'})
+    
+    const sele = (id,selectId) => {
+        if (id === 1){
+            if (selectId === 1){
+                setShareableLink({...shareableLink,anyShare:'Anyone'})
+                setStyle7(false);
+            }
+            else if (selectId === 2){
+                setShareableLink({...shareableLink,anyShare:'Shared'})
+                setStyle7(false);
+            }
+        }
+        else if (id === 2){
+            if (selectId === 1){
+                setShareableLink({...shareableLink,canDo:'Can Edit'})
+                setStyle8(false);
+            }
+            else if (selectId === 2){
+                setShareableLink({...shareableLink,canDo:'Can View'})
+                setStyle8(false);
+            }
+            else if (selectId === 3){
+                setShareableLink({...shareableLink,canDo:'Can Comment'})
+                setStyle8(false);
+            }
+        }
+    }
 
     // toggle users
     const changeStyle2 = () => {
@@ -39,16 +63,6 @@ export default function CalendarWorkSpace() {
             setStyle3(true);
         }
     };
-
-    // // requested access => can edit toggle
-    // const changeStyle3 = () => {
-    //     if (style4) {
-    //         setStyle4(false);
-    //     }
-    //     else {
-    //         setStyle4(true);
-    //     }
-    // };
 
     const changeStyle8 = () => {
         if (style9) {
@@ -111,61 +125,7 @@ export default function CalendarWorkSpace() {
 
     // const displayRequestedAccessUsers
     //         = requestedAccessUsers.map((d) =>
-    //         <CardContent key={d.id} className={aaa.pflexWS} style={{ "flex-direction": "column", "margin-bottom": "20px" }}>
-    //         <CardContent style={{ "width": "100%", "display": "flex", "justify-content": "start", "align-items": "center", "padding": "0px", "margin-bottom": "20px" }} className={aaa.userInfo}>
-    //             <Typography variant="h5" className={cx(sty.pic, sty.picc, sty.tmsmStyle, sty.padding0)}>
-    //                 {d.ProfilePic}
-    //             </Typography>
-    //             <CardContent className={cx(sty.userEmail, sty.flexUser, sty.tmsmStyle, sty.padding0)}>
-    //                 <CardContent className={aaa.padding0}>
-    //                     <Typography variant="h5" className={aaa.fn}>
-    //                         {d.Name}
-    //                     </Typography>
-    //                     <Typography variant="h6" className={aaa.en}>
-    //                         {d.Email}
-    //                     </Typography>
-    //                 </CardContent>
-    //             </CardContent>
-    //         </CardContent>
-    //         <Stack className={cx(sty.flexAccess)}>
-    //         <CardContent  style={{"width":"100px"}}  className={cx(sty.ComposeBtns,sty.mrll, sty.tsStyle,sty.padding0)}>
-    //                 <CardContent onClick={changeStyle3} className={cx(sty.ComposeBtns,sty.mrll,sty.pl4 ,sty.borderStyle, sty.tsStyle,sty.padding0)}>
-    //                     <Typography className={cx(sty.t1317,sty.padding0)}>Can Edit</Typography>
-    //                     <ImageListItem className={cx(sty.imgr2)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
-    //                     <Stack className={aaa.relts}>
-    //                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
-    //                             <CardContent className={cx(sty.users2, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
-    //                                 <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-    //                                     Can Edit
-    //                                 </Typography>
-    //                                 <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-    //                                     Can View
-    //                                 </Typography>
-    //                                 <Typography variant="h1" className={cx(sty.pbtl, sty.t1317, sty.padding0)}>
-    //                                     Can Comment
-    //                                 </Typography>
-    //                                 <Typography variant="contained" className={cx(sty.pbtl, sty.colorr, sty.t1317, sty.padding0)}>
-    //                                     Revoke Access
-    //                                 </Typography>
-    //                             </CardContent>
-    //                         </Stack>
-    //                     </Stack>
-    //                 </CardContent>
-    //             </CardContent>
-    //             <Stack>
-    //                 <CardContent className={cx(sty.btns, sty.ebtns, sty.btna)}>
-    //                     <CardContent className={cx(sty.btnIn, sty.ebtnIn, sty.tsStyle, sty.ref)}>
-    //                         <Button style={{ "margin-right": "0px" }} variant="contained" className={cx(sty.tmStyle, sty.ewid)}>
-    //                             Grant Access
-    //                         </Button>
-    //                     </CardContent>
-    //                 </CardContent>
-    //             </Stack>
-    //             <ImageListItem id="my-element28" className={cx(sty.imgr)}><ReactTooltip className={sty.tooltip} anchorId="my-element28" type='light' effect='solid'>
-    //     <span>Close</span>
-    // </ReactTooltip><img src={Close} alt="hero" /></ImageListItem>
-    //         </Stack>
-    //     </CardContent>
+    //         
     //         );
 
     return (
@@ -207,7 +167,7 @@ export default function CalendarWorkSpace() {
                                             : aaa.spanHide
                                     }
                                 >
-                                    <CardContent className={aaa.headerStyle}>
+                                    <CardContent className={aaa.headerStyle2}>
                                         <Typography varient="h1" className={aaa.tmStyle}>
                                             Access Requested By
                                         </Typography>
@@ -380,7 +340,7 @@ export default function CalendarWorkSpace() {
                                     className={aaa.composeMrll2}
                                 >
                                     <Typography className={aaa.bbtext}>
-                                        Anyone
+                                        {shareableLink.anyShare}
                                     </Typography>
                                     <ImageListItem className={aaa.imgr3}>
                                         <img
@@ -404,6 +364,7 @@ export default function CalendarWorkSpace() {
                                                 <Typography
                                                     variant="h1"
                                                     className={aaa.mars}
+                                                    onClick={(e) => {e.stopPropagation(); sele(1,1)}}
                                                 >
                                                     Anyone <br></br>{" "}
                                                     <span>
@@ -414,8 +375,9 @@ export default function CalendarWorkSpace() {
                                                 <Typography
                                                     variant="h1"
                                                     className={aaa.mars}
+                                                    onClick={(e) => {e.stopPropagation(); sele(1,2)}}
                                                 >
-                                                    Share <br></br>{" "}
+                                                    Only Shared <br></br>{" "}
                                                     <span>
                                                         {" "}
                                                         Only those shared with above can open this item.
@@ -435,7 +397,7 @@ export default function CalendarWorkSpace() {
                                     className={aaa.composeMrll2}
                                 >
                                     <Typography className={aaa.bbtext}>
-                                        Can Edit
+                                        {shareableLink.canDo}
                                     </Typography>
                                     <ImageListItem className={aaa.imgr3}>
                                         <img
@@ -465,18 +427,21 @@ export default function CalendarWorkSpace() {
                                                 <Typography
                                                     variant="h1"
                                                     className={aaa.marpbtl}
+                                                    onClick={(e) => {e.stopPropagation(); sele(2,1)}}
                                                 >
                                                     Edit
                                                 </Typography>
                                                 <Typography
                                                     variant="h1"
                                                     className={aaa.marpbtl}
+                                                    onClick={(e) => {e.stopPropagation(); sele(2,2)}}
                                                 >
                                                     View
                                                 </Typography>
                                                 <Typography
                                                     variant="h1"
                                                     className={aaa.marpbtl}
+                                                    onClick={(e) => {e.stopPropagation(); sele(2,3)}}
                                                 >
                                                     Comment
                                                 </Typography>

@@ -214,7 +214,7 @@ export default function OneToOneMeeting2() {
                                         
                                     >
                                                                         <ImageListItem className={classes.checkers}>
-                                            <img src={Object.values(checker)[weeklyy.id - 1]  ? sq : sq2} onClick={() => checkercheck(weeklyy.id)} alt="dad" loading="lazy" />
+                                            <img src={Object.values(checker)[weeklyy.id - 1]  ? sq2 : sq} onClick={() => checkercheck(weeklyy.id)} alt="dad" loading="lazy" />
                                         </ImageListItem>
                                         <Typography
                                             className={classes.weekname}
@@ -249,6 +249,7 @@ export default function OneToOneMeeting2() {
                                             display: "flex",
                                             "align-items": "center",
                                             height: "25px",
+                                            "marginTop":"-4px"
                                         }}
                                     >
                                         <img

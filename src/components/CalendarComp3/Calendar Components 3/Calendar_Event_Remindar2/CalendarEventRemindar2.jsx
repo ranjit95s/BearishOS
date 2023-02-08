@@ -118,10 +118,11 @@ export default function CalendarEventRemindar2() {
                                 </ImageListItem>
                             </CardContent>
                             <CardContent className={aaa.pwmr}>
-                                <CardContent className={aaa.headerStyle2}>
+                                <CardContent className={aaa.headerStyle2} style={{"marginTop":"3px"}}>
                                     <Typography
                                         variant="h1"
                                         className={aaa.sajmn}
+                                        
                                     >
                                         Start and Join Meeting Now
                                     </Typography>

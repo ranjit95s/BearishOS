@@ -15,7 +15,7 @@ export default function Comments() {
         <>
             <StyledEngineProvider injectFirst>
                 <Box component="EnterName" className={aaa.boxStyle}>
-                    <Card className={aaa.inStyle}>
+                    <Card className={aaa.boxIn}>
                         <CardContent className={aaa.headerStyle}>
                             <ImageListItem id="my-element78">
                                 <ReactTooltip

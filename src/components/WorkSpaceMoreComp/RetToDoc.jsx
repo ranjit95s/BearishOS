@@ -15,7 +15,7 @@ export default function Comments() {
         <>
             <StyledEngineProvider injectFirst>
                 <Box component="EnterName" className={aaa.boxStyle}>
-                    <Card className={aaa.inStyle}>
+                    <Card className={aaa.boxIn}>
                         <CardContent className={aaa.headerStyle}>
                             <ImageListItem style={{"marginLeft":"10px"}} id="my-element78">
                                 <img src={Close} alt="close" loading="lazy" />

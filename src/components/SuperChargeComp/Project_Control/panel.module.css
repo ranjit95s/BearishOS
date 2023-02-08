@@ -31,13 +31,15 @@
 }
 
 .f {
-    font: unset !important;
+        font: unset !important;
     display: flex;
     flex-direction: column;
+    box-shadow: none;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 8px;
+    padding: 5px;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
