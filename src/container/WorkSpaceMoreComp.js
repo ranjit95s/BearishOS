@@ -21,7 +21,7 @@ function WorkSpaceMoreComp() {
             <ReqSent/> 
             <AccessDenied/> 
             <Welcome/>
-            {/* <Comments/> */}
+            <Comments/>
             <ReturnToDoc/>
             <ReqAccess/>
             <AddComment/>

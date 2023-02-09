@@ -233,9 +233,8 @@ export default function OneToOneMeeting2() {
                                                     <span>{scheduless}</span>{" "}
                                                     <img
                                                         id="my-element154"
-                                                        style={{ "marginLeft": "15px","position":"relative","left":"4px" }}
                                                         onClick={() => removei(weeklyy.id, Index)}
-                                                        className={classes.imgStyle}
+                                                        className={classes.imgStyle21}
                                                         src={rtrash}
                                                         alt="close"
                                                         loading="lazy"
@@ -245,12 +244,8 @@ export default function OneToOneMeeting2() {
                                         </Typography>
                                     </CardContent>
                                     <ImageListItem
-                                        style={{
-                                            display: "flex",
-                                            "align-items": "center",
-                                            height: "25px",
-                                            "marginTop":"-4px"
-                                        }}
+                                     
+                                        className={classes.Li}
                                     >
                                         <img
                                             id="my-element154"

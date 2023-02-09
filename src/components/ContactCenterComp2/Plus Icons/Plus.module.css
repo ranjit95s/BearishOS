@@ -1,0 +1,158 @@
+.boxStyle {
+    font-family: Source Serif Pro !important;
+    display: flex;
+    position: relative;
+    width: 50px;
+    margin: 0px;
+    /* display: block; */
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #E9EDF2;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.rel {
+    position: relative;
+    top: 33px;
+    left: 10rem;
+}
+
+.boxStyleGreen {
+    font-family: Source Serif Pro !important;
+    overflow: visible !important;
+    display: flex;
+    position: relative;
+    width: 50px;
+    margin: 0px;
+    /* display: block; */
+    height: 50px;
+    cursor: pointer;
+    background: #5EE2A0 0% 0% no-repeat padding-box;
+    border: 3px solid #E9EDF2;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.boxIn {
+    /* width: 285px; */
+    box-shadow: none;
+    margin: auto;
+    display:flex;
+    overflow:visible !important;
+}
+
+.imgStyle {
+    width:25px;
+    height: 25px;
+}
+
+
+.imgStyle1 {
+    width: 20.83px;
+    /* position: absolute; */
+    height: 20.83px !important;
+    right: -3px;
+    top: -1px;
+}
+
+.tooltip {
+    background: darkgray !important;
+    font-size: 13px !important;
+    color: white !important;
+    font-family: 'Source Serif Pro' !important;
+    opacity: 75% !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    top: -35px !important;
+    font-weight: 100 !important;
+}
+
+.tooltip1 {
+    background: darkgray !important;
+    font-size: 13px !important;
+    color: white !important;
+    font-family: 'Source Serif Pro' !important;
+    opacity: 75% !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    width: 158px !important;
+    left: -4.3rem !important;
+    top: -9.3rem !important;
+    font-weight: 100 !important;
+}
+
+.tooltip2 {
+    background: darkgray !important;
+    font-size: 13px !important;
+    color: white !important;
+    font-family: 'Source Serif Pro' !important;
+    opacity: 75% !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    width: 158px !important;
+    left: -4.3rem !important;
+    top: -7.3rem !important;
+    font-weight: 100 !important;
+}
+
+.toggle {
+    position: absolute;
+    width: 155px;
+    height: 225px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 2px solid #E9EDF2;
+    border-radius: 5px;
+    opacity: 1;
+    animation: fadeIn 1s;
+    top: 3.5rem;
+    left: -6.5rem;
+}
+
+.toggleIn {
+    width: 131px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.t61825 {
+    text-align: left;
+    font: normal normal 600 18px/25px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tn1317 {
+    text-align: left;
+    font: normal normal normal 13px/17px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    cursor:pointer;
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    flex-direction: revert;
+}
+
+.spanHide {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

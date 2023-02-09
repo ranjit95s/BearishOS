@@ -360,6 +360,20 @@ margin-top:-2px;
     width: 25px !important;
 }
 
+.Li{
+    display: flex;
+    height: 25px !important;
+    margin-top:-4px;
+}
+
+.imgStyle21 {
+    margin-left: 5px;
+    position:relative;
+    left:10px;
+    /* margin-left: 12px; */
+    width: 25px !important;
+}
+
 .small1 {
     text-align: left;
     font: normal normal 600 13px/17px Source Serif Pro !important;
