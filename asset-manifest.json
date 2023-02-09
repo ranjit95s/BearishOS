@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BearishOS/static/css/main.8a81656e.css",
-    "main.js": "/BearishOS/static/js/main.1c8758f5.js",
+    "main.css": "/BearishOS/static/css/main.c258c8dd.css",
+    "main.js": "/BearishOS/static/js/main.288cee1e.js",
     "static/media/bg3.jpg": "/BearishOS/static/media/bg3.915e8dd31e013ad3f5a4.jpg",
     "static/media/bg2.jpg": "/BearishOS/static/media/bg2.48c2a48550d860e36988.jpg",
     "static/media/bg1.jpg": "/BearishOS/static/media/bg1.427b5bca6e29a24506c8.jpg",
@@ -13,6 +13,7 @@
     "static/media/source-serif-pro-greek-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-greek-400-normal.5f27fe26decc1385118e.woff2",
     "static/media/source-serif-pro-cyrillic-ext-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-cyrillic-ext-400-normal.a16446d373777df62a7e.woff2",
     "static/media/source-serif-pro-vietnamese-400-normal.woff2": "/BearishOS/static/media/source-serif-pro-vietnamese-400-normal.8fb8eabe508ffcd906af.woff2",
+    "static/media/gear1.svg": "/BearishOS/static/media/gear1.4c363957e577400122cf6ff8e6ef1f94.svg",
     "static/media/gear.svg": "/BearishOS/static/media/gear.ee5567f577827e4038e03b38ed0e4ff3.svg",
     "static/media/msgo.svg": "/BearishOS/static/media/msgo.c87837f833c68c7bb6a50eaf9a506c36.svg",
     "static/media/oclock.svg": "/BearishOS/static/media/oclock.2fd2c21a9a208069fb6d1638dbdaad9a.svg",
@@ -46,7 +47,11 @@
     "static/media/bvideo.svg": "/BearishOS/static/media/bvideo.719e23f811f62583731cd5f48c45d4b6.svg",
     "static/media/opro.svg": "/BearishOS/static/media/opro.e6b3b9e8f5d21f71020267cad476e393.svg",
     "static/media/pinkco.svg": "/BearishOS/static/media/pinkco.c9feba273d001d39ea662f1e6126f08e.svg",
+    "static/media/logout.svg": "/BearishOS/static/media/logout.55cb056112c330549b175c1a9119186e.svg",
+    "static/media/repeat.svg": "/BearishOS/static/media/repeat.78282a16f8d1409890465adbfb6621b0.svg",
+    "static/media/help.svg": "/BearishOS/static/media/help.b93beacc6e09d4b72988df90b18a441a.svg",
     "static/media/noti.svg": "/BearishOS/static/media/noti.3ddca71229341d5097e1b796a36f0c4d.svg",
+    "static/media/snoti.svg": "/BearishOS/static/media/snoti.44c585bfedae0e63df8ca5e8c473109e.svg",
     "static/media/smile.svg": "/BearishOS/static/media/smile.bb7447ed47415aaa93bee2e4b3ab5d2d.svg",
     "static/media/gedit.svg": "/BearishOS/static/media/gedit.67c06c8faa156eb5771da95951e7a5d9.svg",
     "static/media/edit23.svg": "/BearishOS/static/media/edit23.4e82561e0aded095346278f261b7ad2b.svg",
@@ -90,11 +95,11 @@
     "static/media/remove.svg": "/BearishOS/static/media/remove.82b32639067be531e75673b3418888a2.svg",
     "static/media/l.svg": "/BearishOS/static/media/l.051ccc1c15ed5e630d3fae28a49cb434.svg",
     "static/media/search.svg": "/BearishOS/static/media/search.5c8ace101a9d985a28a0e01240273659.svg",
-    "main.8a81656e.css.map": "/BearishOS/static/css/main.8a81656e.css.map",
-    "main.1c8758f5.js.map": "/BearishOS/static/js/main.1c8758f5.js.map"
+    "main.c258c8dd.css.map": "/BearishOS/static/css/main.c258c8dd.css.map",
+    "main.288cee1e.js.map": "/BearishOS/static/js/main.288cee1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a81656e.css",
-    "static/js/main.1c8758f5.js"
+    "static/css/main.c258c8dd.css",
+    "static/js/main.288cee1e.js"
   ]
 }
