@@ -32,10 +32,10 @@ const Team = () => {
                             <Typography variant="h1" className={classes.t61825}>
                                 Create New Team
                             </Typography>
-                            <ImageListItem id="my-element19">
+                            <ImageListItem id="my-Team">
                                 <ReactTooltip
                                     className={classes.tooltip}
-                                    anchorId="my-element19"
+                                    anchorId="my-Team"
                                     type="light"
                                     effect="solid"
                                 >
@@ -52,7 +52,7 @@ const Team = () => {
                                 <input
                                     onChange={(e) => setName(e.target.value)}
                                     type="text"
-                                    placeholder="New Department Name"
+                                    placeholder="New Team Name"
                                     name="name"
                                     id="name"
                                 />

@@ -34,10 +34,10 @@ const Dire = () => {
                             <Typography variant="h1" className={classes.t61825}>
                                 Add Contact to Directory
                             </Typography>
-                            <ImageListItem id="my-elementdir">
+                            <ImageListItem id="my-DireDire">
                                 <ReactTooltip
                                     className={classes.tooltip}
-                                    anchorId="my-elementdir"
+                                    anchorId="my-DireDire"
                                     type="light"
                                     effect="solid"
                                 >

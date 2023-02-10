@@ -16,6 +16,8 @@ import CallCenter2 from './container/CallCenter2'
 import SuperChargeComp from './container/SuperChargeComp'
 import Login from './container/Login'
 import ContactCenterComp2 from './container/ContactCenterComp2'
+import MessageComp2 from './container/MessageComp2'
+import SettingComps from './container/SettingComps'
 import './App.css';
 
 function App() {
@@ -30,12 +32,14 @@ function App() {
     {/* <VideoCenterOne /> */}
     {/* <CalendarComp4 /> */}
     {/* <MessageComp /> */}
-    {/* <WorkSpaceMoreComp /> */}
+    <WorkSpaceMoreComp />
     {/* <TaskCenter /> */}
   {/* <SuperChargeComp/>  */}
     {/* <CallCenter2 /> */}
   {/* <Login /> */}
-  <ContactCenterComp2 />
+  {/* <ContactCenterComp2 /> */}
+  <MessageComp2 />
+  <SettingComps />
 
     </div>
   );

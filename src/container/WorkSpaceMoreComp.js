@@ -10,13 +10,14 @@ import ReturnToDoc from '../components/WorkSpaceMoreComp/RetToDoc'
 import Welcome from '../components/WorkSpaceMoreComp/Welcome'
 import ReqAccess from '../components/WorkSpaceMoreComp/ReqAccess'
 import AddComment from '../components/WorkSpaceMoreComp/AddComment'
-
+import {BearishFea} from '../components/WorkSpaceMoreComp/BearishFea'
 
 function WorkSpaceMoreComp() {
 
     return (
         <div style={{"display":"flex","flex-wrap": "wrap"}}>
              
+            <BearishFea/> 
             <NameYourFork/> 
             <ReqSent/> 
             <AccessDenied/> 

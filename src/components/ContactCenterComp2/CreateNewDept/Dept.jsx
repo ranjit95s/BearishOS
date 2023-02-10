@@ -22,10 +22,10 @@ const Dept = () => {
                             <Typography variant="h1" className={classes.t61825}>
                                 Create New Department
                             </Typography>
-                            <ImageListItem id="my-element19">
+                            <ImageListItem id="my-deptt">
                                 <ReactTooltip
                                     className={classes.tooltip}
-                                    anchorId="my-element19"
+                                    anchorId="my-deptt"
                                     type="light"
                                     effect="solid"
                                 >

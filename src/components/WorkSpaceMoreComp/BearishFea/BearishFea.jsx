@@ -1,30 +1,29 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import { StyledEngineProvider } from '@mui/material/styles';
-import classes from "./workSMC.module.css";
-export default function NameYourFork() {
-   
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import { StyledEngineProvider } from "@mui/material/styles";
+import classes from "./Fea.module.css";
+const BearishFea = () =>  {
     return (
         <>
             <StyledEngineProvider injectFirst>
                 <Box
-                    component="accessDenied"
+                    component="firstConnect"
                     className={classes.boxStyle}
                 >
                     <Card className={classes.boxIn}>
-                        <CardContent className={classes.headerStyle}>
+                    <CardContent className={classes.headerStyle}>
                             <Typography variant="h1" className={classes.mainT}>
-                            Request Sent
+                            Bearish OS Feature
                             </Typography>
                         </CardContent>
                         <CardContent className={classes.headerStyle2}>
                             <Typography variant="h1" className={classes.mainT2}>
-                            You’re request to access this fork has been successfully sent.
+                            In this Open Beta, Advanced Analytics only work with items stored in Bearish OS Drive.
                             </Typography>
                         </CardContent>
                         <CardContent
@@ -48,3 +47,4 @@ export default function NameYourFork() {
         </>
     );
 }
+export default BearishFea;

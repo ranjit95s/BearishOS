@@ -52,10 +52,10 @@ const Bearishuser = () => {
                             <Typography variant="h1" className={classes.t61825}>
                                 Add new Bearish OS user
                             </Typography>
-                            <ImageListItem id="my-elementdir">
+                            <ImageListItem id="my-useruser">
                                 <ReactTooltip
                                     className={classes.tooltip}
-                                    anchorId="my-elementdir"
+                                    anchorId="my-useruser"
                                     type="light"
                                     effect="solid"
                                 >

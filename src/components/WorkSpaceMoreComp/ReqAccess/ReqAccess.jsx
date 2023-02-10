@@ -6,31 +6,31 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import { StyledEngineProvider } from '@mui/material/styles';
-import aaa from "./wel.module.css";
+import classes from "./wel.module.css";
 export default function ReqAccess() {
     return (
         <>
             <StyledEngineProvider injectFirst>
             <Box
                     component="add"
-                    className={aaa.boxStyle}
+                    className={classes.boxStyle}
                 >
-                    <Card className={aaa.boxIn}>
-                        <CardContent className={aaa.headerStyle}>
-                            <Typography variant="h1" className={aaa.mainT}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.headerStyle}>
+                            <Typography variant="h1" className={classes.mainT}>
                             Request Access
                             </Typography>
                         </CardContent>
-                        <CardContent className={aaa.headerStyle2}>
-                            <Typography variant="h1" className={aaa.mainT2}>
+                        <CardContent className={classes.headerStyle2}>
+                            <Typography variant="h1" className={classes.mainT2}>
                             To request access to this fork please provide your name & email.
                             </Typography>
                         </CardContent>
-                        <CardActions className={aaa.signSec}>
-                            <CardContent className={aaa.wellM}>
+                        <CardActions className={classes.signSec}>
+                            <CardContent className={classes.wellM}>
                                 <CardContent
                                 style={{"width":"45%"}}
-                                    className={aaa.inputStyle}
+                                    className={classes.inputStyle}
                                 >
                                     <input
                                         type="text"
@@ -41,7 +41,7 @@ export default function ReqAccess() {
                                 </CardContent>
                                 <CardContent
                                 style={{"width":"45%"}}
-                                    className={aaa.inputStyle}
+                                    className={classes.inputStyle}
                                 >
                                     <input
                                         type="text"
@@ -52,7 +52,7 @@ export default function ReqAccess() {
                                 </CardContent>
                             </CardContent>
                             <CardContent
-                                className={aaa.inputStyle}
+                                className={classes.inputStyle}
                             >
                                 <input
                                     type="text"
@@ -62,11 +62,11 @@ export default function ReqAccess() {
                                 />
                             </CardContent>
                             <CardContent
-                                className={aaa.btns}
+                                className={classes.btns}
                                 
                             >
                                 <CardContent
-                                    className={aaa.btnIn}
+                                    className={classes.btnIn}
                                 >
                                     <Button
                                         size="small"
