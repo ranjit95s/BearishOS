@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import EmailComp from './container/EmailComp'
 // import EmailComp2 from './container/EmailComp2'
-// import EmailTwo from './container/EmailTwo'
+import EmailTwo from './container/EmailTwo'
 import CalendarComp from './container/CalendarComp'
 import CalendarComp2 from './container/CalendarComp2'
 import CalendarComp2One from './container/CalendarComp2One'
@@ -25,6 +25,7 @@ function App() {
     <div className='App'>
       {/* <WorkSpaceCS /> */}
       {/* <EmailComp/> */}
+      {/* <EmailTwo/> */}
       {/* <CalendarComp2One /> */}
       {/* <CalendarComp /> */}
       {/* <CalendarComp2 /> */}
@@ -32,13 +33,13 @@ function App() {
     {/* <VideoCenterOne /> */}
     {/* <CalendarComp4 /> */}
     {/* <MessageComp /> */}
-    <WorkSpaceMoreComp />
+    {/* <WorkSpaceMoreComp /> */}
     {/* <TaskCenter /> */}
   {/* <SuperChargeComp/>  */}
     {/* <CallCenter2 /> */}
   {/* <Login /> */}
   {/* <ContactCenterComp2 /> */}
-  <MessageComp2 />
+  {/* <MessageComp2 /> */}
   <SettingComps />
 
     </div>
