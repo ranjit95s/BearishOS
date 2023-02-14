@@ -1,5 +1,6 @@
 import TranquilAI from "./TranquilAI";
 
-export default 
+export  {
     TranquilAI
 
+}

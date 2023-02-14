@@ -42,6 +42,11 @@
     margin-top: 20px;
 }
 
+hr {
+    opacity: 0.5;
+    margin: 10px 0px;
+}
+
 .t61825 {
     text-align: left;
 font: normal normal 600 18px/25px Source Serif Pro;

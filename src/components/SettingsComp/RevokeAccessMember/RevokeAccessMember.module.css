@@ -1,0 +1,116 @@
+.boxStyle {
+    font-family: Source Serif Pro !important;
+    top: 33px;
+    left: 24px;
+    position: relative; /* imp */
+    width: 300px;
+    height: 350px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.boxIn {
+    width: 275px;
+    box-shadow: none;
+    margin: auto;
+    overflow:visible !important;
+}
+
+.titleStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 18px !important;
+    /* padding-bottom: 10px !important; */
+    font-weight: bold;
+    padding: 0px;
+    align-items: center;
+}
+
+.t61825 {
+    font: normal normal 600 18px/25px Source Serif Pro !important;
+    letter-spacing: 0px;
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+.info {
+    text-align: left;
+font: normal normal 300 15px/21px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+margin-top: 10px;
+}
+
+.inpf {
+margin-top: 10px;
+}
+
+hr {
+    opacity: 30%;
+    margin: 10px 5px 10px 0px;
+    width: -webkit-fill-available;
+}
+
+.inpy {
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    opacity: 1;
+    flex-direction: row;
+    padding: 0px 5px;
+    align-items: center;
+    height: 40px;
+    justify-content: start;
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    /* opacity: 0.5; */
+}
+
+.op1 {
+    opacity: 0.5 !important;
+}
+
+.inpy input {
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.inpy input::placeholder  {
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+}
+
+.btno {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.btni {
+    height:40px;
+    width: 125px;
+       background: #ff9595 0% 0% no-repeat padding-box;
+       color: darkred;
+       border: 1px solid #E9EDF2;
+       border-radius: 5px;
+       opacity: 75%;
+    align-items: center;
+    justify-content: center;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    /* opacity: 0.25; */
+}

@@ -36,9 +36,8 @@ opacity: 1;
 }
 
 hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    opacity:0.5;
+    opacity: 0.5;
+    margin: 10px 0px;
 }
 
 .flx {
@@ -81,7 +80,7 @@ opacity: 1;
 
 .finput input {
     width: 110px;
-    padding: 10px;
+    padding: 0px 10px;
     /* border: 1px solid red; */
     height: 30px;
     border: 1px solid #E9EDF2;
@@ -115,7 +114,7 @@ opacity: 1;
     width: 290px;
     height: 30px;
     justify-content: space-between;
-    padding: 10px !important;
+    padding: 0px 10px !important;
 }
 
 .t61115 {

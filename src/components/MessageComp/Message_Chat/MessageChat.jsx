@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "../../img/Close.svg";
-import remove from "../../img/remove.svg";
-import greenCheck from "../../img/greenCheck.svg";
+import Close from "../../../../../Images/Bearish/Close.svg";
+import remove from "../../../../../Images/Bearish/remove.svg";
+import greenCheck from "../../../../../Images/Bearish/greenCheck.svg";
 
-import laugh from "../../img/laugh.svg";
-import attachment from "../../img/attachment.png";
-import pic from "../../img/pic.png";
-import s1 from "../../img/s1.svg";
+import laugh from "../../../../../Images/Bearish/laugh.svg";
+import attachment from "../../../../../Images/Bearish/attachment.png";
+import pic from "../../../../../Images/Bearish/pic.png";
+import s1 from "../../../../../Images/Bearish/s1.svg";
 
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
@@ -76,7 +77,24 @@ export default function MessageChat() {
                                 </CardContent>
                             </CardContent>
                         </CardContent>
-                        <CardContent className={t106.msgSec}>Message Components</CardContent>
+                        <CardContent className={t106.msgSec}>
+                            <Stack className={t106.textG}>
+                                <Typography variant="h5"style={{width:"25px"}} className={t106.iconU}>
+                                    LB
+                                </Typography>
+                            </Stack>
+                            <Stack className={t106.times}>
+                                00:00:00 - 00:00:00
+                            </Stack>
+                            <Stack className={t106.textW}>
+                                <Typography variant="h5"style={{width:"25px"}} className={t106.iconU}>
+                                    LB
+                                </Typography>
+                            </Stack>
+                            <Stack className={t106.times}>
+                                00:00:00 - 00:00:00
+                            </Stack>
+                        </CardContent>
                     </Card>
                         <CardContent className={isOpen ? t106.sendPart : t106.spanHide}>
                         <ImageListItem id="my-element1323"><img src={laugh} alt="hero" className={t106.imgStyle} />

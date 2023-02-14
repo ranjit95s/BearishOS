@@ -36,9 +36,8 @@ opacity: 1;
 }
 
 hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    opacity:0.5;
+    opacity: 0.5;
+    margin: 10px 0px;
     width: 450px;
 }
 
@@ -61,7 +60,7 @@ cursor: pointer;
 
 .finput input {
     width: 54px;
-    padding: 10px;
+    padding: 0 10px;
     /* border: 1px solid red; */
     height: 30px;
     border: 1px solid #E9EDF2;
@@ -95,7 +94,7 @@ cursor: pointer;
     width: 290px;
     height: 30px;
     justify-content: space-between;
-    padding: 10px !important;
+    padding: 0px 10px !important;
 }
 
 .t61115 {
@@ -118,20 +117,22 @@ cursor: pointer;
     align-items: center;}
 
 .upbtn {
-      /* text-align: left; */
-      font: normal normal 600 11px/15px Source Serif Pro;
-      letter-spacing: 0px;
-      color: #000000;
-      opacity: 75%;
-      margin-left: 182px;
-      background: #88f3be 0% 0% no-repeat padding-box;
-      border: 1px solid #E9EDF2;
-      border-radius: 5px;
-      padding: 5px;
-      text-align: center;
-      width: 150px;
-      height: 25px;
-      cursor: pointer;
+    /* text-align: left; */
+    font: normal normal 600 11px/15px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 75%;
+    margin-left: 182px;
+    background: #88f3be 0% 0% no-repeat padding-box;
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
 }
 
 .fp img {
@@ -178,7 +179,7 @@ opacity: 1;
 
 .finput input {
     width: 228px;
-    padding: 10px;
+    padding: 0px 10px;
     /* border: 1px solid red; */
     height: 30px;
     border: 1px solid #E9EDF2;

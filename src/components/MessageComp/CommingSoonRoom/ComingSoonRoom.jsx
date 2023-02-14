@@ -1,8 +1,8 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "../img/Close.svg";
-import sem from "../img/LogoM.png";
+import Close from "../../../../../Images/Bearish/Close.svg";
+import sem from "../../../../../Images/Bearish/LogoM.png";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -11,7 +11,7 @@ import CardContent from "@mui/material/CardContent";
 import { StyledEngineProvider } from "@mui/material/styles";
 import classes from './Message.module.css'
 import { Tooltip as ReactTooltip } from "react-tooltip";
-export default function ComingSoonChat() {
+const ComingSoonRoom = () => {
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -39,7 +39,7 @@ export default function ComingSoonChat() {
                                 <Typography
                                     variant="h1"
                                     className={classes.signOption}>
-                                    Bearish Group Chat
+                                    Bearish Group Room
                                 </Typography>
                             </Button>
                             <Typography className={classes.info}>
@@ -65,3 +65,4 @@ export default function ComingSoonChat() {
         </>
     );
 }
+export default ComingSoonRoom;

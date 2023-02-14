@@ -9,17 +9,26 @@ import {SettingComp,
     General,
     AdminConsole,Plan} from '../components/SettingsComp/'
 
+    import {ChangePassword} from '../components/SettingsComp/ChangePassword'
+    import {RevokeAccessAdmin} from '../components/SettingsComp/RevokeAccessAdmin'
+    import {RevokeAccessLead} from '../components/SettingsComp/RevokeAccessLead'
+    import {RevokeAccessMember} from '../components/SettingsComp/RevokeAccessMember'
+
 function SettingComps() {
     return (
         <div style={{"display":"flex","flexWrap":"wrap"}}>
-            <SettingComp/>   
-            <General/>   
-            <Security/>   
-            <HandShakeAI/>   
-            <AdminConsole/>   
-            <Plan/>   
-            <Notification/>   
-            <TranquilAI/>   
+            {/* <SettingComp/>    */}
+            {/* <General/>    */}
+            {/* <Security/>    */}
+            {/* <HandShakeAI/>    */}
+            {/* <AdminConsole/>    */}
+            {/* <Plan/>    */}
+            {/* <Notification/>    */}
+            {/* <TranquilAI/>    */}
+            <ChangePassword/>   
+            <RevokeAccessAdmin/>   
+            <RevokeAccessLead/>   
+            <RevokeAccessMember/>   
         </div>
     )
 }

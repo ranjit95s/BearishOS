@@ -16,6 +16,11 @@
     /* margin-bottom: 20px; */
 }
 
+hr {
+    opacity: 0.5;
+    margin: 10px 0px;
+}
+
 .boxIn {
     width: 450px;
     box-shadow: none;

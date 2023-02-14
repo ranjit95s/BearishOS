@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import Box from "@mui/material/Box";
 import ImageListItem from "@mui/material/ImageListItem";
-import Close from "../../img/Close.svg";
-import sem from "../../img/LogoM.png";
+import Close from "../../../../../Images/Bearish/Close.svg";
+import sem from "../../../../../Images/Bearish/LogoM.png";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -12,7 +12,7 @@ import { StyledEngineProvider } from "@mui/material/styles";
 import classes from './Message.module.css'
 // import sty from "../sty.module.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
-export default function CreateNewChat() {
+const CreateNewChat = () => {
 
     const [isAdd, setIsAdd] = useState('Contact Added');
     return (
@@ -78,3 +78,4 @@ export default function CreateNewChat() {
         </>
     );
 }
+export default CreateNewChat;

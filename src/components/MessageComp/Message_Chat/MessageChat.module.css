@@ -116,10 +116,16 @@
     padding: 7px !important;
     border-radius: 50%;
     font-weight: 700 !important;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
     border: 1px solid gray;
     margin-right: 10px;
     font: normal normal 300 15px/21px Source Serif Pro;
 }
+
+/* .padding0{padding:0px !important; height: 20rem;} */
 
 .flexU {
     align-items: center;
@@ -148,11 +154,34 @@
 }
 
 .msgSec {
-    background-color: #5EE2A0;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 5px;
-    opacity: 0.75;
+    /* background-color: #5EE2A0; */
+    /* box-shadow: 0px 3px 6px #00000029; */
+    /* border-radius: 5px; */
+    /* opacity: 0.75; */
+    padding:0px !important;
     height: 20rem;
+}
+
+.textG {
+    background: #E9EDF2 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 0.75;
+}
+
+.textM {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9EDF2;
+    opacity: 0.75;
+}
+
+.times {
+    text-align: left;
+font: normal normal 300 11px/15px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+align-items: end;
+margin-top:5px;
 }
 
 .sendPart {
