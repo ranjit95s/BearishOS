@@ -18,6 +18,7 @@ import Login from './container/Login'
 import ContactCenterComp2 from './container/ContactCenterComp2'
 import MessageComp2 from './container/MessageComp2'
 // import SettingComps from './container/SettingComps'
+import CalScheduleLinks from './container/CalScheduleLinks'
 // import './App.css';
 // import {BrowserRouter} from "react-router-dom";
 import theme from "./MUI/theme";
@@ -45,6 +46,7 @@ function App() {
           {/* <ContactCenterComp2 /> */}
           {/* <MessageComp2 /> */}
           {/* <SettingComps /> */}
+          <CalScheduleLinks />
         </StyledEngineProvider>
       </ThemeProvider>
     </>
