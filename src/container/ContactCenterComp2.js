@@ -14,7 +14,7 @@ import {Status} from '../components/ContactCenterComp2/Status'
 
 function ContactCenterComp2() {
     return (
-        <div style={{"display":"flex","flexWrap":"wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             <Dept/> 
             <Team/> 
             <Dire/> 

@@ -1,57 +1,60 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import ImageListItem from '@mui/material/ImageListItem';
-import logoM from './LogoM1.jpg.png';
-import bg from './bg1.jpg';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import CardContent from '@mui/material/CardContent';
-import { StyledEngineProvider } from '@mui/material/styles';
-import log from './Login.module.css'
+import {Stack, TextField} from "@mui/material";
+import BearishLogo from './LogoM1.jpg.png';
+import classes from './Login.module.css'
 export default function Login1() {
+    const [state, setState] = useState({password: '', email: ''});
+    const handleChange = ({target}) => {
+        setState(pre => ({...pre, [target.name]: target.value}))
+    };
     return (
         <>
-            <StyledEngineProvider injectFirst>
-                <Box component="login1" style={{ "backgroundImage": `url(${bg})` }} className={log.boxStyle}>
-                    <Stack className={log.outStyle}>
-                        <Stack className={log.inStyle}>
-                            <Stack className={log.w}>
-                                <Stack className={log.loginHead}>
-                                    <ImageListItem style={{ "marginRight": "5px" }} className={log.imgStyle}>
-                                        <img className={log.imgStyle} src={logoM} alt="close" loading="lazy" />
-                                    </ImageListItem>
-                                    <Typography variant="h1" className={log.mainT}>
+           <Stack>
+                <Stack className={classes.bg}>
+                    <Stack className={classes.loginModal}>
+                        <Stack className={classes.loginBox}>
+                            <Stack gap={'29px'} padding={'63px 90px 77px 85px'}>
+                                <Stack className={classes.logoAdnTitle}>
+                                    <Stack>
+                                        <img width={'75px'} src={BearishLogo} alt={''}/>
+                                    </Stack>
+                                    <Stack className={classes.bearishOSName}>
                                         Bearish OS
-                                    </Typography>
+                                    </Stack>
                                 </Stack>
-                                <Stack style={{ "marginTop": "39px" }} className={log.inputSty}>
-                                    <Stack className={log.inputT}>
-                                        <input type="text" placeholder='Email' name="email" id="email" />
+                                <Stack>
+                                    <Stack gap={'20px'} >
+                                        <TextField placeholder={'Email'} name={'email'} onChange={handleChange}/>
+                                        <Stack gap={'10px'}>
+                                            <TextField  placeholder={'Password'} type={'password'} name={'password'}
+                                                       onChange={handleChange}/>
+                                            <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
+                                                <Stack className={classes.forgotPassword}>
+                                                    Forgot Password
+                                                </Stack>
+                                                <Stack direction={'row'} gap={'3px'}>
+                                                    <Stack fontSize={'13px'}>
+                                                        Don’t have an account?
+                                                    </Stack>
+                                                    <Stack className={classes.signUp}>
+                                                        Sign Up Now
+                                                    </Stack>
+                                                </Stack>
+                                            </Stack>
+                                        </Stack>
                                     </Stack>
-                                    <Stack style={{ "marginTop": "20px" }} className={log.inputT}>
-                                        <input type="Password" placeholder='Password' name="code" id="code" />
+                                </Stack>
+                                <Stack alignItems={'center'}>
+                                    <Stack className={classes.loginBtn} >
+                                        Login
                                     </Stack>
-                                    <CardContent className={log.flexI}>
-                                        <a href="http://"> Forgot Password </a>
-                                        <Typography className={log.styFont}>
-                                            Don't have an account? 
-                                            <span><a href="http://"> Sign Up Now </a></span>
-                                        </Typography>
-                                    </CardContent>
-                                    <CardContent className={log.logbtns}>
-                                        <CardContent className={log.logbtn}>
-                                            <Button variant="contained" className={log.styFont}>
-                                                Login
-                                            </Button>
-                                        </CardContent>
-                                    </CardContent>
                                 </Stack>
                             </Stack>
                         </Stack>
                     </Stack>
-                </Box>
-            </StyledEngineProvider>
+                </Stack>
+            </Stack>
         </>
     );
 }

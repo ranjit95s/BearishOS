@@ -8,7 +8,7 @@ import CalendarWorkSpace from '../components/CalendarComp2One/CalendarWorkSpace'
 function CalendarComp2One() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             <CalendarWorkSpace/>
         </div>
     )

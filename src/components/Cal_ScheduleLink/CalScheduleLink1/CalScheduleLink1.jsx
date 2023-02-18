@@ -14,7 +14,7 @@ const CalScheduleLink1 = () => {
     });
     return (
         <>
-            <Box component="Cal_ScheduleLink1" className={classes.boxStyle}>
+            <Stack component="Cal_ScheduleLink1" className={classes.boxStyle}>
                 <Card className={classes.boxIn}>
                     <Stack className={classes.imgSty}>
                         <Stack className={classes.imgIcon}>
@@ -64,7 +64,7 @@ const CalScheduleLink1 = () => {
                         </Stack>
                     </Stack>
                 </Card>
-            </Box>
+            </Stack>
         </>
     );
 };

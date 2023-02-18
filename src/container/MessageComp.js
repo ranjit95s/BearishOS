@@ -11,7 +11,7 @@ import MessageChat from '../components/MessageComp/Message_Chat/MessageChat'
 function MessageComp() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
              
             <ComingSoonChat/> 
             <ComingSoonRoom/> 

@@ -16,7 +16,7 @@ import FirstConnect1 from '../components/Email Center/FirstConnect/FirstConnect'
 function EmailComp() {
 
     return (
-        <div style={{"display":"flex","flexWrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             <FirstConnect/>
             <FirstConnect1/>
             <AlphaAccess/>

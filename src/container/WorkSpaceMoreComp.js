@@ -15,7 +15,7 @@ import {BearishFea} from '../components/WorkSpaceMoreComp/BearishFea'
 function WorkSpaceMoreComp() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
              
             <BearishFea/> 
             <NameYourFork/> 

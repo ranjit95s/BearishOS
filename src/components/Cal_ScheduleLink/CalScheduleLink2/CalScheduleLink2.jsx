@@ -56,7 +56,7 @@ const CalScheduleLink2 = () => {
     ]
     return (
         <>
-                <Box component="Cal_ScheduleLink2" className={classes.boxStyle}>
+                <Stack component="Cal_ScheduleLink2" className={classes.boxStyle}>
                     <Card className={classes.boxIn}>
                         <Stack className={classes.header}>
                         Select a date and time for the event
@@ -85,7 +85,7 @@ const CalScheduleLink2 = () => {
                             })}
                         </Stack>
                     </Card>
-                </Box>
+                </Stack>
         </>
     );
 };

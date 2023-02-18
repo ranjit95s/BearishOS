@@ -21,7 +21,7 @@ import AskingJoinMeeting1 from '../components/VideoCenterOne/Video Center One/As
 function VideoCenterOne() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+         <div style={{"margin":"10px","gap":"20px"}}>
             <CreateNewMeetingLoad1/>
 
             <CreateNewMeetingGo1/>

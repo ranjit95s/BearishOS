@@ -10,7 +10,7 @@ import CalendarName from '../components/Calendar_Center_Two/CalendarName'
 function CalendarComp2() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             {/* <EventNameOne/>
             <EventNameTwo/>
             <SuccessEvent/> */}

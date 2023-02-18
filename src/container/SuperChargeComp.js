@@ -20,7 +20,7 @@ import NameYourReco123 from '../components/SuperChargeComp/Recording_Controls/Na
 function SuperChargeComp() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             {/* <NameYourReco/>  */}
             <NameYourReco12/> 
             <NameYourReco123/> 

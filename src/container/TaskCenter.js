@@ -8,7 +8,7 @@ import TaskCenterM from '../components/TaskCenter/TaskCenterM'
 function TaskCenter() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             <TaskCenterM/> 
         </div>
     )

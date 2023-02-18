@@ -6,7 +6,7 @@ import "@fontsource/source-serif-pro";
 
 function CalScheduleLinks() {
     return (
-        <div style={{"display":"flex","flexWrap":"wrap","margin":"10px","gap":"20px"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             <CalScheduleLink1/>   
             <CalScheduleLink2/>   
             <CalScheduleLink3/>   

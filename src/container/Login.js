@@ -1,19 +1,18 @@
 import React from 'react'
 import "@fontsource/source-serif-pro";
-import '../components/sty.module.css';
-import Login1 from '../components/Login/Login1'
-import ForgotP from '../components/Login/ForgotP'
-import CreateID from '../components/Login/CreateID'
-
-
+// import '../components/sty.module.css';
+// import Login1 from '../components/Login/Login1'
+// import {ForgotP} from '../components/ForgotPass/'
+// import {CreateID} from '../components/CreateAccount/'
+import {ForgotPassRedirect} from '../components/ForgotPassRedirect'
+import {CreateAccOneTimeCode} from '../components/CreateAccOneTimeCode'
 
 function Login() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
-            <Login1/> 
-            <ForgotP/> 
-            <CreateID/> 
+        <div style={{"margin":"10px","gap":"20px"}}>
+            <CreateAccOneTimeCode/>
+            <ForgotPassRedirect/>
         </div>
     )
 }

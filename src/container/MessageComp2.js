@@ -10,7 +10,7 @@ import {ConnectAccount} from '../components/MessageComp2/ConnectAccount'
 
 function MessageComp2() {
     return (
-        <div style={{"display":"flex","flexWrap":"wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             <ConnectAccount/>  
             <RecentMessage/> 
         </div>

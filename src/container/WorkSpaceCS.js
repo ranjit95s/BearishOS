@@ -17,7 +17,7 @@ import EnterNameGD from '../components/WorkSpaceCS/EnterNameGD'
 function CalendarComp2() {
 
     return (
-        <div style={{"display":"flex","flexWrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             <TicklingDP/>
             <TicklingBB/>
             <TicklingGD/>

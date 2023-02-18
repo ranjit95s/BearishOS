@@ -12,7 +12,7 @@ import OneToOneMeeting11 from "../components/CalendarComp4/OneToOneMeeting1/OneT
 import OneToOneMeeting22 from '../components/CalendarComp4/OneToOneMeeting2/OneToOneMeeting2'
 function CalendarComp4() {
   return (
-    <div style={{ display: "flex", "flex-wrap": "wrap" }}>
+    <div style={{"margin":"10px","gap":"20px"}}>
       <CVschedules />
       <ChooseEventType />
       <Success />

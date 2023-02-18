@@ -10,7 +10,7 @@ import CalendarEventRemindar12 from '../components/CalendarComp3/Calendar Compon
 function CalendarComp3() {
 
     return (
-        <div style={{"display":"flex","flex-wrap": "wrap"}}>
+        <div style={{"margin":"10px","gap":"20px"}}>
             {/* <CalendarEventRemindar/> */}
             {/* <CalendarEventRemindar2/> */}
 
