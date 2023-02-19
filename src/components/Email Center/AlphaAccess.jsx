@@ -9,7 +9,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import { StyledEngineProvider } from '@mui/material/styles';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import ReactTooltip from "../Tooltip/ReactTooltip";
 import classes from './EmailCenter.module.css'
 export default function AlphaAccess() {
     return (
@@ -22,10 +22,9 @@ export default function AlphaAccess() {
                             Alpha Access
                         </Typography>
                         <ImageListItem id="AlphaAccess">
-                                <ReactTooltip  anchorId="AlphaAccess" className={classes.tooltip} type='light' effect='solid'>
-                                    <span>Close</span>
-                                </ReactTooltip>
-                                <img src={Close} alt={''} loading="lazy" />
+                        <ReactTooltip title={'Our Intelligent Connection connecting Google Gmail and Bearish OS is currently in Alpha Access only.If you think you should have access contact'} fontWeight={'bold'}>
+                        <img src={Close} alt={''} />
+                        </ReactTooltip>
                             </ImageListItem>
                     </CardContent>
                     <CardActions className={classes.signSection}>
