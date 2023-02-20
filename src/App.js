@@ -1,4 +1,4 @@
-import EmailComp from "./container/EmailComp";
+// import EmailComp from "./container/EmailComp";
 // // import EmailComp2 from './container/EmailComp2'
 // import EmailTwo from "./container/EmailTwo";
 // import CalendarComp from "./container/CalendarComp";
@@ -8,14 +8,14 @@ import EmailComp from "./container/EmailComp";
 // import CalendarComp3 from "./container/CalendarComp3";
 // import VideoCenterOne from "./container/VideoCenterOne";
 // import CalendarComp4 from "./container/CalendarComp4";
-import WorkSpaceMoreComp from "./container/WorkSpaceMoreComp";
-import MessageComp from "./container/MessageComp";
+// import WorkSpaceMoreComp from "./container/WorkSpaceMoreComp";
+// import MessageComp from "./container/MessageComp";
 // import TaskCenter from "./container/TaskCenter";
 // import CallCenter2 from "./container/CallCenter2";
 import SuperChargeComp from "./container/SuperChargeComp";
 // import Login from "./container/Login";
 // import ContactCenterComp2 from "./container/ContactCenterComp2";
-import MessageComp2 from "./container/MessageComp2";
+// import MessageComp2 from "./container/MessageComp2";
 // // import SettingComps from './container/SettingComps'
 // import CalScheduleLinks from "./container/CalScheduleLinks";
 import theme from "./MUI/theme";
@@ -35,9 +35,9 @@ function App() {
           {/* <VideoCenterOne /> */}
           {/* <CalendarComp4 /> */}
           {/* <MessageComp /> */}
-          <WorkSpaceMoreComp />
+          {/* <WorkSpaceMoreComp /> */}
           {/* <TaskCenter /> */}
-          {/* <SuperChargeComp /> */}
+          <SuperChargeComp />
           {/* <CallCenter2 /> */}
           {/* <Login /> */}
           {/* <ContactCenterComp2 /> */}
