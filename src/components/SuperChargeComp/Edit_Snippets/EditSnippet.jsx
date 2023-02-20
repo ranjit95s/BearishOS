@@ -10,8 +10,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import classes from "./createSnippet.module.css";
 import { StyledEngineProvider } from "@mui/material/styles";
-import { Tooltip as ReactTooltip } from "react-tooltip";
-export default function CrateSnippet() {
+const EditSnippet = () => {
     const [inputValue, setInputValue] = React.useState("");
 
     const onChangeHandler = (event) => {
@@ -31,17 +30,9 @@ export default function CrateSnippet() {
                     <Card className={classes.boxIn}>
                         <CardContent className={classes.titleStyle}>
                             <Typography variant="h1" className={classes.t61825}>
-                                Create Snippet
+                                Edit Snippet
                             </Typography>
                             <ImageListItem id="my-element5330">
-                                <ReactTooltip
-                                    className={classes.tooltip}
-                                    anchorId="my-element5330"
-                                    type="light"
-                                    effect="solid"
-                                >
-                                    <span>Close</span>
-                                </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
@@ -92,8 +83,11 @@ export default function CrateSnippet() {
                             <CardContent
                                 className={classes.btns}
                             >
+                                <Button style={{marginRight:"10px"}} className={classes.red} variant="contained">
+                                    Delete
+                                </Button>
                                 <Button variant="contained">
-                                    Create
+                                    Save
                                 </Button>
                             </CardContent>
                         </CardContent>
@@ -103,3 +97,4 @@ export default function CrateSnippet() {
         </>
     );
 }
+export default EditSnippet;

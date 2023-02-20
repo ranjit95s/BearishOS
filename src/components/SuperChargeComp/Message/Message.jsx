@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from '../img/Close.svg';
-import search from '../img/search.svg';
-import edit from '../img/edit1.svg';
+import Close from '../../img/Close.svg';
+import search from '../../img/search.svg';
+import edit from '../../img/edit1.svg';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';

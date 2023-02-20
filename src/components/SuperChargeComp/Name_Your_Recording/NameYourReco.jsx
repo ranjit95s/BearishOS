@@ -11,7 +11,7 @@ import logoM from '../../img/add1.svg'
 import CardContent from '@mui/material/CardContent';
 import { StyledEngineProvider } from '@mui/material/styles';
 import classes from './SuperCharge.module.css';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import ReactTooltip from "../../Tooltip/ReactTooltip";
 export default function NameYourReco() {
     const [choose, setChoose] = useState(false);
     const [isCreate, setIsCreate] = useState(false);
@@ -44,18 +44,9 @@ export default function NameYourReco() {
                             </Typography>
                             <ImageListItem className={classes.imgFlex}>
                                 <img src={dad} style={{ "marginRight": "15px" }} alt="dad" loading="lazy" />
-                            <ReactTooltip
-                                        className={classes.tooltip2}
-                                        anchorId="my-yt"
-                                        type="light"
-                                        effect="solid"
-                                    >
-                                        <span>
-                                            Add the rough amount of time this agenda item should
-                                            take in the meeting
-                                        </span>
-                                    </ReactTooltip>
-                                <img src={info} id="my-yt" className={classes.w14} alt="dad" loading="lazy" />
+                                <ReactTooltip title={'Every video must live in a folder. Create a new or select existing folder to create'} fontWeight={'bold'}>
+                        <img src={info} className={classes.w14} alt={''} />
+                        </ReactTooltip>
                             </ImageListItem>
                             <Stack className={choose ? classes.abs : classes.spanHide}>
                                 <CardContent  className={classes.hoverBody} >

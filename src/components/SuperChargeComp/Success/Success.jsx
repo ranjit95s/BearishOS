@@ -7,7 +7,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import { StyledEngineProvider } from '@mui/material/styles';
 import classes from './Succee.module.css'
-export default function Success() {
+const Success = () => {
     return (
         <>
         <StyledEngineProvider injectFirst>
@@ -36,3 +36,5 @@ export default function Success() {
         </>
     );
 }
+
+export default Success;

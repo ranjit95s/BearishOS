@@ -5,16 +5,14 @@ import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../../img/Close.svg';
 import search from '../../img/search.svg';
 import edit from '../../img/edit1.svg';
-import edit23 from '../../img/edit23.svg';
-import cy from '../../img/copy1.svg';
+import ceye from '../../img/ceye.svg';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import stySC from './superC.module.css';
 import { StyledEngineProvider } from '@mui/material/styles';
 import classes from './AllSnippet.module.css';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
-export default function AllSnippet() {
+const AllTrackingSessions = () => {
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -22,17 +20,9 @@ export default function AllSnippet() {
                     <Card className={classes.boxIn}>
                         <CardContent className={classes.titleStyle}>
                             <Typography variant="h1" className={classes.t61825}>
-                                All Snippets
+                            All Tracking Sessions
                             </Typography>
                             <ImageListItem id="my-element5230">
-                                <ReactTooltip
-                                    className={classes.tooltip}
-                                    anchorId="my-element5230"
-                                    type="light"
-                                    effect="solid"
-                                >
-                                    <span>Close</span>
-                                </ReactTooltip>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
@@ -42,7 +32,7 @@ export default function AllSnippet() {
                                     <img src={search} alt="close" loading="lazy" />
                                 </ImageListItem>
                                 <CardContent className={classes.searcgM}>
-                                    <input type="text" placeholder='Search Snippets' name="code" id="code" />
+                                    <input type="text" placeholder='Search Sessions' name="code" id="code" />
                                 </CardContent>
                             </CardContent>
                             <CardContent className={classes.padding0m0}>
@@ -54,23 +44,18 @@ export default function AllSnippet() {
                         <CardContent className={classes.flexWS}>
                             <Stack className={classes.userStyle}>
                                 <Typography variant="h5" className={classes.th1521}>
-                                    Snippet Name
+                                Sessions Name1
                                 </Typography>
                                 <CardContent className={classes.fp0}>
                                     <ImageListItem >
-                                        <img src={edit23} alt="dad" loading="lazy" className={stySC.mr2525} />
+                                        <img src={ceye} alt="dad" loading="lazy" className={classes.mr2525} />
                                         <Typography variant="h5" className={classes.bt}>
-                                            Edit
-                                        </Typography>
-                                    </ImageListItem>
-                                    <ImageListItem style={{ "margin-left": "10px" }}>
-                                        <img src={cy} alt="dad" loading="lazy" className={stySC.mr2525} />
-                                        <Typography variant="h5" className={classes.bt}>
-                                            Copy
+                                            View
                                         </Typography>
                                     </ImageListItem>
                                 </CardContent>
                             </Stack>
+                            
                         </CardContent>
                     </Card>
                 </Box>
@@ -78,3 +63,5 @@ export default function AllSnippet() {
         </>
     );
 }
+
+export default AllTrackingSessions;

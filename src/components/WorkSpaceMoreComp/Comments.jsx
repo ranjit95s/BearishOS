@@ -3,12 +3,10 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from "../img/Close.svg";
-import remove from "../img/remove.svg";
 import greenCheck from "../img/greenCheck.svg";
 
 import laugh from "../img/laugh.svg";
 import attachment from "../img/attachment.png";
-import pic from "../img/pic.png";
 import s1 from "../img/s1.svg";
 
 import hide from "../img/hide.svg";
@@ -47,32 +45,33 @@ export default function Comments() {
                                     LB
                                 </Typography>
                             </Stack>
-                            <Stack className={classes.times}>
-                                00:00:00 - 00:00:00
+                            <Stack gap={'10px'} direction={'row'} justifyContent={'end'} aliingItem={'center'}>
+                               <Stack  className={classes.times}>View Comment</Stack>
+                               <Stack  className={classes.times}> 00:00:00 - 00:00:00</Stack>
                             </Stack>
                             <Stack gap={'24px'} className={action ? classes.abs : classes.spanHide}>
                                 <Stack style={{"flexDirection":"row","margin":"10px 10px -15px 10px","justifyContent":"space-between","alignItems":"center"}}>
                                 <Stack className={classes.absText} style={{"opacity":"1"}}>Comments Menu</Stack>
                                 <img src={Close} alt="alt" />
                                 </Stack>
-                            <Stack gap={"5px"} className={classes.absT}>
+                            <Stack gap={"8px"} className={classes.absT}>
                                 <img src={greenCheck} alt="alt" />
                                 <Stack className={classes.absText}>Resolve Comment</Stack>
                             </Stack>
-                            <Stack gap={"5px"} className={classes.absT}>
+                            <Stack gap={"8px"} className={classes.absT}>
                                 <img src={hide} alt="alt" />
                                 <Stack className={classes.absText}>Hide Comments</Stack>
                             </Stack>
-                            <Stack gap={"5px"} className={classes.absT}>
+                            <Stack gap={"8px"} className={classes.absT}>
                                 <img src={ceye} alt="alt" />
                                 <Stack className={classes.absText}>View All Comments</Stack>
                             </Stack>
-                            <Stack gap={"5px"} className={classes.absT}>
+                            <Stack gap={"8px"} className={classes.absT}>
                                 <img src={BlueLoc} alt="alt" />
                                 <Stack className={classes.absText}>Place Comment</Stack>
                             </Stack>
                             <Stack
-                                gap={"5px"}
+                                gap={"8px"}
                                 className={classes.absT}
                                 onClick={() => setDeletes(deletes ? false : true)}
                             >
