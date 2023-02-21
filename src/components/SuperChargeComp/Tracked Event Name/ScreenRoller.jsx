@@ -3,13 +3,10 @@ import Stack from "@mui/material/Stack";
 
 import aaa from "./TrackedEventName.module.css";
 const ScreenRoller = ({ timer }) => {
-    let string = "w3docs.com";
-    let firstChar = string.charAt(0); // Returns "w"
-    console.log(firstChar);
 
     return (
         <>
-            <Stack gap={"5px"} className={aaa.scroller}>
+            <Stack mb={'10px'} gap={"5px"} className={aaa.scroller}>
                 <Stack gap={"2px"} direction={"row"} className={aaa.simgCap}>
                     {timer.map((t) => {
                         return (
@@ -24,11 +21,13 @@ const ScreenRoller = ({ timer }) => {
                                                         left: `${i.imgTakenAt.charAt(
                                                             3
                                                         )}${i.imgTakenAt.charAt(4)}px`,
-                                                        width: `calc(${i.inBtw[1].charAt(
-                                                            3
-                                                        )}${i.inBtw[1].charAt(4)}px - ${i.inBtw[0].charAt(
-                                                            3
-                                                        )}${i.inBtw[0].charAt(4)}px)`,
+                                                        // width normally 24px
+                                                        width:'24px'
+                                                        // width: `calc(${i.inBtw[1].charAt(
+                                                        //     3
+                                                        // )}${i.inBtw[1].charAt(4)}px - ${i.inBtw[0].charAt(
+                                                        //     3
+                                                        // )}${i.inBtw[0].charAt(4)}px)`,
                                                     }}
                                                     key={index}
                                                     className={aaa.bg}

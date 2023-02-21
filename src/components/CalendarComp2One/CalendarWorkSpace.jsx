@@ -18,7 +18,7 @@ import aaa from './share.module.css'
 // import Select from '@mui/material/Select';
 // import TextField from '@mui/material/TextField';
 import { Tooltip as ReactTooltip } from "react-tooltip";
-export default function CalendarWorkSpace() {
+const CalendarWorkSpace = () => {
     const [style3, setStyle3] = React.useState(false);
     const [style5, setStyle5] = React.useState(false);
     const [style6, setStyle6] = React.useState(false);
@@ -485,3 +485,4 @@ export default function CalendarWorkSpace() {
         </>
     );
 }
+export default CalendarWorkSpace;
