@@ -6,13 +6,13 @@
 // import CalendarComp2One from "./container/CalendarComp2One";
 // import WorkSpaceCS from "./container/WorkSpaceCS";
 // import CalendarComp3 from "./container/CalendarComp3";
-// import VideoCenterOne from "./container/VideoCenterOne";
+import VideoCenterOne from "./container/VideoCenterOne";
 // import CalendarComp4 from "./container/CalendarComp4";
 // import WorkSpaceMoreComp from "./container/WorkSpaceMoreComp";
 // import MessageComp from "./container/MessageComp";
 // import TaskCenter from "./container/TaskCenter";
 // import CallCenter2 from "./container/CallCenter2";
-import SuperChargeComp from "./container/SuperChargeComp";
+// import SuperChargeComp from "./container/SuperChargeComp";
 // import Login from "./container/Login";
 // import ContactCenterComp2 from "./container/ContactCenterComp2";
 // import MessageComp2 from "./container/MessageComp2";
@@ -32,12 +32,12 @@ function App() {
           {/* <CalendarComp /> */}
           {/* <CalendarComp2 /> */}
           {/* <CalendarComp3 /> */}
-          {/* <VideoCenterOne /> */}
+          <VideoCenterOne />
           {/* <CalendarComp4 /> */}
           {/* <MessageComp /> */}
           {/* <WorkSpaceMoreComp /> */}
           {/* <TaskCenter /> */}
-          <SuperChargeComp />
+          {/* <SuperChargeComp /> */}
           {/* <CallCenter2 /> */}
           {/* <Login /> */}
           {/* <ContactCenterComp2 /> */}
