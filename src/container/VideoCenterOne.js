@@ -18,7 +18,10 @@ import "@fontsource/source-serif-pro";
 // import JoinMeetingGo1 from '../components/VideoCenterOne/Video Center One/Join_Meeting_Go/JoinMeetingGo'
 // import WellMeeting1 from '../components/VideoCenterOne/Video Center One/WellCome_Meeting/WellMeeting'
 // import AskingJoinMeeting1 from '../components/VideoCenterOne/Video Center One/Asking_Join_Meeting/AskingJoinMeeting'
-import CallChat from '../components/VideoCenterOne/Video Center One/Call Chat/CallChat'
+// import CallChat from '../components/VideoCenterOne/Video Center One/Call Chat/CallChat'
+import FirstLast from '../components/VideoCenterOne/Video Center One/FirstLast/FirstLast'
+// import PleaseWait from '../components/VideoCenterOne/Video Center One/Please Wait/PleaseWait'
+// import Oops from '../components/VideoCenterOne/Video Center One/Oops/Oops'
 
 function VideoCenterOne() {
 
@@ -26,7 +29,9 @@ function VideoCenterOne() {
          <div style={{"margin":"10px","gap":"20px"}}>
             
 
-            <CallChat/>
+            {/* <Oops/> */}
+            <FirstLast/>
+            {/* <PleaseWait/> */}
         </div>
     )
 }

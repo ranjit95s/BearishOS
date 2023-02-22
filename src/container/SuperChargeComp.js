@@ -6,7 +6,7 @@ import '../components/sty.module.css';
 // import CreateSnippet from '../components/SuperChargeComp/CreateSnippet'
 // import EditSnippet from '../components/SuperChargeComp/Edit_Snippets/EditSnippet'
 // import AllSnippet from '../components/SuperChargeComp/AllSnippet'
-// import Oops from '../components/SuperChargeComp/Oops'
+import Oops from '../components/SuperChargeComp/Oops'
 
 // import NameYourProj12 from '../components/SuperChargeComp/Name_Your_project/NameYourProj'
 // import NameYourReco12 from '../components/SuperChargeComp/Name_Your_Recording/NameYourReco'
@@ -14,7 +14,7 @@ import '../components/sty.module.css';
 
 // import NameYourProj123 from '../components/SuperChargeComp/Project_Control/NameYourProj1'
 // import NameYourReco123 from '../components/SuperChargeComp/Recording_Controls/NameYourReco1'
-import TrackedEventName from '../components/SuperChargeComp/Tracked Event Name/TrackedEventName'
+// import TrackedEventName from '../components/SuperChargeComp/Tracked Event Name/TrackedEventName'
 function SuperChargeComp() {
 
     return (
@@ -28,9 +28,9 @@ function SuperChargeComp() {
             <CreateSnippet/> 
             <EditSnippet/>
             <AllSnippet/> 
-            <AllTrackingSessions/>
-            <Oops/>  */}
-            <TrackedEventName/>
+            <AllTrackingSessions/> */}
+            <Oops/> 
+            {/* <TrackedEventName/> */}
         </div>
     )
 }
