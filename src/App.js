@@ -6,8 +6,8 @@
 // import CalendarComp2One from "./container/CalendarComp2One";
 // import WorkSpaceCS from "./container/WorkSpaceCS";
 // import CalendarComp3 from "./container/CalendarComp3";
-import VideoCenterOne from "./container/VideoCenterOne";
-// import CalendarComp4 from "./container/CalendarComp4";
+// import VideoCenterOne from "./container/VideoCenterOne";
+import CalendarComp4 from "./container/CalendarComp4";
 // import WorkSpaceMoreComp from "./container/WorkSpaceMoreComp";
 // import MessageComp from "./container/MessageComp";
 // import TaskCenter from "./container/TaskCenter";
@@ -16,8 +16,9 @@ import VideoCenterOne from "./container/VideoCenterOne";
 // import Login from "./container/Login";
 // import ContactCenterComp2 from "./container/ContactCenterComp2";
 // import MessageComp2 from "./container/MessageComp2";
-// // import SettingComps from './container/SettingComps'
+// import SettingComps from './container/SettingComps'
 // import CalScheduleLinks from "./container/CalScheduleLinks";
+// import InsideContact from "./container/InsideContact";
 import theme from "./MUI/theme";
 import { StyledEngineProvider, ThemeProvider } from "@mui/material";
 function App() {
@@ -32,8 +33,8 @@ function App() {
           {/* <CalendarComp /> */}
           {/* <CalendarComp2 /> */}
           {/* <CalendarComp3 /> */}
-          <VideoCenterOne />
-          {/* <CalendarComp4 /> */}
+          {/* <VideoCenterOne /> */}
+          <CalendarComp4 />
           {/* <MessageComp /> */}
           {/* <WorkSpaceMoreComp /> */}
           {/* <TaskCenter /> */}
@@ -44,6 +45,7 @@ function App() {
           {/* <MessageComp2 /> */}
           {/* <SettingComps /> */}
           {/* <CalScheduleLinks /> */}
+          {/* <InsideContact /> */}
         </StyledEngineProvider>
       </ThemeProvider>
     </>

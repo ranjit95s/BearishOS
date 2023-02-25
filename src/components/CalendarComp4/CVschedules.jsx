@@ -6,59 +6,63 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { StyledEngineProvider } from '@mui/material/styles';
-import aaa from './Choose.module.css';
+import classes from './Choose.module.css';
 export default function CVschedules() {
     return (
         <>
              <StyledEngineProvider injectFirst>
-                <Box component="chooseevent" className={aaa.boxStyle}>
-                    <Card className={aaa.boxIn}>
-                        <CardContent className={aaa.headerStyle}>
-                            <Typography variant="h1" className={aaa.tllStyle}>
+                <Box component="chooseevent" className={classes.boxStyle}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.headerStyle}>
+                            <Typography variant="h1" className={classes.tllStyle}>
                             Create or View Schedules
                             </Typography>
                         </CardContent>
-                        <CardActions className={aaa.signHover}>
-                            <Button className={aaa.ais}
+                        <CardActions className={classes.signHover}>
+                            <Button className={classes.ais}
                             
                             >
                                 <Typography
                                     variant="h1"
-                                    className={aaa.als}
+                                    className={classes.als}
                                 >
                                    Create Regularly Scheduled Events
                                 </Typography>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.tsec}
+                                    className={classes.tsec}
                                 >
                                     Create a new template for all your regularly scheduled events.
                                 </Typography>
                             </Button>
-                            <Button className={aaa.ais}>
+                            <Button className={classes.ais}>
+                                     <span className={classes.spanStyle}>
+                                        {" "}
+                                        Alpha{" "}
+                                    </span>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.als}
+                                    className={classes.als}
                                 >
                                    Single Meeting Link
                                 </Typography>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.tsec}
+                                    className={classes.tsec}
                                 >
                                     Create a link for a one time meeting to send and share with a single person.
                                 </Typography>
                             </Button>
-                            <Button className={aaa.ais}>
+                            <Button className={classes.ais}>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.als}
+                                    className={classes.als}
                                 >
                                     View All Created Links
                                 </Typography>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.tsec}
+                                    className={classes.tsec}
                                 >
                                     View and Edit all the schedules or links that you’ve created.
                                 </Typography>

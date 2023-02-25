@@ -1,0 +1,18 @@
+.boxStyle {
+    font-family: Source Serif Pro !important;
+    width: 500px;
+    display:flex;
+    height: 325px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    overflow: visible !important;
+    opacity: 1;
+}
+
+.boxIn {
+    width: 450px;
+    box-shadow: none;
+    margin:0 auto;
+    overflow:visible !important;
+}

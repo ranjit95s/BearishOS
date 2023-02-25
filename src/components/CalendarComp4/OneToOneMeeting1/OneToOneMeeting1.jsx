@@ -275,23 +275,18 @@ export default function OneToOneMeeting1() {
                             </Typography>
                         </CardContent>
                         <CardContent
-                            className={classes.timer2}
-                        >
-                            <Typography
-                                variant="h1"
-                                className={classes.top1}
-                            >
-                                Location, Virtual Bearish OS
-                            </Typography>
-                            <ImageListItem>
-                                <img
-                                    className={classes.imgStyle}
-                                    src={dad}
-                                    alt="dad"
-                                    loading="lazy"
-                                />
-                            </ImageListItem>
-                        </CardContent>
+                                    style={{width:'auto', "marginRight":"5px","height":"25px","justifyContent":'flex-start' }}
+                                    className={classes.inputStyle}
+                                >
+                                    <input 
+                                    style={{width: "10%"}}
+                                        type="number"
+                                        placeholder="15"
+                                        max="2"
+                                        name="code"
+                                        id="code"
+                                    /> <span style={{"opacity":"0.5"}}>Mins</span>
+                                </CardContent>
                         <CardContent className={classes.headerStyle}>
                             <Typography
                                 varient="h1"
@@ -308,11 +303,12 @@ export default function OneToOneMeeting1() {
                         </CardContent>
                         <CardContent
                             className={classes.inputStyle}
+                            style={{width:'auto'}}
                         >
                             <input
                                 onChange={onChangeHandler}
                                 type="text"
-                                placeholder="Any text"
+                                placeholder="Name your link"
                                 name="code"
                                 id="code"
                             />

@@ -6,60 +6,64 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { StyledEngineProvider } from '@mui/material/styles';
-import aaa from './Choose.module.css';
+import classes from './Choose.module.css';
 
 export default function ChooseEventType() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="chooseevent" className={aaa.boxStyle}>
-                    <Card className={aaa.boxIn}>
-                        <CardContent className={aaa.headerStyle}>
-                            <Typography variant="h1" className={aaa.tllStyle}>
+                <Box component="chooseevent" className={classes.boxStyle}>
+                    <Card className={classes.boxIn}>
+                        <CardContent className={classes.headerStyle}>
+                            <Typography variant="h1" className={classes.tllStyle}>
                                 Choose your Event Type
                             </Typography>
                         </CardContent>
-                        <CardActions className={aaa.signHover}>
-                            <Button className={aaa.ais}
+                        <CardActions className={classes.signHover}>
+                            <Button className={classes.ais}
                             
                             >
                                 <Typography
                                     variant="h1"
-                                    className={aaa.als}
+                                    className={classes.als}
                                 >
                                     One on One Meetings
                                 </Typography>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.tsec}
+                                    className={classes.tsec}
                                 >
                                     Let your guests pick a time to have a one on one meeting with you.
                                 </Typography>
                             </Button>
-                            <Button className={aaa.ais}>
+                            <Button className={classes.ais}>
+                            <span className={classes.spanStyle}>
+                                        {" "}
+                                        Alpha{" "}
+                                    </span>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.als}
+                                    className={classes.als}
                                 >
                                     Create a One Time Meeting
                                 </Typography>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.tsec}
+                                    className={classes.tsec}
                                 >
                                     Create a one time use link to let a single guest pick a time to meet you.
                                 </Typography>
                             </Button>
-                            <Button className={aaa.ais}>
+                            <Button className={classes.ais}>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.als}
+                                    className={classes.als}
                                 >
                                     More Soon…
                                 </Typography>
                                 <Typography
                                     variant="h1"
-                                    className={aaa.tsec}
+                                    className={classes.tsec}
                                 >
                                     View and Edit all the schedules or links that you’ve created.
                                 </Typography>
